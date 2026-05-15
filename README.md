@@ -24,11 +24,11 @@ This repository contains practical writeups and walkthroughs for labs completed 
 ## 📂 Lab Categories
 
 ### Access Control
-- [ ] Unprotected admin functionality
-- [ ] Unprotected admin functionality with unpredictable URL
-- [ ] User role controlled by request parameter
-- [ ] User role can be modified in user profile
-- [ ] URL-based access control can be circumvented
+- [x] Unprotected admin functionality
+- [x] Unprotected admin functionality with unpredictable URL
+- [x] User role controlled by request parameter
+- [x] User role can be modified in user profile
+- [x] URL-based access control can be circumvented
 
 ---
 
