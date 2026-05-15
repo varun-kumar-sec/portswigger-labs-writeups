@@ -85,7 +85,7 @@ The `robots.txt` file was accessed manually, revealing a hidden administrative e
 /administrator-panel
 ```
 
-![image alt](screenshots/unprotected-admin-2.png)
+![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/unprotected-admin-functionality/screenshots/(Access%20Control%20Vulnerability)Lab2.png?raw=true)
 
 **Caption:** robots.txt exposing the hidden administrative panel URL.
 
