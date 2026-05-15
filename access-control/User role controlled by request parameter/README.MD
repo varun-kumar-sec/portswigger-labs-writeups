@@ -161,7 +161,7 @@ for all upcoming requests.
 
 After refreshing the page, an administrative panel button became visible for the standard user account.
 
-![Admin Button Visible](screenshots/user-role-request-5.png)
+![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc5.png?raw=true)
 
 **Caption:** Administrative functionality exposed after modifying the request parameter.
 
