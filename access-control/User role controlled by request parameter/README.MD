@@ -182,11 +182,8 @@ The user `carlos` was deleted successfully, which solved the lab.
 # Why It Works
 
 The application relied on a client-controlled parameter to determine whether the user had administrative privileges.
-
 Because the parameter was sent from the client side, it could easily be modified using Burp Suite.
-
 The server trusted the manipulated value without performing proper authorization validation, allowing privilege escalation.
-
 This demonstrates why authorization decisions should never rely on user-controlled input.
 
 ---
