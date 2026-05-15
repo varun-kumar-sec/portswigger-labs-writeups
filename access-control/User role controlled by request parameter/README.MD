@@ -151,7 +151,7 @@ Admin=true
 
 for all upcoming requests.
 
-![Match and Replace Configuration](screenshots/user-role-request-4.png)
+![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc4.png?raw=true)
 
 **Caption:** Burp Suite Match and Replace configured to elevate privileges.
 
