@@ -129,7 +129,7 @@ Inside the request, the following parameter was identified:
 Admin=false
 ```
 
-![Captured Request](screenshots/user-role-request-3.png)
+![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc3.png?raw=true)
 
 **Caption:** Login request containing the `Admin=false` parameter.
 
