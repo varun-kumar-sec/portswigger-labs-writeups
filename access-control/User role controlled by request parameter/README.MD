@@ -98,7 +98,7 @@ Admin=true
 
 The application initially appears to be a normal website.
 
-![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc1.png?raw=true)
+![Main website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc1.png?raw=true)
 
 **Caption:** Initial application interface before authentication.
 
@@ -113,7 +113,7 @@ Username: wiener
 Password: peter
 ```
 
-![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc2.png?raw=true)
+![Login page](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc2.png?raw=true)
 
 **Caption:** Logging into the application using standard user credentials.
 
@@ -129,7 +129,7 @@ Inside the request, the following parameter was identified:
 Admin=false
 ```
 
-![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc3.png?raw=true)
+![Captured request](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc3.png?raw=true)
 
 **Caption:** Login request containing the `Admin=false` parameter.
 
@@ -151,7 +151,7 @@ Admin=true
 
 for all upcoming requests.
 
-![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc4.png?raw=true)
+![Match and Replace Configuration](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc4.png?raw=true)
 
 **Caption:** Burp Suite Match and Replace configured to elevate privileges.
 
@@ -161,7 +161,7 @@ for all upcoming requests.
 
 After refreshing the page, an administrative panel button became visible for the standard user account.
 
-![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc5.png?raw=true)
+![Admnin Button Visible](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc5.png?raw=true)
 
 **Caption:** Administrative functionality exposed after modifying the request parameter.
 
