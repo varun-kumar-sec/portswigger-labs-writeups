@@ -84,7 +84,7 @@ While inspecting the page source, a hidden administrative endpoint was discovere
 /admin-g14cxw
 ```
 
-![Source Code Analysis](screenshots/unprotected-admin-unpredictable-2.png)
+![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/unprotected-admin-functionality-with-unpredictable-url/screenshots/(Access%20Control%20Vulnerability)Lab2.png?raw=true)
 
 **Caption:** Hidden administrative URL exposed inside the page source.
 
