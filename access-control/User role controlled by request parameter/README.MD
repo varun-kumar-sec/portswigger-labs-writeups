@@ -98,7 +98,7 @@ Admin=true
 
 The application initially appears to be a normal website.
 
-![Main Website](screenshots/user-role-request-1.png)
+![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc1.png?raw=true)
 
 **Caption:** Initial application interface before authentication.
 
