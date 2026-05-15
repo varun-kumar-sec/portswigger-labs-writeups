@@ -97,7 +97,7 @@ The hidden endpoint was accessed directly, exposing administrative functionality
 
 The user `carlos` was deleted successfully, which solved the lab.
 
-![image alt](screenshots/unprotected-admin-3.png)
+![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/unprotected-admin-functionality/screenshots/(Access%20Control%20Vulnerability)Lab3.png?raw=true)
 
 **Caption:** Unauthorized access to the administration panel allowing deletion of user accounts.
 
