@@ -70,7 +70,7 @@ View Page Source
 
 The application initially appears to be a normal website without visible administrative functionality.
 
-![Main Website](screenshots/unprotected-admin-unpredictable-1.png)
+![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/unprotected-admin-functionality-with-unpredictable-url/screenshots/(Access%20Control%20Vulnerability)Lab1.png?raw=true)
 
 **Caption:** Initial application interface with no visible admin access.
 
