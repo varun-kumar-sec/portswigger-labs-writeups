@@ -71,7 +71,7 @@ Broken Access Control vulnerabilities are among the most critical web applicatio
 
 The application initially appears to be a normal web page without any visible administrative functionality.
 
-![image alt](screenshots/unprotected-admin-1.png)
+![image alt](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/unprotected-admin-functionality/screenshots/(Access%20Control%20Vulnerability)Lab1.png?raw=true)
 
 **Caption:** Initial application interface without visible admin access.
 
