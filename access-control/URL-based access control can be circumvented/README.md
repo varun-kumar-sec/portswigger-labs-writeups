@@ -162,7 +162,7 @@ X-Original-URL: /admin/delete
 
 This successfully deleted Carlos's account and solved the lab.
 
-![Lab Solved](screenshots/url-access-control-5.png)
+![Lab Solved](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/URL-based%20access%20control%20can%20be%20circumvented/screenshots/(Access%20Control%20Vulnerability)poc5.png?raw=true)
 
 **Caption:** Successfully deleting Carlos's account using the manipulated request.
 
