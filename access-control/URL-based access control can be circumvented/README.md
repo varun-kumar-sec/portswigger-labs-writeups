@@ -5,7 +5,7 @@
 | Category | Access Control |
 |---|---|
 | Lab Name | URL-based access control can be circumvented |
-| Difficulty | Apprentice |
+| Difficulty | PRACTITIONER |
 | Platform | PortSwigger Web Security Academy |
 
 ---
