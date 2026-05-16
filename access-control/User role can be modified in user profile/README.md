@@ -164,7 +164,7 @@ The request was modified by adding the following JSON parameter:
 
 This attempted to escalate the user's privileges.
 
-![Modified Request](screenshots/user-role-profile-5.png)
+![Modified Request](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20can%20be%20modified%20in%20user%20profile/screenshots/(Access%20Control%20Vulnerability)poc5.png?raw=true)
 
 **Caption:** Modified profile update request attempting privilege escalation.
 
