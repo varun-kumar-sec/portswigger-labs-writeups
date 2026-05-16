@@ -145,7 +145,7 @@ After inserting the header, the server returned a:
 
 response, exposing administrative functionality including account deletion features.
 
-![Admin Access Granted](screenshots/url-access-control-4.png)
+![Admin Access Granted](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/URL-based%20access%20control%20can%20be%20circumvented/screenshots/(Access%20Control%20Vulnerability)poc4.png?raw=true)
 
 **Caption:** Unauthorized administrative access after header manipulation.
 
