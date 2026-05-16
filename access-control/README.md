@@ -29,7 +29,7 @@ These labs demonstrate how improper authorization mechanisms can allow attackers
 - [x] User role controlled by request parameter
 - [x] User role can be modified in user profile
 - [x] User ID controlled by request parameter
-- [ ] URL-based access control can be circumvented
+- [x] URL-based access control can be circumvented
 - [ ] Method-based access control can be circumvented
 
 ---
