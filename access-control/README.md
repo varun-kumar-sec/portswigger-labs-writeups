@@ -27,7 +27,7 @@ These labs demonstrate how improper authorization mechanisms can allow attackers
 - [x] Unprotected admin functionality
 - [x] Unprotected admin functionality with unpredictable URL
 - [x] User role controlled by request parameter
-- [ ] User role can be modified in user profile
+- [x] User role can be modified in user profile
 - [ ] URL-based access control can be circumvented
 - [ ] Method-based access control can be circumvented
 
