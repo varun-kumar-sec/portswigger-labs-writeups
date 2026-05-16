@@ -122,7 +122,7 @@ After logging in, the account page URL contained the username as a request param
 /my-account?id=wiener
 ```
 
-![User ID Parameter](screenshots/user-id-request-3.png)
+![User ID Parameter](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20ID%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc3.png?raw=true)
 
 **Caption:** Account page URL exposing the user identifier parameter.
 
