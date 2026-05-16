@@ -108,7 +108,7 @@ Username: wiener
 Password: peter
 ```
 
-![Login Page](screenshots/user-id-request-2.png)
+![Login Page](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20ID%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc2.png?raw=true)
 
 **Caption:** Logging into the application using standard user credentials.
 
