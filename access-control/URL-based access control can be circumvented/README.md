@@ -103,7 +103,7 @@ X-Original-URL: /admin/delete
 
 The application initially displayed a normal web page with an additional **Admin Panel** button.
 
-![Main Website](screenshots/url-access-control-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/URL-based%20access%20control%20can%20be%20circumvented/screenshots/(Access%20Control%20Vulnerability)poc1.png?raw=true)
 
 **Caption:** Initial application interface displaying the admin panel option.
 
