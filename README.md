@@ -28,6 +28,7 @@ This repository contains practical writeups and walkthroughs for labs completed 
 - [x] Unprotected admin functionality with unpredictable URL
 - [x] User role controlled by request parameter
 - [x] User role can be modified in user profile
+- [x] User ID controlled by request parameter 
 - [x] URL-based access control can be circumvented
 
 ---
