@@ -113,7 +113,7 @@ The application initially displayed a normal web page with an additional **Admin
 
 Attempting to access the admin panel directly resulted in an access denied response.
 
-![Access Denied](screenshots/url-access-control-2.png)
+![Access Denied](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/URL-based%20access%20control%20can%20be%20circumvented/screenshots/(Access%20Control%20Vulnerability)poc2.png?raw=true)
 
 **Caption:** Direct access to the admin panel blocked by the application.
 
