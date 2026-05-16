@@ -174,7 +174,7 @@ This attempted to escalate the user's privileges.
 
 After refreshing the logged-in page, an administrative panel button became visible.
 
-![Admin Button Visible](screenshots/user-role-profile-6.png)
+![Admin Button Visible](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20can%20be%20modified%20in%20user%20profile/screenshots/(Access%20Control%20Vulnerability)poc6.png?raw=true)
 
 **Caption:** Administrative functionality exposed after modifying the role identifier.
 
