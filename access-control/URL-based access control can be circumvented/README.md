@@ -129,7 +129,7 @@ The following header was added:
 X-Original-URL: /admin
 ```
 
-![Modified Header](screenshots/url-access-control-3.png)
+![Modified Header](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/URL-based%20access%20control%20can%20be%20circumvented/screenshots/(Access%20Control%20Vulnerability)poc3.png?raw=true)
 
 **Caption:** Injecting the `X-Original-URL` header to bypass access control.
 
