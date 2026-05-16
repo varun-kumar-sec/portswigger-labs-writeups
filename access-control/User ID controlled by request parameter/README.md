@@ -13,7 +13,6 @@
 # Description
 
 This lab demonstrates a Broken Access Control vulnerability where user account access is controlled directly through a URL parameter.
-
 After logging into the application using standard user credentials, the account page URL contained the logged-in username as a request parameter:
 
 ```text
@@ -21,7 +20,6 @@ After logging into the application using standard user credentials, the account 
 ```
 
 By modifying the parameter value from `wiener` to `carlos`, unauthorized access to another user's account became possible.
-
 This exposed sensitive information including Carlos's API key.
 
 ---
@@ -154,7 +152,7 @@ This granted unauthorized access to Carlos's account, exposing his API key.
 
 Carlos's API key was submitted in the solution section, successfully solving the lab.
 
-![Lab Solved](screenshots/user-id-request-5.png)
+![Lab Solved](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20ID%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc5.png?raw=true)
 
 **Caption:** Submitting Carlos's API key to complete the lab.
 
@@ -163,11 +161,8 @@ Carlos's API key was submitted in the solution section, successfully solving the
 # Why It Works
 
 The application relied entirely on a user-controlled request parameter to determine which account data should be displayed.
-
 The server failed to verify whether the authenticated user was authorized to access the requested account.
-
 Because the parameter could be modified directly in the URL, attackers could access sensitive information belonging to other users.
-
 This is a classic example of an Insecure Direct Object Reference (IDOR) vulnerability.
 
 ---
@@ -218,5 +213,4 @@ Applications that trust user-controlled identifiers without authorization checks
 # Conclusion
 
 This lab demonstrated a Broken Access Control vulnerability caused by insecure handling of user-controlled request parameters.
-
 By modifying the `id` parameter from `wiener` to `carlos`, unauthorized access to another user's account became possible, exposing sensitive information including an API key.
