@@ -132,7 +132,7 @@ The email address used was:
 hello@hello.com
 ```
 
-![Update Email Function](screenshots/user-role-profile-3.png)
+![Update Email Function](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20can%20be%20modified%20in%20user%20profile/screenshots/(Access%20Control%20Vulnerability)poc3.png?raw=true)
 
 **Caption:** User profile section containing the email update functionality.
 
