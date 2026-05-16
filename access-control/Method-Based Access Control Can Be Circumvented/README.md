@@ -13,11 +13,8 @@
 # Description
 
 This lab demonstrates a Broken Access Control vulnerability where authorization checks depend only on the HTTP request method.
-
 The administrator account had access to functionality that allowed upgrading or downgrading user privileges through the `/admin-roles` endpoint.
-
 After capturing the administrative request, the session cookie was replaced with a normal user's session cookie. Initially, the request returned an `Unauthorized` response.
-
 However, after changing the HTTP request method, the server processed the request successfully and granted administrative privileges to the standard user account.
 
 ---
@@ -206,11 +203,8 @@ The lab was solved successfully.
 # Why It Works
 
 The application implemented inconsistent authorization checks based on the HTTP request method.
-
 While one request method correctly enforced access restrictions, another method processed the same action without proper validation.
-
 By changing the request method, the attacker bypassed the intended access control mechanism and successfully escalated privileges.
-
 This demonstrates why authorization logic should remain consistent across all HTTP methods.
 
 ---
@@ -262,5 +256,4 @@ Improper method-based authorization logic can allow attackers to bypass critical
 # Conclusion
 
 This lab demonstrated a Broken Access Control vulnerability caused by inconsistent authorization enforcement across HTTP methods.
-
 Although the application initially blocked the modified request, changing the HTTP method bypassed the restriction and allowed unauthorized privilege escalation, ultimately promoting a standard user account to administrator privileges.
