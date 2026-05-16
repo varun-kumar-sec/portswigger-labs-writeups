@@ -148,7 +148,7 @@ Inside the response, an interesting parameter was identified:
 "roleid":1
 ```
 
-![Captured Response](screenshots/user-role-profile-4.png)
+![Captured Response](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20can%20be%20modified%20in%20user%20profile/screenshots/(Access%20Control%20Vulnerability)poc4.png?raw=true)
 
 **Caption:** Server response exposing the current role identifier.
 
