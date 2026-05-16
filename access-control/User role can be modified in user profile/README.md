@@ -186,7 +186,7 @@ The administration panel became accessible, allowing management of user accounts
 
 The user `carlos` was deleted successfully, which solved the lab.
 
-![Admin Panel Access](screenshots/user-role-profile-7.png)
+![Admin Panel Access](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20can%20be%20modified%20in%20user%20profile/screenshots/(Access%20Control%20Vulnerability)poc7.png?raw=true)
 
 **Caption:** Unauthorized access to the administration panel allowing deletion of user accounts.
 
