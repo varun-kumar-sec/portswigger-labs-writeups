@@ -101,7 +101,7 @@ hello@hello.com
 
 The application initially appears to be a normal website.
 
-![Main Website](screenshots/user-role-profile-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20role%20can%20be%20modified%20in%20user%20profile/screenshots/(Access%20Control%20Vulnerability)poc1.png?raw=true)
 
 **Caption:** Initial application interface before authentication.
 
