@@ -144,7 +144,7 @@ carlos
 
 This granted unauthorized access to Carlos's account, exposing his API key.
 
-![Carlos Account Access](screenshots/user-id-request-4.png)
+![Carlos Account Access](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/User%20ID%20controlled%20by%20request%20parameter/screenshots/(Access%20Control%20Vulnerability)poc4.png?raw=true)
 
 **Caption:** Unauthorized access to Carlos's account after modifying the user ID parameter.
 
