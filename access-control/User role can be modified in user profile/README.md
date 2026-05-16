@@ -13,7 +13,6 @@
 # Description
 
 This lab demonstrates a Broken Access Control vulnerability where user privilege levels can be modified directly through profile update requests.
-
 After logging into the application using normal user credentials, the email update functionality was analyzed using Burp Suite. While inspecting the server response, a parameter named:
 
 ```json
@@ -21,7 +20,6 @@ After logging into the application using normal user credentials, the email upda
 ```
 
 was identified.
-
 By modifying the request and adding:
 
 ```json
@@ -29,7 +27,6 @@ By modifying the request and adding:
 ```
 
 the application granted administrative privileges to the standard user account.
-
 This allowed unauthorized access to the administration panel and deletion of user accounts.
 
 ---
@@ -198,11 +195,8 @@ The user `carlos` was deleted successfully, which solved the lab.
 # Why It Works
 
 The application trusted user-controlled input during the profile update process.
-
 By modifying the request and supplying a higher role identifier, the server updated the user's privileges without verifying whether the action was authorized.
-
 The application failed to implement proper server-side access control validation, allowing privilege escalation through parameter tampering.
-
 Authorization-related values should never be modifiable by normal users.
 
 ---
@@ -253,5 +247,4 @@ If attackers can manipulate role identifiers, they may gain full control over th
 # Conclusion
 
 This lab demonstrated a Broken Access Control vulnerability caused by insecure handling of privilege-related parameters during profile updates.
-
 By modifying the request and adding `"roleid":2`, administrative privileges were granted to a standard user account. This allowed unauthorized access to the administration panel and deletion of user accounts.
