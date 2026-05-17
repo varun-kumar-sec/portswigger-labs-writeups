@@ -160,7 +160,7 @@ Username: wiener
 Password: peter
 ```
 
-![Wiener Login](screenshots/method-access-control-6.png)
+![Wiener Login](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/Method-Based%20Access%20Control%20Can%20Be%20Circumvented/screenshots/(Access%20Control%20Vulnerability)poc6.png?raw=true)
 
 **Caption:** Logging into the application using standard user credentials.
 
