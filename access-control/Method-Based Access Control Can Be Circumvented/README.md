@@ -138,7 +138,6 @@ The administrator account had functionality to upgrade or downgrade user privile
 ## Step 5 — Capturing the Administrative Request
 
 The privilege modification request was intercepted using Burp Suite.
-
 The request targeted the following endpoint:
 
 ```text
@@ -179,7 +178,6 @@ The login request for the Wiener account was captured, exposing the session cook
 ## Step 8 — Replacing the Session Cookie
 
 The administrator session cookie in the previously captured `/admin-roles` request was replaced with Wiener's session cookie.
-
 Initially, the server returned an `Unauthorized` response.
 
 ![Unauthorized Response](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/Method-Based%20Access%20Control%20Can%20Be%20Circumvented/screenshots/(Access%20Control%20Vulnerability)poc8.png?raw=true)
@@ -191,10 +189,9 @@ Initially, the server returned an `Unauthorized` response.
 ## Step 9 — Changing the HTTP Request Method
 
 After changing the HTTP request method, the server processed the request successfully and promoted Wiener to administrator privileges.
-
 The lab was solved successfully.
 
-![Privilege Escalation Successful](screenshots/method-access-control-9.png)
+![Privilege Escalation Successful](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/Method-Based%20Access%20Control%20Can%20Be%20Circumvented/screenshots/(Access%20Control%20Vulnerability)poc9.png?raw=true)
 
 **Caption:** Successful privilege escalation after changing the HTTP request method.
 
