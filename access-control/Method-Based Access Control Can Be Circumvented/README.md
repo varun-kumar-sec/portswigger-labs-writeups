@@ -119,7 +119,7 @@ Password: admin
 
 After successful authentication, the administration panel became accessible.
 
-![Admin Panel Access](screenshots/method-access-control-3.png)
+![Admin Panel Access](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/Method-Based%20Access%20Control%20Can%20Be%20Circumvented/screenshots/(Access%20Control%20Vulnerability)poc4.png?raw=true)
 
 **Caption:** Administrative panel visible after administrator login.
 
