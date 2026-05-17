@@ -182,7 +182,7 @@ The administrator session cookie in the previously captured `/admin-roles` reque
 
 Initially, the server returned an `Unauthorized` response.
 
-![Unauthorized Response](screenshots/method-access-control-8.png)
+![Unauthorized Response](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/Method-Based%20Access%20Control%20Can%20Be%20Circumvented/screenshots/(Access%20Control%20Vulnerability)poc8.png?raw=true)
 
 **Caption:** Authorization failure after replacing the administrator session cookie.
 
