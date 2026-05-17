@@ -109,7 +109,7 @@ Username: administrator
 Password: admin
 ```
 
-![Administrator Login](screenshots/method-access-control-2.png)
+![Administrator Login](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/Method-Based%20Access%20Control%20Can%20Be%20Circumvented/screenshots/(Access%20Control%20Vulnerability)poc3.png?raw=true)
 
 **Caption:** Logging into the administrator account.
 
