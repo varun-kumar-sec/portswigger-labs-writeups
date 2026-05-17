@@ -129,7 +129,7 @@ After successful authentication, the administration panel became accessible.
 
 The administrator account had functionality to upgrade or downgrade user privileges.
 
-![Privilege Management](screenshots/method-access-control-4.png)
+![Privilege Management](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/Method-Based%20Access%20Control%20Can%20Be%20Circumvented/screenshots/(Access%20Control%20Vulnerability)poc.png?raw=true)
 
 **Caption:** Administrative functionality for modifying user roles.
 
