@@ -170,7 +170,7 @@ Password: peter
 
 The login request for the Wiener account was captured, exposing the session cookie.
 
-![Session Cookie](screenshots/method-access-control-7.png)
+![Session Cookie](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/Method-Based%20Access%20Control%20Can%20Be%20Circumvented/screenshots/(Access%20Control%20Vulnerability)poc7.png?raw=true)
 
 **Caption:** Captured session cookie associated with the Wiener account.
 
