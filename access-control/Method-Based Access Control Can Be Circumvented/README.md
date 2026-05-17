@@ -94,7 +94,7 @@ response.
 
 The application initially appears to be a normal website.
 
-![Main Website](screenshots/method-access-control-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/Method-Based%20Access%20Control%20Can%20Be%20Circumvented/screenshots/(Access%20Control%20Vulnerability)poc1.png?raw=true)
 
 **Caption:** Initial application interface before authentication.
 
