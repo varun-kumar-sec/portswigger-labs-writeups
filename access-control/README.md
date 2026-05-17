@@ -38,3 +38,7 @@ These labs demonstrate how improper authorization mechanisms can allow attackers
 - Burp Suite
 - Firefox Developer Tools
 - PortSwigger Web Security Academy
+
+# ⚠️ Disclaimer
+
+These labs were performed in a legal training environment provided by PortSwigger Web Security Academy for educational and ethical learning purposes only.
