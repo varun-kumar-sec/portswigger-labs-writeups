@@ -30,6 +30,7 @@ This repository contains practical writeups and walkthroughs for labs completed 
 - [x] User role can be modified in user profile
 - [x] User ID controlled by request parameter 
 - [x] URL-based access control can be circumvented
+- [x] Method-Based Access Control Can Be Circumvented
 
 ---
 
