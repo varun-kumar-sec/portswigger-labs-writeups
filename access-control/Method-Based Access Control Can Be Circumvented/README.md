@@ -145,7 +145,7 @@ The request targeted the following endpoint:
 /admin-roles
 ```
 
-![Captured Request](screenshots/method-access-control-5.png)
+![Captured Request](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/access-control/Method-Based%20Access%20Control%20Can%20Be%20Circumvented/screenshots/(Access%20Control%20Vulnerability)poc5.png?raw=true)
 
 **Caption:** Captured administrative request responsible for modifying user roles.
 
