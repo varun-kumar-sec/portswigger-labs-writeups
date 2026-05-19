@@ -193,7 +193,7 @@ The attacker used:
 The payload:
 
 ```sql
-UNION SELECT null,'3GCj9s',null--
+UNION SELECT null,('3GCj9s'),null--
 ```
 
 worked because:
