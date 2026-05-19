@@ -118,7 +118,7 @@ ORDER BY 4--
 
 The application initially appears to be a normal e-commerce website containing product filtering functionality.
 
-![Main Website](screenshots/sqli-union-text-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,Finding%20a%20Column%20Containing%20Text/screenshots/lab4.png?raw=true)
 
 **Caption:** Initial application interface containing the Lifestyle category filter.
 
