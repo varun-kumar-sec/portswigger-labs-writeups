@@ -125,7 +125,7 @@ The request generated after selecting the **Gifts** category was intercepted usi
 /filter?category=Gifts
 ```
 
-![Captured Request](screenshots/sqli-union-columns-2.png)
+![Captured Request](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Determining%20the%20Number%20of%20Columns%20Returned%20by%20the%20Query/screenshots/lab3(1).png?raw=true)
 
 **Caption:** Captured product filter request using the category parameter.
 
