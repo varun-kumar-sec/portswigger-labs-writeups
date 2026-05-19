@@ -152,7 +152,7 @@ A UNION query containing three `NULL` values was injected:
 
 This validated that the injected query matched the original query structure.
 
-![UNION Validation](screenshots/sqli-union-text-3.png)
+![UNION Validation](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,Finding%20a%20Column%20Containing%20Text/screenshots/lab4(2).png?raw=true)
 
 **Caption:** Validating the column count using a `UNION SELECT` query.
 
