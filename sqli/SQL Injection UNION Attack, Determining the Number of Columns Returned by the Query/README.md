@@ -111,7 +111,7 @@ ORDER BY 4--
 
 The application initially appears to be a normal e-commerce website with product filtering functionality.
 
-![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Determining%20the%20Number%20of%20Columns%20Returned%20by%20the%20Query/lab3.png?raw=true)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Determining%20the%20Number%20of%20Columns%20Returned%20by%20the%20Query/screenshots/lab3.png?raw=true)
 
 **Caption:** Initial application interface containing the Gifts category filter.
 
