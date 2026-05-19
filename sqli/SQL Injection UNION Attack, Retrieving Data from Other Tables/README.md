@@ -182,7 +182,7 @@ The login succeeded successfully, granting access to the administrator account.
 
 The lab was solved successfully.
 
-![Administrator Access](screenshots/sqli-union-data-6.png)
+![Administrator Access](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Data%20from%20Other%20Tables/screenshots/lab5(5).png?raw=true)
 
 **Caption:** Successful administrator login using credentials extracted via SQL Injection.
 
