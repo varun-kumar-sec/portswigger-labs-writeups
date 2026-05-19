@@ -120,7 +120,7 @@ The request generated after selecting the **Gifts** category was intercepted usi
 /filter?category=gifts
 ```
 
-![Captured Request](screenshots/sqli-union-data-2.png)
+![Captured Request](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Data%20from%20Other%20Tables/screenshots/lab5(1).png?raw=true)
 
 **Caption:** Captured request using the category filter parameter.
 
