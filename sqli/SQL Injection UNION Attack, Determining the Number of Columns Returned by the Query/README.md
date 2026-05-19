@@ -171,7 +171,7 @@ The number of `NULL` values matched the number of columns in the original query.
 
 The lab was solved successfully.
 
-![UNION SELECT Payload](screenshots/sqli-union-columns-4.png)
+![UNION SELECT Payload](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Determining%20the%20Number%20of%20Columns%20Returned%20by%20the%20Query/screenshots/lab3(3).png?raw=true)
 
 **Caption:** Successful UNION-based SQL Injection after matching the number of columns.
 
