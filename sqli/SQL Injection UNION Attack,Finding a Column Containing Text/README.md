@@ -176,7 +176,7 @@ The text appeared successfully in the application's response, confirming that th
 
 The lab was solved successfully.
 
-![String Injection Successful](screenshots/sqli-union-text-4.png)
+![String Injection Successful](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,Finding%20a%20Column%20Containing%20Text/screenshots/lab4(3).png?raw=true)
 
 **Caption:** Successfully identifying the column capable of displaying string data.
 
