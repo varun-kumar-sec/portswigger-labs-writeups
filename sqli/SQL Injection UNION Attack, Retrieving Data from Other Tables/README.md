@@ -138,7 +138,7 @@ Example payload:
 
 The application returned an error after testing column number `3`, confirming that the query contained **2 columns**.
 
-![ORDER BY Enumeration](screenshots/sqli-union-data-3.png)
+![ORDER BY Enumeration](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Data%20from%20Other%20Tables/screenshots/lab5(2).png?raw=true)
 
 **Caption:** Using the `ORDER BY` technique to determine the number of backend query columns.
 
