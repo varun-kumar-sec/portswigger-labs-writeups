@@ -136,7 +136,7 @@ The `ORDER BY` technique was used to determine the number of columns returned by
 
 In this case, the query contained **3 columns**.
 
-![ORDER BY Enumeration](screenshots/sqli-union-text-2.png)
+![ORDER BY Enumeration](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,Finding%20a%20Column%20Containing%20Text/screenshots/lab4(1).png?raw=true)
 
 **Caption:** Using the `ORDER BY` technique to identify the number of columns.
 
