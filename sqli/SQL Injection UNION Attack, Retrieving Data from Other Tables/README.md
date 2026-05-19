@@ -160,7 +160,7 @@ After executing the payload, usernames and passwords became visible in the appli
 
 The administrator password was successfully retrieved.
 
-![Credential Extraction](screenshots/sqli-union-data-4.png)
+![Credential Extraction](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Data%20from%20Other%20Tables/screenshots/lab5(3).png?raw=true)
 
 **Caption:** Extracting usernames and passwords from the backend users table.
 
