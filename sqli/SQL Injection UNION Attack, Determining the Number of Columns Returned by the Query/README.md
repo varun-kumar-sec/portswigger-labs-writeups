@@ -153,7 +153,7 @@ After testing:
 
 This confirmed that the query contained **3 columns**.
 
-![ORDER BY Technique](screenshots/sqli-union-columns-3.png)
+![ORDER BY Technique](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Determining%20the%20Number%20of%20Columns%20Returned%20by%20the%20Query/screenshots/lab3(2).png?raw=true)
 
 **Caption:** Using the `ORDER BY` technique to determine the number of columns.
 
