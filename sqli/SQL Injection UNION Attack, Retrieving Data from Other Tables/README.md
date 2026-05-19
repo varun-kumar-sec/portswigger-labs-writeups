@@ -106,7 +106,7 @@ Example:
 
 The application initially appears to be a normal e-commerce website with product filtering functionality.
 
-![Main Website](screenshots/sqli-union-data-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Data%20from%20Other%20Tables/screenshots/lab5.png?raw=true)
 
 **Caption:** Initial application interface containing the Gifts category filter.
 
