@@ -207,7 +207,7 @@ This successfully displayed usernames in the application's response, confirming 
 - the first column accepted numeric values
 - the second column accepted and displayed string data
 
-![Username Extraction](screenshots/sqli-multiple-values-6.png)
+![Username Extraction](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Multiple%20Values%20in%20a%20Single%20Column/screenshots/lab6(5).png?raw=true)
 
 **Caption:** Successfully displaying usernames through the second column.
 
