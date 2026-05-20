@@ -127,7 +127,7 @@ Example payload:
 
 The query successfully returned data using 2 columns.
 
-![ORDER BY Enumeration](screenshots/sqli-oracle-version-3.png)
+![ORDER BY Enumeration](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Querying%20the%20Database%20Type%20and%20Version%20on%20Oracle/screenshots/lab7(2).png?raw=true)
 
 **Caption:** Using the `ORDER BY` technique to determine the number of backend query columns.
 
