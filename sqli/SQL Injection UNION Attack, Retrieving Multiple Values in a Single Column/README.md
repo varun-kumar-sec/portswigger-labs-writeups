@@ -133,7 +133,7 @@ The request generated after selecting the **Accessories** category was intercept
 /filter?category=accessories
 ```
 
-![Captured Request](screenshots/sqli-multiple-values-2.png)
+![Captured Request](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Multiple%20Values%20in%20a%20Single%20Column/screenshots/lab6(1).png?raw=true)
 
 **Caption:** Captured request using the category filter parameter.
 
