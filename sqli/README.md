@@ -36,16 +36,16 @@ These labs demonstrate how attackers can manipulate database queries to:
 
 - [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 - [x] SQL injection vulnerability allowing login bypass
-- [ ] SQL injection UNION attack, determining the number of columns returned by the query
-- [ ] SQL injection UNION attack, finding a column containing text
-- [ ] SQL injection UNION attack, retrieving data from other tables
-- [ ] SQL injection UNION attack, retrieving multiple values in a single column
+- [x] SQL injection UNION attack, determining the number of columns returned by the query
+- [x] SQL injection UNION attack, finding a column containing text
+- [x] SQL injection UNION attack, retrieving data from other tables
+- [x] SQL injection UNION attack, retrieving multiple values in a single column
 
 ---
 
 ## Practitioner Labs
 
-- [ ] SQL injection attack, querying the database type and version
+- [x] SQL injection attack, querying the database type and version on oracle
 - [ ] SQL injection attack, listing the database contents on non-Oracle databases
 - [ ] Blind SQL injection with conditional responses
 - [ ] Blind SQL injection with time delays and information retrieval
