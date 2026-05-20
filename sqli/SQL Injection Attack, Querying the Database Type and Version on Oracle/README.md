@@ -95,7 +95,7 @@ Example payload:
 
 The application initially appears to be a normal e-commerce website with product filtering functionality.
 
-![Main Website](screenshots/sqli-oracle-version-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Querying%20the%20Database%20Type%20and%20Version%20on%20Oracle/screenshots/lab7.png?raw=true)
 
 **Caption:** Initial application interface containing the Gifts category filter.
 
