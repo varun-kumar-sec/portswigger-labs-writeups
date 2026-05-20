@@ -173,7 +173,7 @@ The application responded with:
 
 indicating that the first column did not properly support string data.
 
-![First Column Error](screenshots/sqli-multiple-values-4.png)
+![First Column Error](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Multiple%20Values%20in%20a%20Single%20Column/screenshots/lab6(3).png?raw=true)
 
 **Caption:** Attempting to inject string data into the first column.
 
