@@ -145,7 +145,7 @@ This payload queried Oracle's internal `v$version` table and displayed database 
 
 The lab was solved successfully.
 
-![Oracle Version Disclosure](screenshots/sqli-oracle-version-4.png)
+![Oracle Version Disclosure](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Querying%20the%20Database%20Type%20and%20Version%20on%20Oracle/screenshots/lab7(3).png?raw=true)
 
 **Caption:** Successfully retrieving Oracle database version information using SQL Injection.
 
