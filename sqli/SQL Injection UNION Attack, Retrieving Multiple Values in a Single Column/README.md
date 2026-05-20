@@ -237,7 +237,7 @@ The extracted administrator credentials were used to authenticate successfully.
 
 The lab was solved successfully.
 
-![Administrator Login](screenshots/sqli-multiple-values-8.png)
+![Administrator Login](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Multiple%20Values%20in%20a%20Single%20Column/screenshots/lab6(7).png?raw=true)
 
 **Caption:** Successful administrator login using credentials extracted via SQL Injection.
 
