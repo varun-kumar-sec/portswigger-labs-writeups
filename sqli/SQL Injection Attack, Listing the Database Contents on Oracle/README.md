@@ -119,7 +119,7 @@ PASSWORD_MRXCDL
 
 The application initially appears to be a normal e-commerce website with product filtering functionality.
 
-![Main Website](screenshots/sqli-oracle-enum-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8.png?raw=true)
 
 **Caption:** Initial application interface containing the Lifestyle category filter.
 
