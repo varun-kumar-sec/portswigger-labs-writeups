@@ -109,7 +109,7 @@ The request generated after selecting the **Gifts** category was intercepted usi
 /filter?category=gifts
 ```
 
-![Captured Request](screenshots/sqli-oracle-version-2.png)
+![Captured Request](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Querying%20the%20Database%20Type%20and%20Version%20on%20Oracle/screenshots/lab7(1).png?raw=true)
 
 **Caption:** Captured request using the category filter parameter.
 
