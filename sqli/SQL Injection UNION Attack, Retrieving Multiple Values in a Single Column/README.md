@@ -151,7 +151,7 @@ The following validation query was used:
 /filter?category=' UNION SELECT null,null FROM users--
 ```
 
-![Column Enumeration](screenshots/sqli-multiple-values-3.png)
+![Column Enumeration](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Multiple%20Values%20in%20a%20Single%20Column/screenshots/lab6(2).png?raw=true)
 
 **Caption:** Determining and validating the number of backend query columns.
 
