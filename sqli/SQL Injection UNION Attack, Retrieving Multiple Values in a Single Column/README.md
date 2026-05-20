@@ -184,7 +184,7 @@ indicating that the first column did not properly support string data.
 Another payload was tested:
 
 ```sql
-/filter?category=' UNION SELECT null,password FROM users--
+/filter?category=' UNION SELECT password,null FROM users--
 ```
 
 The application still returned an error response.
