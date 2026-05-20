@@ -88,7 +88,7 @@ SQL Injection vulnerabilities capable of retrieving credentials are considered c
 10. Test the second column:
 
 ```sql
-/filter?category=' UNION SELECT null,password FROM users--
+/filter?category=' UNION SELECT password,null FROM users--
 ```
 
 11. Observe that the response still returns an error.
