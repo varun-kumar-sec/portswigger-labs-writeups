@@ -225,7 +225,7 @@ This combined usernames and passwords into a single displayed column.
 
 The administrator credentials became visible in the application's response.
 
-![Credential Concatenation](screenshots/sqli-multiple-values-7.png)
+![Credential Concatenation](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Multiple%20Values%20in%20a%20Single%20Column/screenshots/lab6(6).png?raw=true)
 
 **Caption:** Extracting usernames and passwords using SQL concatenation.
 
