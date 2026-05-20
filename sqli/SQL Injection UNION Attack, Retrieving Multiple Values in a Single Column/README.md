@@ -119,7 +119,7 @@ SQL Injection vulnerabilities capable of retrieving credentials are considered c
 
 The application initially appears to be a normal e-commerce website with product filtering functionality.
 
-![Main Website](screenshots/sqli-multiple-values-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20UNION%20Attack,%20Retrieving%20Multiple%20Values%20in%20a%20Single%20Column/screenshots/lab6.png?raw=true)
 
 **Caption:** Initial application interface containing the Accessories category filter.
 
