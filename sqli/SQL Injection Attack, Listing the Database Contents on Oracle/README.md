@@ -133,7 +133,7 @@ The request generated after selecting the **Lifestyle** category was intercepted
 /filter?category=lifestyle
 ```
 
-![Captured Request](screenshots/sqli-oracle-enum-2.png)
+![Captured Request](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8(1).png?raw=true)
 
 **Caption:** Captured request using the category filter parameter.
 
