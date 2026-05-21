@@ -130,7 +130,7 @@ The page displayed:
 - Welcome Back!
 - My Account
 
-![Login Page](screenshots/blind-sqli-conditional-2.png)
+![Login Page](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(1).png?raw=true)
 
 **Caption:** Login page containing the Welcome Back! message.
 
