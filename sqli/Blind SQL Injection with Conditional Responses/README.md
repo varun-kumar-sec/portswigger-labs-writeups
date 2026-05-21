@@ -182,7 +182,7 @@ removed the `Welcome back!` message.
 
 This confirmed that the application was vulnerable to Blind SQL Injection.
 
-![Blind SQLi Confirmation](screenshots/blind-sqli-conditional-4.png)
+![Blind SQLi Confirmation](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(3).png?raw=true)
 
 **Caption:** Confirming Blind SQL Injection using TRUE and FALSE conditions.
 
