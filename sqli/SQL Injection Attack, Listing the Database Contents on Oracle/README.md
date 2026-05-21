@@ -217,7 +217,7 @@ The response displayed usernames and passwords, including the administrator cred
 
 The extracted administrator credentials were used on the login page.
 
-![Administrator Login](screenshots/sqli-oracle-enum-7.png)
+![Administrator Login](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8(6).png?raw=true)
 
 **Caption:** Attempting administrator login using extracted credentials.
 
