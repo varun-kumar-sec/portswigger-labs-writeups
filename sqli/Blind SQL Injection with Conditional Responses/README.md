@@ -292,7 +292,7 @@ The extracted characters were noted sequentially using a text editor until the f
 
 The extracted administrator credentials were used on the login page.
 
-![Administrator Login](screenshots/blind-sqli-conditional-12.png)
+![Administrator Login](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(11).png?raw=true)
 
 **Caption:** Attempting login using extracted administrator credentials.
 
