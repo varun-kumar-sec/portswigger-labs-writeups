@@ -224,7 +224,7 @@ appeared at request number `20`.
 
 This confirmed that the administrator password length was **20 characters**.
 
-![Password Length Result](screenshots/blind-sqli-conditional-7.png)
+![Password Length Result](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(6).png?raw=true)
 
 **Caption:** Identifying the administrator password length through conditional responses.
 
