@@ -115,7 +115,7 @@ TrackingId=PIJz9QYdQ6uZFbnw' AND SUBSTRING((SELECT password FROM users WHERE use
 
 The application initially appears to be a normal website containing a **My Account** functionality.
 
-![Main Website](screenshots/blind-sqli-conditional-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9.png?raw=true)
 
 **Caption:** Initial application interface before exploitation.
 
