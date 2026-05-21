@@ -254,7 +254,7 @@ Burp Suite Intruder payload positions were configured:
 - Position 1 → numbers from 1 to 20
 - Position 2 → brute-force character set
 
-![Intruder Payload Positions](screenshots/blind-sqli-conditional-9.png)
+![Intruder Payload Positions](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(8).png?raw=true)
 
 **Caption:** Configuring Burp Suite Intruder payload positions.
 
