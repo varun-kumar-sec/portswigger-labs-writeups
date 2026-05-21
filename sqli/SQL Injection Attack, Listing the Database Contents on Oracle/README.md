@@ -151,7 +151,7 @@ Example payload:
 
 The query confirmed that the application contained **2 columns**.
 
-![ORDER BY Enumeration](screenshots/sqli-oracle-enum-3.png)
+![ORDER BY Enumeration](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8(2).png?raw=true)
 
 **Caption:** Using the `ORDER BY` technique to determine backend query columns.
 
