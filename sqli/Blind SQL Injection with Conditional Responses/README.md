@@ -196,7 +196,7 @@ The following payload was crafted to determine the administrator password length
 TrackingId=PIJz9QYdQ6uZFbnw' AND LENGTH((SELECT password FROM users WHERE username='administrator')) = 1--;
 ```
 
-![Password Length Payload](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(3).png?raw=true)
+![Password Length Payload](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(4).png?raw=true)
 
 **Caption:** Creating a payload to determine the administrator password length.
 
