@@ -304,7 +304,7 @@ The administrator login succeeded successfully.
 
 The lab was solved successfully.
 
-![Administrator Access](screenshots/blind-sqli-conditional-13.png)
+![Administrator Access](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(12).png?raw=true)
 
 **Caption:** Successful administrator login after extracting credentials via Blind SQL Injection.
 
