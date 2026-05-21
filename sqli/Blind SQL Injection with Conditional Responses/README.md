@@ -282,7 +282,7 @@ were identified as valid.
 
 The extracted characters were noted sequentially using a text editor until the full password was reconstructed.
 
-![Response Filtering](screenshots/blind-sqli-conditional-11.png)
+![Response Filtering](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(9).png?raw=true)
 
 **Caption:** Filtering valid responses containing the Welcome Back! message.
 
