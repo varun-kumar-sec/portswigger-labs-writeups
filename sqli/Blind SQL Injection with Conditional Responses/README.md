@@ -206,7 +206,7 @@ TrackingId=PIJz9QYdQ6uZFbnw' AND LENGTH((SELECT password FROM users WHERE userna
 
 The payload was sent to Burp Suite Intruder for automated testing.
 
-![Intruder Setup](screenshots/blind-sqli-conditional-6.png)
+![Intruder Setup](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(5).png?raw=true)
 
 **Caption:** Sending the password length payload to Burp Suite Intruder.
 
