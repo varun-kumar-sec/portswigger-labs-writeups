@@ -173,7 +173,7 @@ USERS_HNXMGL
 
 was discovered.
 
-![Table Enumeration](screenshots/sqli-oracle-enum-4.png)
+![Table Enumeration](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8(3).png?raw=true)
 
 **Caption:** Enumerating database tables using Oracle system tables.
 
