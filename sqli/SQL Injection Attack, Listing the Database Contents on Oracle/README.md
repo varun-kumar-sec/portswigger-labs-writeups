@@ -191,7 +191,7 @@ This revealed the following columns:
 - `USERNAME_CEJRVQ`
 - `PASSWORD_MRXCDL`
 
-![Column Enumeration]([screenshots/sqli-oracle-enum-5.png](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8(4).png?raw=true))
+![Column Enumeration](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8(4).png?raw=true)
 
 **Caption:** Retrieving column names from the discovered users table.
 
@@ -207,7 +207,7 @@ After identifying the table and column names, the final payload was crafted:
 
 The response displayed usernames and passwords, including the administrator credentials.
 
-![Credential Extraction](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8(4).png?raw=true)
+![Credential Extraction]()
 
 **Caption:** Extracting usernames and passwords from the users table.
 
