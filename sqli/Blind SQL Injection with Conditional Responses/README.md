@@ -264,7 +264,7 @@ Burp Suite Intruder payload positions were configured:
 
 The Intruder attack was executed to identify valid password characters.
 
-![Intruder Attack](screenshots/blind-sqli-conditional-10.png)
+![Intruder Attack](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(10).png?raw=true)
 
 **Caption:** Running automated Blind SQL Injection character extraction.
 
