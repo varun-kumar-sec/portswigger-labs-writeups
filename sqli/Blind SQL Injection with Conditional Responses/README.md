@@ -152,7 +152,7 @@ TrackingId
 
 was identified.
 
-![Captured Request](screenshots/blind-sqli-conditional-3.png)
+![Captured Request](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(2).png?raw=true)
 
 **Caption:** Capturing the login request and identifying the vulnerable TrackingId cookie.
 
