@@ -242,7 +242,7 @@ Payload position:
 - `$1$` → character position
 - `$a$` → brute-forced character
 
-![Substring Payload](screenshots/blind-sqli-conditional-8.png)
+![Substring Payload](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Conditional%20Responses/screenshots/lab9(7).png?raw=true)
 
 **Caption:** Creating a substring-based payload for password extraction.
 
