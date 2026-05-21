@@ -229,7 +229,7 @@ The administrator login succeeded successfully.
 
 The lab was solved successfully.
 
-![Administrator Access](screenshots/sqli-oracle-enum-8.png)
+![Administrator Access](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8(7).png?raw=true)
 
 **Caption:** Successful administrator login after extracting credentials via SQL Injection.
 
