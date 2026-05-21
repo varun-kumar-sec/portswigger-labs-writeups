@@ -207,7 +207,7 @@ After identifying the table and column names, the final payload was crafted:
 
 The response displayed usernames and passwords, including the administrator credentials.
 
-![Credential Extraction]([https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8(6).png?raw=true](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8(5).png?raw=true))
+![Credential Extraction](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/SQL%20Injection%20Attack,%20Listing%20the%20Database%20Contents%20on%20Oracle/screenshots/lab8(5).png?raw=true)
 
 **Caption:** Extracting usernames and passwords from the users table.
 
