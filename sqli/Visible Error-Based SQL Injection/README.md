@@ -117,7 +117,7 @@ After modifying and testing the payload, the application generated a visible dat
 
 The extracted administrator credentials were used on the login page.
 
-![Administrator Login](screenshots/error-based-sqli-4.png)
+![Administrator Login](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Visible%20Error-Based%20SQL%20Injection/screenshots/lab11(3).png?raw=true)
 
 **Caption:** Attempting administrator login using extracted credentials.
 
