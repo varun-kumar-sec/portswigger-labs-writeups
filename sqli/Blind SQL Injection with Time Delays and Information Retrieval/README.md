@@ -182,7 +182,7 @@ Burp Suite Intruder was configured with:
 - Position 1 → character position
 - Position 2 → brute-force character testing
 
-![Substring Payload](screenshots/blind-time-based-5.png)
+![Substring Payload](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Time%20Delays%20and%20Information%20Retrieval/screenshots/lab10(4).png?raw=true)
 
 **Caption:** Preparing substring-based payloads for password extraction.
 
