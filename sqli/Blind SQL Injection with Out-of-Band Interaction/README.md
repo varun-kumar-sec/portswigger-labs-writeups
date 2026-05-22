@@ -130,7 +130,7 @@ This confirmed that:
 
 The lab was solved successfully.
 
-![Collaborator Interaction](screenshots/oast-sqli-4.png)
+![Collaborator Interaction](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Out-of-Band%20Interaction/screenshots/lab12(3).png?raw=true)
 
 **Caption:** DNS interaction captured through Burp Suite Collaborator confirming successful SQL Injection.
 
