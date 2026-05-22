@@ -219,7 +219,7 @@ Each valid character was noted sequentially inside a text editor until the full 
 
 The extracted administrator credentials were used on the login page.
 
-![Administrator Login](screenshots/blind-time-based-8.png)
+![Administrator Login](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Time%20Delays%20and%20Information%20Retrieval/screenshots/lab10(7).png?raw=true)
 
 **Caption:** Attempting login using extracted administrator credentials.
 
