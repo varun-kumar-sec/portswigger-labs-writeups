@@ -194,7 +194,7 @@ Intruder payload positions were configured:
 - Position 1 → numbers from 1 to 20
 - Position 2 → brute-force characters
 
-![Intruder Configuration](screenshots/blind-time-based-6.png)
+![Intruder Configuration](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Time%20Delays%20and%20Information%20Retrieval/screenshots/lab10(5).png?raw=true)
 
 **Caption:** Configuring Burp Suite Intruder payload positions.
 
