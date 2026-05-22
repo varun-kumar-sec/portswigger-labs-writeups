@@ -164,7 +164,7 @@ TrackingId='|| CASE WHEN ((LENGTH((SELECT password FROM users WHERE username='ad
 
 The response delay indicated whether the tested password length was correct.
 
-![Password Length Enumeration](screenshots/blind-time-based-4.png)
+![Password Length Enumeration](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Time%20Delays%20and%20Information%20Retrieval/screenshots/lab10(3).png?raw=true)
 
 **Caption:** Creating a payload to identify the administrator password length.
 
