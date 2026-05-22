@@ -209,7 +209,7 @@ The results were sorted using the **Response Received** column:
 
 Each valid character was noted sequentially inside a text editor until the full administrator password was reconstructed.
 
-![Intruder Results](screenshots/blind-time-based-7.png)
+![Intruder Results](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Time%20Delays%20and%20Information%20Retrieval/screenshots/lab10(6).png?raw=true)
 
 **Caption:** Identifying valid password characters through delayed responses.
 
