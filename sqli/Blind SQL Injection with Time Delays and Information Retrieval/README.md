@@ -130,7 +130,7 @@ TrackingId='||pg_sleep(10)||';
 
 The server response was delayed by 10 seconds, confirming that the `TrackingId` cookie was vulnerable to SQL Injection.
 
-![Time Delay Confirmation](screenshots/blind-time-based-2.png)
+![Time Delay Confirmation](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Time%20Delays%20and%20Information%20Retrieval/screenshots/lab10(1).png?raw=true)
 
 **Caption:** Confirming the SQL Injection point using a time-delay payload.
 
