@@ -148,7 +148,7 @@ Because the condition `1=1` evaluated to TRUE, the server response delayed for 1
 
 This confirmed successful execution of conditional SQL statements.
 
-![Conditional Delay](screenshots/blind-time-based-3.png)
+![Conditional Delay](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Time%20Delays%20and%20Information%20Retrieval/screenshots/lab10(2).png?raw=true)
 
 **Caption:** Testing conditional SQL execution using time delays.
 
