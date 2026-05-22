@@ -112,7 +112,7 @@ TrackingId='|| CASE WHEN ((SUBSTR((SELECT password FROM users WHERE username='ad
 
 The application initially appeared to be a normal e-commerce website containing product filtering functionality.
 
-![Main Website](screenshots/blind-time-based-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Time%20Delays%20and%20Information%20Retrieval/screenshots/lab10.png?raw=true)
 
 **Caption:** Initial application interface containing the Pets category filter.
 
