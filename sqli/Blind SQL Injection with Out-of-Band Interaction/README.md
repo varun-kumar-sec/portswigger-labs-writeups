@@ -113,7 +113,7 @@ This payload forced the Oracle database to:
 - load an external entity
 - send a DNS request to the Burp Collaborator domain
 
-![Payload Injection](screenshots/oast-sqli-3.png)
+![Payload Injection](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Out-of-Band%20Interaction/screenshots/lab12(2).png?raw=true)
 
 **Caption:** Injecting an Out-of-Band SQL Injection payload through the TrackingId cookie.
 
