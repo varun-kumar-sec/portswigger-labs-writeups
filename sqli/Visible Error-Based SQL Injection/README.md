@@ -79,7 +79,7 @@ TrackingId=' AND CAST((SELECT password FROM users LIMIT 1) AS bool)--;
 
 The application initially appeared to be a normal e-commerce website containing a **Lifestyle** category filter.
 
-![Main Website](screenshots/error-based-sqli-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Visible%20Error-Based%20SQL%20Injection/screenshots/lab11.png?raw=true)
 
 **Caption:** Initial application interface containing the Lifestyle category filter.
 
