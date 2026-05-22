@@ -107,7 +107,7 @@ TrackingId=' AND CAST((SELECT password FROM users LIMIT 1) AS bool)--;
 
 After modifying and testing the payload, the application generated a visible database error containing the administrator password.
 
-![Visible Error Injection](screenshots/error-based-sqli-3.png)
+![Visible Error Injection](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Visible%20Error-Based%20SQL%20Injection/screenshots/lab11(2).png?raw=true)
 
 **Caption:** Extracting the administrator password through a visible database error.
 
