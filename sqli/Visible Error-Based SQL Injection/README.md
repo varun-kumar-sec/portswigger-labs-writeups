@@ -129,7 +129,7 @@ The administrator login succeeded successfully.
 
 The lab was solved successfully.
 
-![Administrator Access](screenshots/error-based-sqli-5.png)
+![Administrator Access](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Visible%20Error-Based%20SQL%20Injection/screenshots/lab11(4).png?raw=true)
 
 **Caption:** Successful administrator login after extracting credentials via Error-Based SQL Injection.
 
