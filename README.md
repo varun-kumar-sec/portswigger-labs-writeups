@@ -42,19 +42,12 @@ This repository contains practical writeups and walkthroughs for labs completed 
 ---
 
 ## SQL Injection
-
-### Apprentice Labs
 - [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 - [x] SQL injection vulnerability allowing login bypass
 - [x] SQL injection UNION attack, determining the number of columns returned by the query
 - [x] SQL injection UNION attack, finding a column containing text
 - [x] SQL injection UNION attack, retrieving data from other tables
 - [x] SQL injection UNION attack, retrieving multiple values in a single column
-
----
-
-### Practitioner Labs
-
 - [x] SQL injection attack, querying the database type and version on oracle
 - [x] SQL injection attack, listing the database contents on non-Oracle databases
 - [x] Blind SQL injection with conditional responses
