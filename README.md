@@ -23,7 +23,7 @@ This repository contains practical writeups and walkthroughs for labs completed 
 
 ## 📂 Lab Categories
 
-### Access Control
+## Access Control
 - [x] Unprotected admin functionality
 - [x] Unprotected admin functionality with unpredictable URL
 - [x] User role controlled by request parameter
@@ -34,16 +34,16 @@ This repository contains practical writeups and walkthroughs for labs completed 
 
 ---
 
-### Cross-Site Scripting (XSS)
+## Cross-Site Scripting (XSS)
 - [ ] Reflected XSS
 - [ ] Stored XSS
 - [ ] DOM-based XSS
 
 ---
 
-### SQL Injection
+## SQL Injection
 
-## Apprentice Labs
+### Apprentice Labs
 - [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 - [x] SQL injection vulnerability allowing login bypass
 - [x] SQL injection UNION attack, determining the number of columns returned by the query
@@ -53,7 +53,7 @@ This repository contains practical writeups and walkthroughs for labs completed 
 
 ---
 
-## Practitioner Labs
+### Practitioner Labs
 
 - [x] SQL injection attack, querying the database type and version on oracle
 - [x] SQL injection attack, listing the database contents on non-Oracle databases
