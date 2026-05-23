@@ -97,7 +97,7 @@ The Lifestyle category request was intercepted using Burp Suite.
 
 During inspection, the vulnerable `TrackingId` cookie was identified.
 
-![Captured Request](screenshots/oast-data-exfiltration-2.png)
+![Captured Request](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Out-of-Band%20Data%20Exfiltration/screenshots/lab13(1).png?raw=true)
 
 **Caption:** Capturing the request and identifying the vulnerable TrackingId cookie.
 
