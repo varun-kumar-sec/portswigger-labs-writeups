@@ -39,23 +39,34 @@ These labs demonstrate how attackers can:
 
 ## Apprentice Labs
 
-[x] Reflected XSS into HTML context with nothing encoded
-[ ] Reflected XSS into attribute with angle brackets HTML-encoded
-[ ] Stored XSS into HTML context with nothing encoded
-[ ] DOM XSS in document.write sink using source location.search
-[ ] DOM XSS in innerHTML sink using source location.search
+☑ Reflected XSS into HTML context with nothing encoded
+
+☑ Reflected XSS into attribute with angle brackets HTML-encoded
+
+☑ Stored XSS into HTML context with nothing encoded
+
+☑ DOM XSS in document.write sink using source location.search
+
+☑ DOM XSS in innerHTML sink using source location.search
 
 ---
 
 ## Practitioner Labs
 
 ☑ Reflected XSS into JavaScript string with single quote and backslash escaped
+
 ☑ Reflected XSS into HTML context with most tags and attributes blocked
+
 ☑ Stored XSS into anchor href attribute with double quotes HTML-encoded
+
 ☑ Stored DOM XSS
+
 ☑ DOM XSS using web messages
+
 ☑ Exploiting cross-site scripting to steal cookies
+
 ☑ Exploiting XSS to perform CSRF
+
 ☑ Reflected XSS protected by CSP, with CSP bypass
 
 ---
@@ -63,7 +74,9 @@ These labs demonstrate how attackers can:
 ## Expert Labs
 
 ☑ Reflected XSS with AngularJS sandbox escape
+
 ☑ Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped
+
 ☑ DOM XSS combined with reflected and stored data
 
 ---
