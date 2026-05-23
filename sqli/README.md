@@ -46,12 +46,12 @@ These labs demonstrate how attackers can manipulate database queries to:
 ## Practitioner Labs
 
 - [x] SQL injection attack, querying the database type and version on oracle
-- [ ] SQL injection attack, listing the database contents on non-Oracle databases
-- [ ] Blind SQL injection with conditional responses
-- [ ] Blind SQL injection with time delays and information retrieval
-- [ ] Visible error-based SQL injection
-- [ ] Blind SQL injection with out-of-band interaction
-- [ ] Blind SQL injection with out-of-band data exfiltration
+- [x] SQL injection attack, listing the database contents on non-Oracle databases
+- [x] Blind SQL injection with conditional responses
+- [x] Blind SQL injection with time delays and information retrieval
+- [x] Visible error-based SQL injection
+- [x] Blind SQL injection with out-of-band interaction
+- [x] Blind SQL injection with out-of-band data exfiltration
 
 ---
 
