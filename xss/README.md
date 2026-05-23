@@ -39,11 +39,11 @@ These labs demonstrate how attackers can:
 
 ## Apprentice Labs
 
-☑ Reflected XSS into HTML context with nothing encoded
-☑ Reflected XSS into attribute with angle brackets HTML-encoded
-☑ Stored XSS into HTML context with nothing encoded
-☑ DOM XSS in document.write sink using source location.search
-☑ DOM XSS in innerHTML sink using source location.search
+[x] Reflected XSS into HTML context with nothing encoded
+[ ] Reflected XSS into attribute with angle brackets HTML-encoded
+[ ] Stored XSS into HTML context with nothing encoded
+[ ] DOM XSS in document.write sink using source location.search
+[ ] DOM XSS in innerHTML sink using source location.search
 
 ---
 
