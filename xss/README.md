@@ -106,6 +106,6 @@ Through these labs, I practiced:
 
 ---
 
-# ⚠ Disclaimer
+# ⚠️ Disclaimer
 
 These labs were performed in a legal training environment provided by PortSwigger Web Security Academy for educational and ethical learning purposes only.
