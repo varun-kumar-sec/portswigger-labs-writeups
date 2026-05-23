@@ -157,7 +157,7 @@ The administrator login succeeded successfully.
 
 The lab was solved successfully.
 
-![Administrator Access](screenshots/oast-data-exfiltration-6.png)
+![Administrator Access](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Out-of-Band%20Data%20Exfiltration/screenshots/lab13(5).png?raw=true)
 
 **Caption:** Successful administrator login after extracting credentials via Out-of-Band SQL Injection.
 
