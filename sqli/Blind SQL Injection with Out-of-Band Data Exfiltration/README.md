@@ -117,7 +117,7 @@ This payload:
 - forced the Oracle database to resolve the external entity
 - triggered a DNS request to the Burp Collaborator server
 
-![Payload Injection](screenshots/oast-data-exfiltration-3.png)
+![Payload Injection](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Out-of-Band%20Data%20Exfiltration/screenshots/lab13(2).png?raw=true)
 
 **Caption:** Injecting an Out-of-Band SQL Injection payload for data exfiltration.
 
