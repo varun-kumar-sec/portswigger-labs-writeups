@@ -135,7 +135,7 @@ os9fclerugnpbz69jdjo.4kplfsxi45y92ldn6rswmn5w8nee25qu.oastify.com
 
 The first part of the subdomain contained the administrator password extracted from the database.
 
-![Collaborator Results](screenshots/oast-data-exfiltration-4.png)
+![Collaborator Results](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Out-of-Band%20Data%20Exfiltration/screenshots/lab13(3).png?raw=true)
 
 **Caption:** Extracting the administrator password from the Burp Collaborator DNS interaction.
 
