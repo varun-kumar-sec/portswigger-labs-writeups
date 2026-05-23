@@ -1,97 +1,74 @@
 # Cross-Site Scripting (XSS) Labs
 
-This repository contains my hands-on practice and writeups for **Cross-Site Scripting (XSS)** vulnerabilities from the **PortSwigger Web Security Academy**.
+---
 
-The goal of this repository is to document:
-- XSS exploitation techniques
-- Payload crafting
-- Filter bypasses
-- DOM-based vulnerabilities
-- Browser-side injection attacks
-- Real-world attack impact
-- Secure mitigation methods
+# 📌 Overview
 
-All labs were solved manually using Burp Suite and browser developer tools.
+This section contains Cross-Site Scripting (XSS) labs from PortSwigger Web Security Academy.
+
+Cross-Site Scripting (XSS) is a web application vulnerability that allows attackers to inject malicious JavaScript into trusted web applications.
+
+These labs demonstrate how attackers can:
+- execute malicious JavaScript
+- steal session cookies
+- perform account takeover
+- manipulate webpage content
+- bypass browser security mechanisms
+- exploit client-side vulnerabilities
 
 ---
 
-# What is XSS?
+# 🛠 Skills Practiced
 
-Cross-Site Scripting (XSS) is a web vulnerability that allows attackers to inject malicious JavaScript into a trusted website.
-
-When another user visits the vulnerable page, the injected JavaScript executes inside their browser.
-
-XSS vulnerabilities can lead to:
-- session hijacking
-- cookie theft
-- account takeover
-- phishing attacks
-- website defacement
-- keylogging
-- malicious redirects
-- unauthorized actions
-
----
-
-# Types of XSS Covered
-
-## Reflected XSS
-Payload is reflected immediately in the server response.
-
-Example:
-```html
-<script>alert(1)</script>
-```
+- Reflected XSS exploitation
+- Stored XSS exploitation
+- DOM-based XSS testing
+- JavaScript payload crafting
+- HTML context injection
+- Attribute context injection
+- Event handler exploitation
+- DOM sink identification
+- Browser-side vulnerability testing
+- Filter bypass techniques
+- CSP bypass basics
+- Burp Suite testing methodology
 
 ---
 
-## Stored XSS
-Payload gets permanently stored in the application database and executes whenever users view the affected page.
+# 📂 Labs Completed
+
+## Apprentice Labs
+
+☑ Reflected XSS into HTML context with nothing encoded
+☑ Reflected XSS into attribute with angle brackets HTML-encoded
+☑ Stored XSS into HTML context with nothing encoded
+☑ DOM XSS in document.write sink using source location.search
+☑ DOM XSS in innerHTML sink using source location.search
 
 ---
 
-## DOM-Based XSS
-The vulnerability exists inside client-side JavaScript instead of server-side code.
+## Practitioner Labs
 
-Common dangerous sinks:
-- `innerHTML`
-- `document.write`
-- `eval()`
-
----
-
-# Repository Structure
-
-```text
-portswigger-xss-labs/
-│
-├── reflected-xss/
-├── stored-xss/
-├── dom-xss/
-├── advanced-xss/
-└── README.md
-```
+☑ Reflected XSS into JavaScript string with single quote and backslash escaped
+☑ Reflected XSS into HTML context with most tags and attributes blocked
+☑ Stored XSS into anchor href attribute with double quotes HTML-encoded
+☑ Stored DOM XSS
+☑ DOM XSS using web messages
+☑ Exploiting cross-site scripting to steal cookies
+☑ Exploiting XSS to perform CSRF
+☑ Reflected XSS protected by CSP, with CSP bypass
 
 ---
 
-# Topics Covered
+## Expert Labs
 
-- Reflected XSS
-- Stored XSS
-- DOM XSS
-- Attribute Injection
-- JavaScript Context Injection
-- HTML Context Injection
-- Event Handler Injection
-- Cookie Theft
-- CSP Bypass
-- AngularJS Sandbox Escape
-- Filter Bypass Techniques
-- Web Message Exploitation
+☑ Reflected XSS with AngularJS sandbox escape
+☑ Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped
+☑ DOM XSS combined with reflected and stored data
 
 ---
 
-# Tools Used
+# 🧰 Tools Used
 
 - Burp Suite
 - Burp Repeater
@@ -101,92 +78,21 @@ portswigger-xss-labs/
 
 ---
 
-# Skills Learned
+# 📖 Learning Goals
 
-- Understanding XSS contexts
-- Breaking out of HTML attributes
-- Injecting JavaScript payloads
-- Identifying DOM sinks and sources
-- Bypassing filters and encodings
-- Exploiting browser-side vulnerabilities
-- Understanding Content Security Policy (CSP)
-- Payload crafting for different contexts
+Through these labs, I practiced:
 
----
-
-# Example Payloads
-
-## Basic Alert Payload
-
-```html
-<script>alert(1)</script>
-```
+- understanding browser parsing behavior
+- identifying vulnerable client-side code
+- crafting context-specific payloads
+- bypassing filters and encodings
+- exploiting DOM-based vulnerabilities
+- understanding JavaScript execution contexts
+- identifying dangerous DOM sinks and sources
+- understanding the impact of insecure frontend logic
 
 ---
 
-## Image Event Handler Payload
+# ⚠ Disclaimer
 
-```html
-<img src=x onerror=alert(1)>
-```
-
----
-
-## SVG Payload
-
-```html
-<svg onload=alert(1)>
-```
-
----
-
-## Attribute Injection Payload
-
-```html
-" onmouseover="alert(1)
-```
-
----
-
-# Security Impact
-
-XSS vulnerabilities can result in:
-- account takeover
-- session hijacking
-- credential theft
-- phishing attacks
-- malicious redirects
-- unauthorized actions
-- sensitive information disclosure
-
----
-
-# Mitigation
-
-- Proper output encoding
-- Input validation
-- Context-aware escaping
-- Content Security Policy (CSP)
-- HttpOnly cookies
-- Avoid dangerous DOM sinks
-- Use secure frameworks and templating engines
-
----
-
-# Learning Resources
-
-- PortSwigger Web Security Academy
-- OWASP XSS Cheat Sheet
-- Mozilla Developer Documentation (MDN)
-
----
-
-# Disclaimer
-
-This repository is created strictly for:
-- educational purposes
-- ethical hacking practice
-- security research
-- vulnerability learning
-
-All labs were performed in legal training environments provided by PortSwigger.
+These labs were performed in a legal training environment provided by PortSwigger Web Security Academy for educational and ethical learning purposes only.
