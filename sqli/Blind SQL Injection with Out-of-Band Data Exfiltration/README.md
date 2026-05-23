@@ -145,7 +145,7 @@ The first part of the subdomain contained the administrator password extracted f
 
 The extracted administrator credentials were used on the login page.
 
-![Administrator Login](screenshots/oast-data-exfiltration-5.png)
+![Administrator Login](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/sqli/Blind%20SQL%20Injection%20with%20Out-of-Band%20Data%20Exfiltration/screenshots/lab13(4).png?raw=true)
 
 **Caption:** Attempting administrator login using extracted credentials.
 
