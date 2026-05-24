@@ -103,7 +103,7 @@ The payload was designed to test whether the application:
 
 ## Screenshot 4 — Comment Submission Response
 
-![Screenshot 4](screenshot-xss4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20XSS%20into%20HTML%20Context%20with%20Nothing%20Encoded/screenshots/lab3(4).png?raw=true)
 
 After submitting the comment:
 - the application accepted the payload
