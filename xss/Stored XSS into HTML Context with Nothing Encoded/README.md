@@ -66,7 +66,7 @@ This became the injection point for Stored XSS.
 
 ## Screenshot 3 — Injecting the XSS Payload
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20XSS%20into%20HTML%20Context%20with%20Nothing%20Encoded/screenshots/lab3(3).png?raw=true)
 
 The following payload was submitted through the **Leave a Comment** section:
 
