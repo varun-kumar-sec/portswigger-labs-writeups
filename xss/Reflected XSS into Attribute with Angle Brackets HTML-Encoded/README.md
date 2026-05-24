@@ -36,7 +36,7 @@ At this stage:
 
 ## Screenshot 2 — Testing Reflection
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20Attribute%20with%20Angle%20Brackets%20HTML-Encoded/screenshots/lab2(2).png?raw=true)
 
 The word:
 
