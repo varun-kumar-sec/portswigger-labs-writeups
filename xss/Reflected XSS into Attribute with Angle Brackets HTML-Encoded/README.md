@@ -226,7 +226,7 @@ Because event handlers do not always require angle brackets for execution inside
 
 ## Screenshot 6 — Successful XSS Execution
 
-![Screenshot 6](screenshot-xss6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20Attribute%20with%20Angle%20Brackets%20HTML-Encoded/screenshots/lab2(6).png?raw=true)
 
 After loading the page:
 - the input field automatically received focus
