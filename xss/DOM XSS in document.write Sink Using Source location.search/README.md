@@ -152,7 +152,7 @@ Because no sanitization or encoding was performed:
 
 # 🖼 Screenshot 3 — Exploiting the DOM XSS
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/DOM%20XSS%20in%20document.write%20Sink%20Using%20Source%20location.search/screenshots/lab4(3).png?raw=true)
 
 The following payload was used:
 
