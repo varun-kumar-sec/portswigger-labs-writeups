@@ -26,7 +26,7 @@ The goal of this lab was to inject JavaScript code into the search functionality
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-xss1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Nothing%20Encoded/screenshots/lab1(1).png?raw=true)
 
 The lab initially provided a normal webpage containing a search functionality.
 
