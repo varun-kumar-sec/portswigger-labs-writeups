@@ -124,7 +124,7 @@ This confirmed that:
 
 ## Screenshot 5 — Successful Stored XSS Execution
 
-![Screenshot 5](screenshot-xss5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20XSS%20into%20HTML%20Context%20with%20Nothing%20Encoded/screenshots/lab3(5).png?raw=true)
 
 After clicking the **Back to Blog** button:
 - the malicious comment loaded automatically
