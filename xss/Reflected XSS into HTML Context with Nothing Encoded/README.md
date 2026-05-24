@@ -39,7 +39,7 @@ At this stage:
 
 ## Screenshot 2 — Injecting XSS Payload
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Nothing%20Encoded/screenshots/lab1(2).png?raw=true)
 
 The following payload was inserted into the search bar:
 
