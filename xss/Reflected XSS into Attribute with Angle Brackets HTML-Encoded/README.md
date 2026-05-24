@@ -76,7 +76,7 @@ This helped identify where user input was being inserted into the page.
 
 ## Screenshot 4 — Testing Basic XSS Payload
 
-![Screenshot 4](screenshot-xss4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20Attribute%20with%20Angle%20Brackets%20HTML-Encoded/screenshots/lab2(4).png?raw=true)
 
 The following payload was tested:
 
