@@ -92,7 +92,7 @@ At this stage:
 
 ## Screenshot 2 — Inspecting Client-Side JavaScript
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/DOM%20XSS%20in%20document.write%20Sink%20Using%20Source%20location.search/screenshots/lab4(2).png?raw=true)
 
 After searching for:
 
