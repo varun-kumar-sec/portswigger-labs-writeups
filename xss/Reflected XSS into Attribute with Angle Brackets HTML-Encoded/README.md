@@ -60,7 +60,7 @@ This confirmed that:
 
 ## Screenshot 3 — Inspecting the Reflection
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20Attribute%20with%20Angle%20Brackets%20HTML-Encoded/screenshots/lab2(3).png?raw=true)
 
 Using browser inspect tools, the reflected input was searched inside the HTML source.
 
