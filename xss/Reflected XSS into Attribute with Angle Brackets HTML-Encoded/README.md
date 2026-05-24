@@ -146,7 +146,7 @@ Now the browser treats it as normal text instead of executable code.
 
 # 🖼 Screenshot 5 — Bypassing the Filter Using Event Handlers
 
-![Screenshot 5](screenshot-xss5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20Attribute%20with%20Angle%20Brackets%20HTML-Encoded/screenshots/lab2(5).png?raw=true)
 
 Since angle brackets were blocked, a new payload was crafted without using `<script>` tags:
 
