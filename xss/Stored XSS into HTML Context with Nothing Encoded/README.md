@@ -44,7 +44,7 @@ At this stage:
 
 ## Screenshot 2 — Inspecting the Comment Section
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20XSS%20into%20HTML%20Context%20with%20Nothing%20Encoded/screenshots/lab3(2).png?raw=true)
 
 After opening a blog post:
 - a comments section became visible
