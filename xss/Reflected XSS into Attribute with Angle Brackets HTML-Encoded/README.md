@@ -151,7 +151,7 @@ Now the browser treats it as normal text instead of executable code.
 Since angle brackets were blocked, a new payload was crafted without using `<script>` tags:
 
 ```html
-a" onfocus="alert('xss')" autofocus="alert('xss')
+a" onfocus="alert('xss')" autofocus="alert"('xss')
 ```
 
 ### Payload Breakdown
