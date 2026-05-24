@@ -23,7 +23,7 @@ The goal of this lab was to bypass HTML encoding protections and execute JavaScr
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-xss1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20Attribute%20with%20Angle%20Brackets%20HTML-Encoded/screenshots/lab2(1).png?raw=true)
 
 The application initially displayed a normal webpage containing a search functionality.
 
