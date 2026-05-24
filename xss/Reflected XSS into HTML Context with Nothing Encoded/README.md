@@ -59,7 +59,7 @@ The purpose of this payload was to test whether the application properly sanitiz
 
 ## Screenshot 3 — Successful XSS Execution
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Nothing%20Encoded/screenshots/lab1(3).png?raw=true)
 
 After clicking the search button:
 - the payload was reflected directly into the webpage
