@@ -31,7 +31,7 @@ The goal of this lab was to inject a malicious JavaScript payload into the comme
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-xss1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20XSS%20into%20HTML%20Context%20with%20Nothing%20Encoded/screenshots/lab3(1).png?raw=true)
 
 The application initially displayed a normal webpage containing a **View Post** functionality.
 
