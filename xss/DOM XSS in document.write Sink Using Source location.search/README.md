@@ -79,7 +79,7 @@ The goal of this lab was to exploit the DOM-based JavaScript functionality and e
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-xss1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/DOM%20XSS%20in%20document.write%20Sink%20Using%20Source%20location.search/screenshots/lab4(1).png?raw=true)
 
 The application initially displayed a normal webpage containing a search functionality.
 
