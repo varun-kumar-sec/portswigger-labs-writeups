@@ -189,7 +189,7 @@ This confirmed that:
 
 ## Screenshot 5 — Testing XSS Payloads
 
-![Screenshot 5](screenshot-xss5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/DOM%20XSS%20in%20innerHTML%20Sink%20Using%20Source%20location.search/screenshots/lab5(5).png?raw=true)
 
 The first payload tested was:
 
