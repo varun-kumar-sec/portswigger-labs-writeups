@@ -254,7 +254,7 @@ Because the image source was invalid:
 
 ## Screenshot 6 — Successful DOM XSS Execution
 
-![Screenshot 6](screenshot-xss6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/DOM%20XSS%20in%20innerHTML%20Sink%20Using%20Source%20location.search/screenshots/lab5(6).png?raw=true)
 
 After loading the payload:
 - browser attempted to load the invalid image
