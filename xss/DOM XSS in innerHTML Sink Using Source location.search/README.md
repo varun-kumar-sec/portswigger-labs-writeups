@@ -123,7 +123,7 @@ This confirmed:
 
 ## Screenshot 3 — Inspecting Client-Side JavaScript
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/DOM%20XSS%20in%20innerHTML%20Sink%20Using%20Source%20location.search/screenshots/lab5(3).png?raw=true)
 
 A client-side JavaScript function responsible for the reflection was identified:
 
