@@ -225,7 +225,7 @@ This is a browser security behavior.
 A different payload was used:
 
 ```html
-<img src=x onerror=alert('1')>
+<img src=x onerror=alert(1)>
 ```
 
 ---
@@ -241,7 +241,7 @@ Creates an image element with an invalid image source.
 ---
 
 ```html
-onerror=alert('1')
+onerror=alert(1)
 ```
 
 Triggers JavaScript execution when the image fails to load.
