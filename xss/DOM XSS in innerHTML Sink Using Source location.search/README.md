@@ -167,7 +167,7 @@ Because no sanitization occurred, attackers could inject arbitrary HTML elements
 
 # 🖼 Screenshot 4 — Inspecting searchMessage Element
 
-![Screenshot 4](screenshot-xss4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/DOM%20XSS%20in%20innerHTML%20Sink%20Using%20Source%20location.search/screenshots/lab5(4).png?raw=true)
 
 Searching for:
 
