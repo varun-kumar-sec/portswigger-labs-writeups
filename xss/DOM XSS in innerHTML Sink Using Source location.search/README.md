@@ -107,7 +107,7 @@ was entered into the search field for testing.
 
 ## Screenshot 2 — Inspecting Reflection
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/DOM%20XSS%20in%20innerHTML%20Sink%20Using%20Source%20location.search/screenshots/lab5(2).png?raw=true)
 
 While inspecting the page source, the reflected input became visible inside a span tag:
 
