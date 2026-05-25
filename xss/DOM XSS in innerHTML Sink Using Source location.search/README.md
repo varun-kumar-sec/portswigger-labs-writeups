@@ -91,7 +91,7 @@ The goal of this lab was to exploit the DOM-based functionality and execute Java
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-xss1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/DOM%20XSS%20in%20innerHTML%20Sink%20Using%20Source%20location.search/screenshots/lab5(1).png?raw=true)
 
 The application initially displayed a normal webpage containing a search functionality.
 
