@@ -285,7 +285,7 @@ This confirmed successful XSS execution.
 
 ## Screenshot 13 — Triggering the Event
 
-![Screenshot 13](screenshot-xss13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(13).png?raw=true)
 
 The browser was resized using:
 - Developer Tools (`F12`)
