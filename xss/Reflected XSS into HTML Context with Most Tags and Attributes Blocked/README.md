@@ -236,7 +236,7 @@ When the window resizes:
 
 ## Screenshot 11 — Crafting Final Payload
 
-![Screenshot 11](screenshot-xss11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(11).png?raw=true)
 
 Using the PortSwigger XSS Cheat Sheet, the following payload was selected:
 
