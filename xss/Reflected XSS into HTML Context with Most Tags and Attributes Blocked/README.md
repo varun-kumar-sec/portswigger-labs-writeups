@@ -299,7 +299,7 @@ This triggered:
 
 ## Screenshot 14 — Preparing the Exploit URL
 
-![Screenshot 14](screenshot-xss14.png)
+![Screenshot 14](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(14).png?raw=true)
 
 The full vulnerable URL was copied:
 
