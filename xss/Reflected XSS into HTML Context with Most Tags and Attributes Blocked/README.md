@@ -115,7 +115,7 @@ This request became the base for further testing.
 
 ## Screenshot 6 — Using PortSwigger XSS Cheat Sheet
 
-![Screenshot 6](screenshot-xss6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(6).png?raw=true)
 
 The PortSwigger XSS Cheat Sheet was used to:
 - copy all possible HTML tags
