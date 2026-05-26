@@ -46,7 +46,7 @@ was entered into the search field for testing.
 
 ## Screenshot 2 — Reflection Testing
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(2).png?raw=true)
 
 After searching:
 - the word `hello` reflected in the webpage heading
