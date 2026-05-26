@@ -101,7 +101,7 @@ This confirmed:
 
 ## Screenshot 5 — Capturing the Request
 
-![Screenshot 5](screenshot-xss5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(5).png?raw=true)
 
 The blocked request was captured inside Burp Suite:
 
