@@ -41,7 +41,7 @@ The goal of this lab was to inject and execute JavaScript by escaping an existin
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-xss1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20a%20JavaScript%20String%20with%20Single%20Quote%20and%20Backslash%20Escaped/screenshots/lab6(1).png?raw=true)
 
 The application initially displayed a normal webpage containing a search functionality.
 
