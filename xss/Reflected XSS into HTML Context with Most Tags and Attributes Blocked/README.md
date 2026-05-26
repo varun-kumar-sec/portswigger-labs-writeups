@@ -69,7 +69,7 @@ This indicated that:
 
 ## Screenshot 3 — Testing Basic XSS Payload
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(3).png?raw=true)
 
 The following payload was tested:
 
