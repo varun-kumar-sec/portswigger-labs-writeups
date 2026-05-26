@@ -147,7 +147,7 @@ Purpose:
 
 ## Screenshot 8 — Discovering Allowed Tags
 
-![Screenshot 8](screenshot-xss8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(8).png?raw=true)
 
 Intruder results showed that only two tags were accepted:
 
