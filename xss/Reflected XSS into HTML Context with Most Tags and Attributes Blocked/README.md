@@ -127,7 +127,7 @@ This is a common real-world methodology for bypassing restrictive XSS filters.
 
 ## Screenshot 7 — Tag Enumeration Using Intruder
 
-![Screenshot 7](screenshot-xss7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(7).png?raw=true)
 
 The request was sent to Burp Intruder.
 
