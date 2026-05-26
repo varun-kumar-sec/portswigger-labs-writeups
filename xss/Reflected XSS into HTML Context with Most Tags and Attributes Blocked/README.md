@@ -83,7 +83,7 @@ This was used to test whether standard script injection was possible.
 
 ## Screenshot 4 — Filter Response
 
-![Screenshot 4](screenshot-xss4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(4).png?raw=true)
 
 After submitting the payload:
 - the application blocked the request
