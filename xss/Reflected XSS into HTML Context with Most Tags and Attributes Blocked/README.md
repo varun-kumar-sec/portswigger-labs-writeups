@@ -182,7 +182,7 @@ Example:
 
 ## Screenshot 9 — Event Handler Enumeration
 
-![Screenshot 9](screenshot-xss9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(9).png?raw=true)
 
 The request was modified again:
 
