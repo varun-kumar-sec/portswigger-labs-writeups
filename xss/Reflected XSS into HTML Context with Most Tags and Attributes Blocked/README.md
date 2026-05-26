@@ -270,7 +270,7 @@ This confirmed successful JavaScript execution.
 
 ## Screenshot 12 — Executing the Payload
 
-![Screenshot 12](screenshot-xss12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(12).png?raw=true)
 
 The payload was inserted into the search field.
 
