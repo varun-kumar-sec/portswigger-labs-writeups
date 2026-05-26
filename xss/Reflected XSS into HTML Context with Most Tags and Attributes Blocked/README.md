@@ -313,7 +313,7 @@ This URL contained the malicious XSS payload.
 
 ## Screenshot 15 — Exploit Server Delivery
 
-![Screenshot 15](screenshot-xss15.png)
+![Screenshot 15](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20HTML%20Context%20with%20Most%20Tags%20and%20Attributes%20Blocked/screenshots/lab7(15).png?raw=true)
 
 The provided exploit server was used to automate victim interaction.
 
