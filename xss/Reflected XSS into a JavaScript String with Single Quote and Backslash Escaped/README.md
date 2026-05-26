@@ -57,7 +57,7 @@ was entered into the search field for testing.
 
 ## Screenshot 2 — Inspecting Client-Side JavaScript
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20a%20JavaScript%20String%20with%20Single%20Quote%20and%20Backslash%20Escaped/screenshots/lab6(2).png?raw=true)
 
 After searching for:
 
