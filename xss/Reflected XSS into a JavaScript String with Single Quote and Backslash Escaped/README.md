@@ -98,7 +98,7 @@ This meant:
 
 # 🖼 Screenshot 3 — Exploiting the Vulnerability
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20a%20JavaScript%20String%20with%20Single%20Quote%20and%20Backslash%20Escaped/screenshots/lab6(3).png?raw=true)
 
 An interesting observation was made:
 - the vulnerable JavaScript already existed inside `<script>` tags
