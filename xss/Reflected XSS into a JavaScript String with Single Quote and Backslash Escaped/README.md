@@ -156,7 +156,7 @@ So:
 
 ## Screenshot 4 — Successful XSS Execution
 
-![Screenshot 4](screenshot-xss4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20a%20JavaScript%20String%20with%20Single%20Quote%20and%20Backslash%20Escaped/screenshots/lab6(4).png?raw=true)
 
 After loading the payload:
 - an alert popup appeared
