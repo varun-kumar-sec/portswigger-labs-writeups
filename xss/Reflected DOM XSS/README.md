@@ -95,7 +95,7 @@ was entered into the search field for testing.
 
 ## Screenshot 2 — Reflection Analysis
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20DOM%20XSS/screenshots/lab10(2).png?raw=true)
 
 While inspecting the webpage:
 - the word `hello` reflected in the heading
