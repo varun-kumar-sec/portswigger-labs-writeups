@@ -106,7 +106,7 @@ At this stage:
 
 ## Screenshot 2 — Injecting the Payload
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20XSS%20into%20Anchor%20href%20Attribute%20with%20Double%20Quotes%20HTML-Encoded/screenshots/lab8(2).png?raw=true)
 
 After opening a blog post:
 - a **Leave a Comment** section became visible
