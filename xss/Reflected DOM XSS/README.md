@@ -173,7 +173,7 @@ This meant:
 
 # 🖼 Screenshot 5 — Capturing Search Response
 
-![Screenshot 5](screenshot-xss5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20DOM%20XSS/screenshots/lab10(5).png?raw=true)
 
 The search request was captured:
 
