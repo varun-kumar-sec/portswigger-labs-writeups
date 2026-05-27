@@ -252,7 +252,7 @@ This is common in DOM-based parsing vulnerabilities.
 
 ## Screenshot 8 — Final Payload Using img Tag
 
-![Screenshot 8](screenshot-xss8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20DOM%20XSS/screenshots/lab9(8).png?raw=true)
 
 A new payload was crafted:
 
