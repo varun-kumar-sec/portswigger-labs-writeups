@@ -297,7 +297,7 @@ This successfully broke the JavaScript structure.
 
 ## Screenshot 10 — Injecting JavaScript
 
-![Screenshot 10](screenshot-xss10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20DOM%20XSS/screenshots/lab10(10).png?raw=true)
 
 A payload was crafted to:
 - break the JSON structure
