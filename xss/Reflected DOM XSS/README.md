@@ -116,7 +116,7 @@ This indicated:
 
 ## Screenshot 3 — Discovering JavaScript File
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20DOM%20XSS/screenshots/lab10(3).png?raw=true)
 
 A suspicious JavaScript file was discovered:
 
