@@ -350,7 +350,7 @@ Comments out remaining characters to prevent syntax errors.
 
 ## Screenshot 11 — Final Payload
 
-![Screenshot 11](screenshot-xss11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20DOM%20XSS/screenshots/lab10(11).png?raw=true)
 
 The final payload used in the search bar was:
 
