@@ -190,7 +190,7 @@ The injected `<script>` became trapped inside another script context.
 
 ## Screenshot 6 — Testing Another Payload
 
-![Screenshot 6](screenshot-xss6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20DOM%20XSS/screenshots/lab9(6).png?raw=true)
 
 A modified payload was submitted:
 
