@@ -163,7 +163,7 @@ then clicking the link executes JavaScript directly inside the browser.
 
 ## Screenshot 3 — Successful XSS Execution
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20XSS%20into%20Anchor%20href%20Attribute%20with%20Double%20Quotes%20HTML-Encoded/screenshots/lab8(3).png?raw=true)
 
 After submitting the comment:
 - the malicious website value was stored successfully
