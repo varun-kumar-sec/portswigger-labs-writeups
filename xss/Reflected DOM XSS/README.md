@@ -367,7 +367,7 @@ This payload:
 
 ## Screenshot 12 — Successful Reflected DOM XSS
 
-![Screenshot 12](screenshot-xss12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20DOM%20XSS/screenshots/lab10(12).png?raw=true)
 
 After submitting the payload:
 - JavaScript executed successfully
