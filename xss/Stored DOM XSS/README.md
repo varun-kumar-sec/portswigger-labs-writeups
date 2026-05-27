@@ -52,7 +52,7 @@ At this stage:
 
 ## Screenshot 2 — Posting a Normal Comment
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20DOM%20XSS/screenshots/lab9(2).png?raw=true)
 
 A random blog post was opened, revealing a **Leave a Comment** functionality.
 
