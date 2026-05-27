@@ -206,7 +206,7 @@ Purpose:
 
 ## Screenshot 7 — Understanding First Occurrence Parsing
 
-![Screenshot 7](screenshot-xss7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20DOM%20XSS/screenshots/lab9(7).png?raw=true)
 
 Inspection revealed:
 
