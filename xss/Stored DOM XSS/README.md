@@ -90,7 +90,7 @@ This step was performed to observe:
 
 ## Screenshot 3 — Comment Submission
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20DOM%20XSS/screenshots/lab9(3).png?raw=true)
 
 After submitting the comment:
 - the application redirected to a confirmation page
