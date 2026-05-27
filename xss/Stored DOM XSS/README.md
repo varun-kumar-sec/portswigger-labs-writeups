@@ -107,7 +107,7 @@ A **Back to Blog** button was also visible.
 
 ## Screenshot 4 — Initial XSS Testing
 
-![Screenshot 4](screenshot-xss4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20DOM%20XSS/screenshots/lab9(4).png?raw=true)
 
 The previously submitted comment became visible with other user comments.
 
