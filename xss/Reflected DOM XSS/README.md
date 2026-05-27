@@ -265,7 +265,7 @@ This meant:
 
 ## Screenshot 9 — Breaking the JSON String
 
-![Screenshot 9](screenshot-xss9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20DOM%20XSS/screenshots/lab10(9).png?raw=true)
 
 Payload tested:
 
