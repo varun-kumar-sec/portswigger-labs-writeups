@@ -245,7 +245,7 @@ This escapes a quotation mark.
 
 ## Screenshot 8 — Testing Double Backslash
 
-![Screenshot 8](screenshot-xss8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20DOM%20XSS/screenshots/lab10(8).png?raw=true)
 
 Payload tested:
 
