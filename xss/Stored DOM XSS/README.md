@@ -309,7 +309,7 @@ So:
 
 ## Screenshot 9 — Successful Stored DOM XSS
 
-![Screenshot 9](screenshot-xss9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20DOM%20XSS/screenshots/lab9(9).png?raw=true)
 
 After loading the malicious comment:
 - browser attempted to load the invalid image
