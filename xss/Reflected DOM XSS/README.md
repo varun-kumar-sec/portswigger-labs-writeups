@@ -210,7 +210,7 @@ Purpose:
 
 ## Screenshot 7 — Testing Escape Character
 
-![Screenshot 7](screenshot-xss7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20DOM%20XSS/screenshots/lab10(7).png?raw=true)
 
 Payload tested:
 
