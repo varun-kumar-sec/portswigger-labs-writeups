@@ -198,7 +198,7 @@ This confirmed:
 
 ## Screenshot 6 — Sending Request to Repeater
 
-![Screenshot 6](screenshot-xss6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20DOM%20XSS/screenshots/lab10(6).png?raw=true)
 
 The request was sent to Burp Repeater for manual payload testing.
 
