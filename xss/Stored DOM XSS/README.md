@@ -150,7 +150,7 @@ http://google.com
 
 ## Screenshot 5 — Analyzing Browser Parsing Behavior
 
-![Screenshot 5](screenshot-xss5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Stored%20DOM%20XSS/screenshots/lab9(5).png?raw=true)
 
 After posting the payload:
 - the comment appeared malformed
