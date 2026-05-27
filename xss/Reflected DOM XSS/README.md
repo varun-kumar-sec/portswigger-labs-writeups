@@ -130,7 +130,7 @@ This file was responsible for handling search functionality.
 
 ## Screenshot 4 — Identifying the Vulnerable eval() Function
 
-![Screenshot 4](screenshot-xss4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20DOM%20XSS/screenshots/lab10(4).png?raw=true)
 
 After opening the JavaScript file, the following vulnerable code was identified:
 
