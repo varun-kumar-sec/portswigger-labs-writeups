@@ -67,11 +67,12 @@ These labs demonstrate how attackers can:
 
 ☑ Exploiting XSS to perform CSRF
 
-☑ Reflected XSS protected by CSP, with CSP bypass
 
 ---
 
 ## Expert Labs
+
+☑ Reflected XSS protected by CSP, with CSP bypass
 
 ☑ Reflected XSS with AngularJS sandbox escape
 
