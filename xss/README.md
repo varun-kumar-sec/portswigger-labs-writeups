@@ -67,6 +67,8 @@ These labs demonstrate how attackers can:
 
 ☑ Exploiting XSS to perform CSRF
 
+☑ Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped
+
 
 ---
 
@@ -75,8 +77,6 @@ These labs demonstrate how attackers can:
 ☑ Reflected XSS protected by CSP, with CSP bypass
 
 ☑ Reflected XSS with AngularJS sandbox escape
-
-☑ Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped
 
 ☑ DOM XSS combined with reflected and stored data
 
