@@ -61,7 +61,7 @@ These labs demonstrate how attackers can:
 
 ☑ Stored DOM XSS
 
-☑ DOM XSS using web messages
+☑ Reflected DOM XSS
 
 ☑ Exploiting cross-site scripting to steal cookies
 
