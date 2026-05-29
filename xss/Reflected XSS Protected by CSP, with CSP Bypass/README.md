@@ -311,7 +311,7 @@ Purpose:
 
 ## Screenshot 5 — Confirming CSP Injection
 
-![Screenshot 5](screenshot-xss5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20Protected%20by%20CSP,%20with%20CSP%20Bypass/screenshots/lab13(5).png?raw=true)
 
 After capturing the response:
 
