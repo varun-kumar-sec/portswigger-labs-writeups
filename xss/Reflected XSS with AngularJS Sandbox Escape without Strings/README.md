@@ -114,7 +114,7 @@ was entered into the search field.
 
 ## Screenshot 2 — Discovering AngularJS Code
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20without%20Strings/screenshots/lab14(2).png?raw=true)
 
 While inspecting the page, the following AngularJS code was discovered:
 
