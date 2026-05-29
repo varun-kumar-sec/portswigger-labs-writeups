@@ -233,7 +233,7 @@ The vulnerability occurred because:
 
 ## Screenshot 3 — Injecting the Payload
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20into%20a%20Template%20Literal%20with%20Angle%20Brackets,%20Single,%20Double%20Quotes,%20Backslash%20and%20Backticks%20Unicode-Escaped/screenshots/lab15(3).png?raw=true)
 
 The following payload was inserted into the search field:
 
