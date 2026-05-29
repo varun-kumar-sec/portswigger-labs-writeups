@@ -426,7 +426,7 @@ This allowed:
 
 ## Screenshot 7 — Successful CSP Bypass
 
-![Screenshot 7](screenshot-xss7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20Protected%20by%20CSP,%20with%20CSP%20Bypass/screenshots/lab13(7).png?raw=true)
 
 Final URL used:
 
