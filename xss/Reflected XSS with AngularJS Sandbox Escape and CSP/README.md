@@ -311,7 +311,7 @@ was successfully executed.
 
 ## Screenshot 5 — Copying the Exploit URL
 
-![Screenshot 5](screenshot-xss5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20and%20CSP/screenshots/lab15(5).png?raw=true)
 
 After successful execution:
 - the malicious URL was copied
