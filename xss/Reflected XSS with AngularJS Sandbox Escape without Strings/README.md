@@ -480,7 +480,7 @@ This bypassed sandbox restrictions.
 
 ## Screenshot 5 — URL Encoding the Payload
 
-![Screenshot 5](screenshot-xss5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20without%20Strings/screenshots/lab14(5).png?raw=true)
 
 The payload was encoded using Burp Suite Decoder.
 
