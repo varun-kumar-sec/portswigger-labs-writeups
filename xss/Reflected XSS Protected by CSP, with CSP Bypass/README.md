@@ -445,7 +445,7 @@ An alert popup appeared.
 
 ## Screenshot 8 — Lab Solved
 
-![Screenshot 8](screenshot-xss8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20Protected%20by%20CSP,%20with%20CSP%20Bypass/screenshots/lab13(8).png?raw=true)
 
 After successful execution:
 - the application displayed:
