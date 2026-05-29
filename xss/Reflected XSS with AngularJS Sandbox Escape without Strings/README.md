@@ -491,7 +491,7 @@ Purpose:
 
 ## Screenshot 6 — Injecting the Payload
 
-![Screenshot 6](screenshot-xss6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20without%20Strings/screenshots/lab14(6).png?raw=true)
 
 The encoded payload replaced the vulnerable parameter:
 
