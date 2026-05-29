@@ -114,7 +114,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Finding the Payload
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20and%20CSP/screenshots/lab15(2).png?raw=true)
 
 Since the lab required:
 - AngularJS sandbox escape
