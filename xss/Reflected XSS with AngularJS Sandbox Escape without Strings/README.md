@@ -292,7 +292,7 @@ This created an AngularJS expression injection vulnerability.
 
 ## Screenshot 4 — Sandbox Escape Payload
 
-![Screenshot 4](screenshot-xss4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20without%20Strings/screenshots/lab14(4).png?raw=true)
 
 A sandbox escape payload from the PortSwigger XSS Cheat Sheet was used:
 
