@@ -296,7 +296,7 @@ This became the CSP injection point.
 
 ## Screenshot 4 — Testing CSP Injection
 
-![Screenshot 4](screenshot-xss4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20Protected%20by%20CSP,%20with%20CSP%20Bypass/screenshots/lab13(4).png?raw=true)
 
 A modified URL was tested:
 
