@@ -323,7 +323,7 @@ Purpose:
 
 ## Screenshot 6 — Exploit Server Delivery
 
-![Screenshot 6](screenshot-xss6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20and%20CSP/screenshots/lab15(6).png?raw=true)
 
 Inside the PortSwigger exploit server, the following script was created:
 
