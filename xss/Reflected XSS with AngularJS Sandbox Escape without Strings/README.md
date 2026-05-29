@@ -96,7 +96,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-xss1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20without%20Strings/screenshots/lab14(1).png?raw=true)
 
 The application initially displayed:
 - a normal webpage
