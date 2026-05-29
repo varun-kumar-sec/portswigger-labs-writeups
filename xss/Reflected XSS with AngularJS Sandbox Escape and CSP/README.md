@@ -278,7 +278,7 @@ Purpose:
 
 ## Screenshot 3 — Injecting the Payload
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20and%20CSP/screenshots/lab15(3).png?raw=true)
 
 The payload was inserted into the search bar.
 
