@@ -69,16 +69,16 @@ These labs demonstrate how attackers can:
 
 ☑ Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped
 
-
 ---
 
 ## Expert Labs
 
-☑ Reflected XSS protected by CSP, with CSP bypass
-
 ☑ Reflected XSS with AngularJS sandbox escape
 
-[x] Reflected
+☑ Reflected XSS protected by CSP, with CSP bypass
+
+☑ Reflected XSS with event handlers and href attributes blocked
+
 ---
 
 # 🧰 Tools Used
@@ -106,6 +106,6 @@ Through these labs, I practiced:
 
 ---
 
-# ⚠️ Disclaimer
+# ⚠ Disclaimer
 
 These labs were performed in a legal training environment provided by PortSwigger Web Security Academy for educational and ethical learning purposes only.
