@@ -507,7 +507,7 @@ The final URL contained:
 
 ## Screenshot 7 — Successful Exploitation
 
-![Screenshot 7](screenshot-xss7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20without%20Strings/screenshots/lab14(7).png?raw=true)
 
 After loading the malicious URL:
 - the AngularJS sandbox was bypassed
