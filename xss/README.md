@@ -78,7 +78,7 @@ These labs demonstrate how attackers can:
 
 ☑ Reflected XSS with AngularJS sandbox escape
 
-☑ Reflected XSS with event handlers and href attributes blocked
+[x] Reflected
 ---
 
 # 🧰 Tools Used
