@@ -291,7 +291,7 @@ The URL now contained:
 
 ## Screenshot 4 — Successful XSS Execution
 
-![Screenshot 4](screenshot-xss4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20and%20CSP/screenshots/lab15(4).png?raw=true)
 
 After loading the payload:
 - AngularJS evaluated the expression
