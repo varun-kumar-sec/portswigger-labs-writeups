@@ -90,7 +90,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Initial XSS Attempt
 
-![Screenshot 1](screenshot-xss1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20Protected%20by%20CSP,%20with%20CSP%20Bypass/screenshots/lab13(1).png?raw=true)
 
 The application initially displayed a normal webpage with a search functionality.
 
