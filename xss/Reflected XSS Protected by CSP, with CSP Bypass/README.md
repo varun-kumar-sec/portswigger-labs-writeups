@@ -104,7 +104,7 @@ A basic payload was entered:
 
 ## Screenshot 2 — Payload Reflected but Not Executed
 
-![Screenshot 2](screenshot-xss2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20Protected%20by%20CSP,%20with%20CSP%20Bypass/screenshots/lab13(2).png?raw=true)
 
 After searching:
 - the payload appeared correctly inside the page source
