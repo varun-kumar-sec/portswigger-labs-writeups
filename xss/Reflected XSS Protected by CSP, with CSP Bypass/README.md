@@ -131,7 +131,7 @@ This strongly suggested:
 
 ## Screenshot 3 — Identifying the CSP Header
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20Protected%20by%20CSP,%20with%20CSP%20Bypass/screenshots/lab13(3).png?raw=true)
 
 The request was captured:
 
