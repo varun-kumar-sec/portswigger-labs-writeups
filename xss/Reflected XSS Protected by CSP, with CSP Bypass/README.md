@@ -342,7 +342,7 @@ This can completely defeat CSP security.
 
 ## Screenshot 6 — Preparing CSP Bypass Payload
 
-![Screenshot 6](screenshot-xss6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20Protected%20by%20CSP,%20with%20CSP%20Bypass/screenshots/lab13(6).png?raw=true)
 
 A new CSP directive was URL-encoded:
 
