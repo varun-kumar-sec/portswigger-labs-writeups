@@ -241,7 +241,7 @@ then malicious AngularJS expressions may execute.
 
 ## Screenshot 3 — Testing Additional Parameters
 
-![Screenshot 3](screenshot-xss3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/xss/Reflected%20XSS%20with%20AngularJS%20Sandbox%20Escape%20without%20Strings/screenshots/lab14(3).png?raw=true)
 
 A second parameter was appended to the URL:
 
