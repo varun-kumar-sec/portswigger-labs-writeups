@@ -496,7 +496,7 @@ Purpose:
 The encoded payload replaced the vulnerable parameter:
 
 ```text
-abcd=
+abcd
 ```
 
 The final URL contained:
