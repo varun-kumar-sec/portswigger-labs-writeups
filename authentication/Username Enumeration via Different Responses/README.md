@@ -112,7 +112,7 @@ This behavior suggested a potential **Username Enumeration** vulnerability.
 
 ## Screenshot 4 — Capturing the Login Request
 
-![Screenshot 4](screenshot-auth4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Different%20Responses/screenshots/lab1(4).png?raw=true)
 
 I captured the login request using Burp Suite.
 
