@@ -222,7 +222,7 @@ directly through the browser.
 
 ## Screenshot 9 — Successful 2FA Bypass
 
-![Screenshot 9](screenshot-auth9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Simple%20Bypass/screenshots/lab2(9).png?raw=true)
 
 The application granted access to:
 
