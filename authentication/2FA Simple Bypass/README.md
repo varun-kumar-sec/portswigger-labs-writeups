@@ -122,7 +122,7 @@ At the top of the page there was an **Email Client** option provided by the lab.
 
 ## Screenshot 4 — Retrieving the Security Code
 
-![Screenshot 4](screenshot-auth4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Simple%20Bypass/screenshots/lab2(4).png?raw=true)
 
 I clicked the **Email Client** button and obtained the verification code:
 
