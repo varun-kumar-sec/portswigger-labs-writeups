@@ -208,7 +208,7 @@ The 302 response indicated a successful login because the application redirected
 
 ## Screenshot 9 — Logging In with Discovered Credentials
 
-![Screenshot 9](screenshot-auth9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Different%20Responses/screenshots/lab1(9).png?raw=true)
 
 I returned to the login page and entered the credentials discovered during the Intruder attack:
 
