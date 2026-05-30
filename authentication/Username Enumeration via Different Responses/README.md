@@ -221,7 +221,7 @@ Password: 1234567890
 
 ## Screenshot 10 — Successful Authentication
 
-![Screenshot 10](screenshot-auth10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Different%20Responses/screenshots/lab1(10).png?raw=true)
 
 The login was successful and I was authenticated as:
 
