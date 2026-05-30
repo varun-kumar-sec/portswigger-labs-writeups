@@ -196,7 +196,7 @@ The application appeared to rely on navigation logic instead of properly validat
 
 ## Screenshot 8 — Directly Accessing Another User's Account
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Simple%20Bypass/screenshots/lab2(8).png?raw=true)
 
 I copied the URL from the response and modified it:
 
