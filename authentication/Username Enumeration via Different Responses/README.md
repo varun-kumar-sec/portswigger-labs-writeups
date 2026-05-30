@@ -126,7 +126,7 @@ This request would later be used for automated testing.
 
 ## Screenshot 5 — Sending the Request to Intruder
 
-![Screenshot 5](screenshot-auth5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Different%20Responses/screenshots/lab1(5).png?raw=true)
 
 The captured request was sent to Burp Intruder.
 
