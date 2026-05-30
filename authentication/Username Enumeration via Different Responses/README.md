@@ -153,7 +153,7 @@ I copied all usernames and prepared them for use in Burp Intruder.
 
 ## Screenshot 7 — Collecting Passwords
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Different%20Responses/screenshots/lab1(7).png?raw=true)
 
 The lab also provided a password list.
 
