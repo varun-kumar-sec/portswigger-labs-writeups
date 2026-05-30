@@ -148,7 +148,7 @@ and clicked the login button.
 
 ## Screenshot 6 — Successful Login as Wiener
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Simple%20Bypass/screenshots/lab2(6).png?raw=true)
 
 After verification, I was successfully logged in as:
 
