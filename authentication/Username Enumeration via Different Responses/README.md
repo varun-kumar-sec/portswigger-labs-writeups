@@ -71,7 +71,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-auth1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Different%20Responses/screenshots/lab1(1).png?raw=true)
 
 The application initially displayed:
 - a normal webpage
