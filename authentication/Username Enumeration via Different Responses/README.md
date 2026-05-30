@@ -143,7 +143,7 @@ These positions would be replaced automatically during the attack.
 
 ## Screenshot 6 — Collecting Usernames
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Different%20Responses/screenshots/lab1(6).png?raw=true)
 
 The lab provided a list of usernames.
 
