@@ -134,7 +134,7 @@ I clicked the **Email Client** button and obtained the verification code:
 
 ## Screenshot 5 — Completing Verification
 
-![Screenshot 5](screenshot-auth5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Simple%20Bypass/screenshots/lab2(5).png?raw=true)
 
 I entered the verification code:
 
