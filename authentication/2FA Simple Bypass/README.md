@@ -87,7 +87,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Logging In
 
-![Screenshot 2](screenshot-auth2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Simple%20Bypass/screenshots/lab2(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
