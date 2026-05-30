@@ -162,7 +162,7 @@ This confirmed the normal authentication workflow.
 
 ## Screenshot 7 — Analyzing the 2FA Request
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Simple%20Bypass/screenshots/lab2(7).png?raw=true)
 
 I captured the 2FA verification request:
 
