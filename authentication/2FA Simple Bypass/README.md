@@ -104,7 +104,7 @@ I entered the credentials and proceeded with authentication.
 
 ## Screenshot 3 — 2FA Verification Page
 
-![Screenshot 3](screenshot-auth3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Simple%20Bypass/screenshots/lab2(3).png?raw=true)
 
 After successful login, I was redirected to the second authentication step.
 
