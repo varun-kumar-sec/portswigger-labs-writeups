@@ -163,7 +163,7 @@ I copied all passwords and prepared them for use in Burp Intruder.
 
 ## Screenshot 8 — Launching the Cluster Bomb Attack
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Different%20Responses/screenshots/lab1(8).png?raw=true)
 
 I configured Burp Intruder using:
 
