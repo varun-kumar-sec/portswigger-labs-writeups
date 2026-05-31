@@ -68,7 +68,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-auth1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Broken%20Logic/screenshots/lab3(1).png?raw=true)
 
 The application initially displayed:
 
