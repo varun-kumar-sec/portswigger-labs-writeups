@@ -154,7 +154,7 @@ along with a submit button.
 
 ## Screenshot 7 — Verifying the Reset Process
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Broken%20Logic/screenshots/lab3(7).png?raw=true)
 
 I set a new password for the account and returned to the login page.
 
