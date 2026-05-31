@@ -268,7 +268,7 @@ As a result, Carlos's password was changed.
 
 ## Screenshot 11 — Logging In as Carlos
 
-![Screenshot 11](screenshot-auth11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Broken%20Logic/screenshots/lab3(11).png?raw=true)
 
 I returned to the login page and authenticated using:
 
