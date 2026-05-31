@@ -187,7 +187,7 @@ This allowed Burp Intruder to automatically detect whether the exact phrase appe
 
 ## Screenshot 6 — Identifying a Suspicious Username
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Subtly%20Different%20Responses/screenshots/lab4(9).png?raw=true)
 
 After running the attack, most responses contained:
 
