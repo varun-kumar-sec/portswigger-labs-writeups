@@ -207,7 +207,7 @@ The application should not trust a user-controlled username field during passwor
 
 ## Screenshot 9 — Modifying the Request
 
-![Screenshot 9](screenshot-auth9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Broken%20Logic/screenshots/lab3(9).png?raw=true)
 
 I modified the request by replacing both instances of the token:
 
