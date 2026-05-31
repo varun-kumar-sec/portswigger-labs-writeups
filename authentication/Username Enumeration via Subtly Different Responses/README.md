@@ -127,7 +127,7 @@ At first glance, this appeared secure because the application was not revealing 
 
 ## Screenshot 4 — Capturing the Login Request
 
-![Screenshot 4](screenshot-auth4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Subtly%20Different%20Responses/screenshots/lab4(4).png?raw=true)
 
 I captured the login request using Burp Suite.
 
