@@ -246,7 +246,7 @@ new-password-2=password
 
 ## Screenshot 10 — Successful Password Reset
 
-![Screenshot 10](screenshot-auth10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Broken%20Logic/screenshots/lab3(10).png?raw=true)
 
 After sending the modified request, the application responded with:
 
