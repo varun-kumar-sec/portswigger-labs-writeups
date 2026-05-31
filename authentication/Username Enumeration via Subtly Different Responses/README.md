@@ -301,7 +301,7 @@ george
 
 ## Screenshot 9 — Logging In
 
-![Screenshot 9](screenshot-auth9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Subtly%20Different%20Responses/screenshots/lab4(9).png?raw=true)
 
 I returned to the login page and entered:
 
