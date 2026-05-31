@@ -93,7 +93,7 @@ The page contained:
 
 ## Screenshot 3 — Initiating Password Reset
 
-![Screenshot 3](screenshot-auth3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Broken%20Logic/screenshots/lab3(3).png?raw=true)
 
 I clicked the **Forgot Password** button.
 
