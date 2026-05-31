@@ -274,7 +274,7 @@ This created a username enumeration vulnerability.
 
 ## Screenshot 8 — Brute-Forcing the Password
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Subtly%20Different%20Responses/screenshots/lab4(8).png?raw=true)
 
 After identifying the valid username:
 
