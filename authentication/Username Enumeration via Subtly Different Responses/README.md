@@ -89,7 +89,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Accessing the Login Page
 
-![Screenshot 2](screenshot-auth2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Subtly%20Different%20Responses/screenshots/lab4(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
