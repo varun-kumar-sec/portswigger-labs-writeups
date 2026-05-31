@@ -137,7 +137,7 @@ Inside the email, I received a password reset link.
 
 ## Screenshot 6 — Password Reset Form
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Broken%20Logic/screenshots/lab3(6).png?raw=true)
 
 After clicking the reset link, I was redirected to a password reset page.
 
