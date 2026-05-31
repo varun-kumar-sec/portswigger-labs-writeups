@@ -166,7 +166,7 @@ This confirmed that the password reset workflow was functioning normally.
 
 ## Screenshot 8 — Inspecting the Password Reset Request
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Broken%20Logic/screenshots/lab3(8).png?raw=true)
 
 While reviewing Burp Suite's request history, I found an interesting request:
 
