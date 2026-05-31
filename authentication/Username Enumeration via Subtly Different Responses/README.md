@@ -223,7 +223,7 @@ This suggested that the response differed slightly from the others.
 
 ## Screenshot 7 — Comparing Responses
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Subtly%20Different%20Responses/screenshots/lab4(7).png?raw=true)
 
 To identify the difference, I selected:
 
