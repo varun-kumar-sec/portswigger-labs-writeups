@@ -127,7 +127,7 @@ Please check your email for a reset password link
 
 ## Screenshot 5 — Retrieving the Reset Link
 
-![Screenshot 5](screenshot-auth5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Broken%20Logic/screenshots/lab3(5).png?raw=true)
 
 I clicked the **Email Client** button provided by the lab.
 
