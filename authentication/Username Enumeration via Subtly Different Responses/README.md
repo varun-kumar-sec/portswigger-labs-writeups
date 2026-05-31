@@ -113,7 +113,7 @@ Password: password
 
 ## Screenshot 3 — Generic Error Message
 
-![Screenshot 3](screenshot-auth3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Subtly%20Different%20Responses/screenshots/lab4(3).png?raw=true)
 
 After submitting the credentials, the application returned:
 
