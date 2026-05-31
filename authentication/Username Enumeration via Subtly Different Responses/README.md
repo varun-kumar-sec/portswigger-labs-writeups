@@ -148,7 +148,7 @@ This request would be used for automated testing.
 
 ## Screenshot 5 — Testing Usernames with Burp Intruder
 
-![Screenshot 5](screenshot-auth5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Subtly%20Different%20Responses/screenshots/lab4(5).png?raw=true)
 
 I copied the username list provided by the lab and configured Burp Intruder.
 
