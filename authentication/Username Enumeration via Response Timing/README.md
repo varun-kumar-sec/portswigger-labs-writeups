@@ -401,7 +401,9 @@ Password: montana
 
 ## Screenshot 12 — Successful Authentication
 
-![Screenshot 12](screenshot-auth12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Response%20Timing/screenshots/lab5(12).png?raw=true)
+
+![Screenshot 13]()
 
 Using Burp Suite's **Request in Browser** feature, I replayed the successful authentication request.
 
