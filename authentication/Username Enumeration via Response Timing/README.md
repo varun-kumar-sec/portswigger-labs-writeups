@@ -388,7 +388,7 @@ A Pitchfork attack was launched again.
 
 ## Screenshot 11 — Discovering the Password
 
-![Screenshot 11](screenshot-auth11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Response%20Timing/screenshots/lab5(11).png?raw=true)
 
 After reviewing the results, I identified the correct password:
 
