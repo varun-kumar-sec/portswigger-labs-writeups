@@ -242,7 +242,7 @@ The server rejected the request quickly because it did not need to verify the pa
 
 ## Screenshot 7 — Discovering the Timing Difference
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Response%20Timing/screenshots/lab5(7).png?raw=true)
 
 I then tested a valid username.
 
