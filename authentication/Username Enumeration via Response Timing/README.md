@@ -337,7 +337,7 @@ Pitchfork was useful here because every username required a unique IP address.
 
 ## Screenshot 9 — Identifying the Valid Username
 
-![Screenshot 9](screenshot-auth9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Response%20Timing/screenshots/lab5(9).png?raw=true)
 
 After launching the attack, I sorted the results by:
 
