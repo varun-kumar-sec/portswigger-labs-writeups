@@ -114,7 +114,7 @@ Password: test
 
 ## Screenshot 3 — Generic Authentication Error
 
-![Screenshot 3](screenshot-auth3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Response%20Timing/screenshots/lab5(3).png?raw=true)
 
 After submitting the credentials, the application returned:
 
