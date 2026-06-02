@@ -164,7 +164,7 @@ This indicated that my IP address had been temporarily rate-limited.
 
 ## Screenshot 5 — Bypassing the Rate Limit
 
-![Screenshot 5](screenshot-auth5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Response%20Timing/screenshots/lab5(5).png?raw=true)
 
 To bypass the restriction, I added:
 
