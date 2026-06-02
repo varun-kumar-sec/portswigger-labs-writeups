@@ -48,7 +48,7 @@ Response Time:
 ```text
 1. Username checked
 2. User found
-3. Password hash verified
+3. Password verified
 4. Request rejected
 ```
 
