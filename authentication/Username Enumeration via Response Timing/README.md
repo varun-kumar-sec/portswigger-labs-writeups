@@ -363,7 +363,7 @@ was a valid username.
 
 ## Screenshot 10 — Brute-Forcing the Password
 
-![Screenshot 10](screenshot-auth10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Response%20Timing/screenshots/lab5(10).png?raw=true)
 
 After identifying the username, I modified the attack:
 
