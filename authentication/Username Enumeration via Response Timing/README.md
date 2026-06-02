@@ -221,7 +221,7 @@ I effectively appeared as a different user each time, bypassing the lockout mech
 
 ## Screenshot 6 — Testing Response Times
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Response%20Timing/screenshots/lab5(6).png?raw=true)
 
 To amplify timing differences, I increased the password length:
 
