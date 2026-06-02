@@ -128,7 +128,7 @@ The error message appeared generic and did not reveal whether the username exist
 
 ## Screenshot 4 — Triggering the Rate Limit
 
-![Screenshot 4](screenshot-auth4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Response%20Timing/screenshots/lab5(4).png?raw=true)
 
 I captured the login request:
 
