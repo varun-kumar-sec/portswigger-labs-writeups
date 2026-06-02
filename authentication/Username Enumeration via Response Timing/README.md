@@ -268,7 +268,7 @@ The longer response revealed a valid username.
 
 ## Screenshot 8 — Configuring Burp Intruder
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Response%20Timing/screenshots/lab5(8).png?raw=true)
 
 I sent the request to Burp Intruder and selected two payload positions:
 
