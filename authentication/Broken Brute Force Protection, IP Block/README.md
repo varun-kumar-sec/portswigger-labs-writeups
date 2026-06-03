@@ -355,7 +355,7 @@ This makes Pitchfork ideal when multiple parameters must remain synchronized.
 
 ## Screenshot 11 — Resource Pool Configuration
 
-![Screenshot 11](screenshot-auth11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(11).png?raw=true)
 
 Before launching the attack, I created a custom resource pool.
 
