@@ -304,7 +304,7 @@ Although no passwords are disclosed directly, username enumeration significantly
 
 ---
 
-# Mitigation
+# 🛡 Mitigation
 
 Organizations should prevent username enumeration by:
 
