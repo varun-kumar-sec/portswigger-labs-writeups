@@ -151,7 +151,7 @@ Password: 1234
 
 ## Screenshot 5 — Incorrect Password Message
 
-![Screenshot 5](screenshot-auth5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(5).png?raw=true)
 
 The application responded with:
 
