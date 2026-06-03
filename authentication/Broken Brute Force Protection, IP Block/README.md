@@ -238,7 +238,7 @@ This behavior became the key to bypassing the protection mechanism.
 
 ## Screenshot 8 — Preparing the Username List
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(8).png?raw=true)
 
 After understanding the logic, I modified my username list.
 
