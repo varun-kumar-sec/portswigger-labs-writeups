@@ -300,7 +300,7 @@ This ensured every third request was a successful login.
 
 ## Screenshot 10 — Configuring Burp Intruder
 
-![Screenshot 10](screenshot-auth10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(10).png?raw=true)
 
 I sent the login request to Burp Intruder.
 
