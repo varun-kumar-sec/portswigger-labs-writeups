@@ -162,7 +162,7 @@ I then sent the request to **Burp Intruder** for automated testing.
 
 ## Screenshot 5 — Configuring Username Enumeration
 
-![Screenshot 5](screenshot5.png)
+![Screenshot 5]()
 
 Inside Intruder, I selected the username parameter:
 
@@ -214,7 +214,7 @@ In this lab, Cluster Bomb allowed automated testing of usernames against a fixed
 
 ## Screenshot 6 — Analyzing Intruder Results
 
-![Screenshot 6](screenshot6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Account%20Lock/screenshots/lab7(6).png?raw=true)
 
 After the attack completed, I examined a random response.
 
