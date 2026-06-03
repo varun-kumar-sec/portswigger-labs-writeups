@@ -310,7 +310,7 @@ The successful response had a noticeably different response length.
 
 ## Screenshot 9 — Logging In
 
-![Screenshot 9](screenshot9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Account%20Lock/screenshots/lab7(9).png?raw=true)
 
 Using the discovered credentials:
 
