@@ -344,7 +344,8 @@ Use MFA to reduce the impact of credential attacks.
 
 ---
 
-# Tools Used
+
+# 🧰 Tools Used
 
 - Burp Suite Intruder
 - Burp Suite Repeater
@@ -354,7 +355,7 @@ Use MFA to reduce the impact of credential attacks.
 
 ---
 
-# Skills Learned
+# 🧠 Skills Learned
 
 - Username enumeration through account lockouts
 - Response-length analysis
@@ -367,6 +368,6 @@ Use MFA to reduce the impact of credential attacks.
 
 ---
 
-# Conclusion
+# ✅ Conclusion
 
 This lab demonstrated how account lockout mechanisms can unintentionally leak valid usernames. By analyzing response lengths and error messages, it was possible to identify an existing user account (`apache`) and then brute-force its password (`1111`). The vulnerability existed because the application handled valid and invalid usernames differently during authentication failures, enabling username enumeration and facilitating further attacks.
