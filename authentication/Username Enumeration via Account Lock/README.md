@@ -2,49 +2,81 @@
 
 ## 📌 Lab Overview
 
-This lab demonstrates how different application responses during account lockout can be used to enumerate valid usernames. Although the application attempts to protect accounts by locking them after multiple failed login attempts, the lockout mechanism itself leaks information about which usernames exist.
+This lab demonstrates a **Username Enumeration** vulnerability through an improperly implemented **account lockout mechanism**.
 
-An attacker can exploit these differences to identify valid usernames before performing password attacks.
+The application attempted to protect user accounts from brute-force attacks by temporarily locking accounts after multiple failed login attempts. However, the lockout functionality behaved differently for valid and invalid usernames.
+
+This difference allowed an attacker to:
+
+- identify valid usernames
+- enumerate accounts without knowing passwords
+- leverage account lock messages as an information disclosure channel
+- perform targeted password attacks
+
+This lab focused on:
+
+- authentication weaknesses
+- username enumeration
+- account lock analysis
+- Burp Intruder automation
+- response comparison techniques
 
 ---
 
-## What is Username Enumeration?
+# 🔍 What is Username Enumeration?
 
-**Username Enumeration** occurs when an application reveals whether a username exists through different responses, status codes, timing differences, account lock messages, or other behavioral differences.
+**Username Enumeration** occurs when an application unintentionally reveals whether a username exists within the system.
+
+Attackers can identify valid usernames through:
+
+- error messages
+- response timing
+- status codes
+- account lock notifications
+- password reset functionality
 
 ### Example
 
-**Invalid Username**
-```
+For an invalid username:
+
+```text
 Invalid username or password.
 ```
 
-**Valid Username**
-```
+For a valid username:
+
+```text
 You have made too many incorrect login attempts.
 Please try again in 1 minute.
 ```
 
-Even though both login attempts fail, the second response confirms that the username exists because the application is tracking failed attempts for that account.
+Although both requests fail, the second message confirms that the username exists because the application is tracking failed attempts for that account.
 
 ---
 
-## Why This Vulnerability Exists
+# ⚠ Why Does This Vulnerability Exist?
 
-The application applies account lockout protection only to valid user accounts.
+The vulnerability exists because the application handles valid and invalid usernames differently.
 
-When an invalid username is supplied:
+For invalid usernames:
 
-- No account exists to lock.
-- The application simply returns a generic error.
+```text
+Invalid username or password.
+```
 
-When a valid username is supplied:
+For valid usernames after multiple failures:
 
-- Failed login attempts are tracked.
-- The account eventually becomes locked.
-- A different error message is displayed.
+```text
+Account locked.
+```
 
-This difference allows attackers to discover legitimate usernames without knowing any passwords.
+This difference leaks information about which usernames exist in the application.
+
+A secure authentication system should never reveal whether:
+
+- a username exists
+- a password is incorrect
+- an account is locked
 
 ---
 
@@ -52,54 +84,66 @@ This difference allows attackers to discover legitimate usernames without knowin
 
 The goal of this lab was to:
 
-1. Identify a valid username by abusing the account lock mechanism.
-2. Brute-force the password for that username.
-3. Log in successfully and solve the lab.
+- identify a valid username
+- exploit the account lock mechanism
+- enumerate users
+- brute-force the password
+- gain access to the target account
 
 ---
 
-# Step 1 - Access the Login Page
+# 🖼 Step-by-Step Walkthrough
 
-The lab starts with a website containing a **My Account** button.
+## Screenshot 1 — Normal Webpage
 
 ![Screenshot 1](screenshot1.png)
 
-After clicking **My Account**, the login page appears.
+The application initially displayed a normal webpage containing a:
 
-I entered random credentials:
-
-- Username: `admin`
-- Password: `admin`
-
-because the correct credentials were unknown.
-
-![Screenshot 2](screenshot2.png)
+- **My Account** button
 
 ---
 
-# Step 2 - Observe the Error Message
+## Screenshot 2 — Accessing the Login Page
 
-After attempting to log in, the application returned:
+![Screenshot 2](screenshot2.png)
+
+After clicking **My Account**, I was redirected to the login page.
+
+Since the credentials were unknown, I entered:
+
+```text
+Username: admin
+Password: admin
+```
+
+to observe the application's behavior.
+
+---
+
+## Screenshot 3 — Authentication Failure
+
+![Screenshot 3](screenshot3.png)
+
+After submitting the credentials, the application returned:
 
 ```text
 Invalid username or password.
 ```
 
-This indicates the authentication attempt failed.
+At this point, it was impossible to determine whether:
 
-![Screenshot 3](screenshot3.png)
-
-At this stage, it is impossible to determine whether:
-
-- The username is wrong.
-- The password is wrong.
-- Both are wrong.
+- the username was invalid
+- the password was invalid
+- both were incorrect
 
 ---
 
-# Step 3 - Capture the Login Request
+## Screenshot 4 — Capturing the Login Request
 
-Using Burp Suite, I intercepted the login request.
+![Screenshot 4](screenshot4.png)
+
+Using Burp Suite, I intercepted the login request:
 
 ```http
 POST /login
@@ -112,66 +156,91 @@ username=admin
 password=admin
 ```
 
-I then sent the request to **Intruder** for automated testing.
-
-![Screenshot 4](screenshot4.png)
+I then sent the request to **Burp Intruder** for automated testing.
 
 ---
 
-# Step 4 - Enumerate Usernames
+## Screenshot 5 — Configuring Username Enumeration
 
-The goal was to identify which username triggers account lockout behavior.
+![Screenshot 5](screenshot5.png)
 
-I configured Intruder as follows:
-
-### Payload Position
+Inside Intruder, I selected the username parameter:
 
 ```http
 username=§admin§
 password=admin
 ```
 
-### Attack Type
+Attack Type:
 
-**Cluster Bomb**
+```text
+Cluster Bomb
+```
 
-### Payload
+I then pasted the username list provided by the lab into the payload section.
 
-I pasted the entire username list provided by the lab into the payload section.
-
-This causes Burp Suite to test every username against the same password.
-
-![Screenshot 5](screenshot5.png)
+The goal was to determine whether any username generated a different response.
 
 ---
 
-# Step 5 - Analyze Intruder Results
+# 🔍 Understanding Cluster Bomb
 
-After the attack completed, I examined the responses.
+A **Cluster Bomb** attack tests every possible combination between payload sets.
 
-A random response displayed the standard message:
+Example:
+
+```text
+Payload Set 1:
+alice
+bob
+
+Payload Set 2:
+password
+123456
+```
+
+Generated Requests:
+
+```text
+alice : password
+alice : 123456
+bob : password
+bob : 123456
+```
+
+In this lab, Cluster Bomb allowed automated testing of usernames against a fixed password.
+
+---
+
+## Screenshot 6 — Analyzing Intruder Results
+
+![Screenshot 6](screenshot6.png)
+
+After the attack completed, I examined a random response.
+
+The rendered response still displayed:
 
 ```text
 Invalid username or password.
 ```
 
-This indicates the tested username was invalid.
-
-![Screenshot 6](screenshot6.png)
+indicating that the tested username was likely invalid.
 
 ---
 
-# Step 6 - Identify the Valid Username
+## Screenshot 7 — Identifying the Valid Username
 
-To find anomalies, I sorted Intruder results by the **Length** column.
+![Screenshot 7](screenshot7.png)
 
-One response stood out with a significantly larger response length:
+To locate anomalies, I sorted Intruder results by the **Length** column.
+
+One response stood out with a significantly larger length:
 
 ```text
 3396
 ```
 
-After opening that response and viewing it in the **Render** tab, I observed a different message:
+After opening the response and selecting the **Render** tab, I observed a different error message:
 
 ```text
 You have made too many incorrect login attempts.
@@ -180,63 +249,68 @@ Please try again in 1 minute.
 
 This message only appears when the application recognizes the username and tracks failed login attempts.
 
-Therefore, the username was confirmed to be:
+Therefore, the username was confirmed as:
 
 ```text
 apache
 ```
 
-![Screenshot 7](screenshot7.png)
+---
+
+# 🔍 Why Was Response Length Important?
+
+Different application responses generate different page sizes.
+
+Example:
+
+### Invalid Username
+
+```text
+Invalid username or password.
+```
+
+Shorter response.
+
+### Valid Username
+
+```text
+You have made too many incorrect login attempts.
+```
+
+Longer response.
+
+Because the account lock page contains more content, the response length increases.
+
+This made it easy to identify the valid username by sorting Intruder results.
 
 ---
 
-## Why the Response Length Was Different
+## Screenshot 8 — Brute Forcing the Password
 
-The lockout page contains:
+![Screenshot 8](screenshot8.png)
 
-- Additional text
-- Additional HTML elements
-- Different content structure
-
-As a result:
-
-- Invalid usernames generated shorter responses.
-- Valid usernames generated longer responses.
-
-This difference made the correct username easy to identify by sorting response lengths.
-
----
-
-# Step 7 - Brute-Force the Password
-
-After discovering the username, I modified the Intruder attack.
-
-### Updated Request
+Once the username was identified, I modified the Intruder request:
 
 ```http
 username=apache
 password=§admin§
 ```
 
-### Payload
+I then pasted the password list provided by the lab and launched the attack.
 
-I pasted the password list provided by the lab.
-
-The attack tested each password against the valid username.
-
-![Screenshot 8](screenshot8.png)
-
-After reviewing the results, I found the correct password:
+After reviewing the results, I discovered the password:
 
 ```text
 1111
 ```
 
-The successful response had the smallest response length because the application redirected the user after successful authentication.
+The successful response had a noticeably different response length.
 
 ---
 
-# Step 8 - Log In
+## Screenshot 9 — Logging In
+
+![Screenshot 9](screenshot9.png)
 
 Using the discovered credentials:
 
@@ -245,70 +319,75 @@ Username: apache
 Password: 1111
 ```
 
-I logged into the application successfully.
-
-![Screenshot 9](screenshot9.png)
+I successfully authenticated to the application.
 
 The lab was solved.
 
 ---
 
-# Attack Flow Summary
+# 🔄 Attack Flow
 
 ```text
-Login Page
-      │
-      ▼
-Test Multiple Usernames
-      │
-      ▼
+Access Login Page
+        │
+        ▼
+Capture Login Request
+        │
+        ▼
+Enumerate Usernames
+        │
+        ▼
 Trigger Account Lock
-      │
-      ▼
+        │
+        ▼
 Different Error Message Appears
-      │
-      ▼
+        │
+        ▼
 Identify Valid Username
-      │
-      ▼
-Brute-Force Password
-      │
-      ▼
-Login Successfully
+        │
+        ▼
+Brute Force Password
+        │
+        ▼
+Successful Login
 ```
 
 ---
 
-# Why the Attack Worked
+# ⚠ Why the Attack Worked
 
 The attack succeeded because:
 
-1. The application produced different responses for valid and invalid usernames.
-2. Account lockout functionality only applied to existing users.
-3. The lockout page generated a noticeably different response length.
-4. Burp Intruder made it easy to identify these differences.
+- valid usernames triggered account lock tracking
+- invalid usernames did not
+- different error messages were displayed
+- response lengths varied significantly
+- account lock status leaked sensitive information
+
+The lockout mechanism unintentionally became a username disclosure channel.
 
 ---
 
-# 💥 Security Impact
+# 💥 Impact
 
-If exploited in a real application, an attacker could:
+In a real-world application, an attacker could:
 
-- Discover valid usernames.
-- Build a list of legitimate accounts.
-- Perform targeted password attacks.
-- Conduct credential stuffing attacks.
-- Aid phishing campaigns using known usernames.
+- enumerate valid usernames
+- build lists of legitimate accounts
+- perform targeted password attacks
+- launch credential stuffing attacks
+- assist phishing campaigns
+- increase the success rate of brute-force attacks
 
-Although no passwords are disclosed directly, username enumeration significantly increases the effectiveness of subsequent attacks.
+Although no password is disclosed directly, username enumeration greatly improves an attacker's chances of compromise.
 
 ---
 
 # 🛡 Mitigation
 
-Organizations should prevent username enumeration by:
+To prevent username enumeration:
 
-### Use Generic Error Messages
+### Use Generic Responses
 
 Always return:
 
@@ -318,56 +397,66 @@ Invalid username or password.
 
 for every authentication failure.
 
-### Avoid Different Lockout Responses
+### Hide Account Lock Information
 
-Do not reveal whether:
+Do not reveal:
 
-- The username exists.
-- The account is locked.
-- The password is incorrect.
+- account existence
+- account lock status
+- password validity
 
 ### Normalize Response Lengths
 
-Ensure all authentication responses have similar sizes.
+Ensure all authentication failures generate similar-sized responses.
 
-### Rate Limiting
+### Implement Rate Limiting
 
-Limit login attempts based on:
+Restrict excessive authentication attempts.
 
-- IP address
-- User account
-- Device fingerprint
+### Enable Multi-Factor Authentication
 
-### Multi-Factor Authentication
+Reduce the impact of credential attacks.
 
-Use MFA to reduce the impact of credential attacks.
+### Monitor Authentication Events
 
----
-
-
-# 🧰 Tools Used
-
-- Burp Suite Intruder
-- Burp Suite Repeater
-- Burp Suite Render View
-- PortSwigger Authentication Username List
-- PortSwigger Authentication Password List
+Detect and block enumeration attempts.
 
 ---
 
 # 🧠 Skills Learned
 
-- Username enumeration through account lockouts
-- Response-length analysis
-- Burp Suite Intruder configuration
-- Cluster Bomb attack usage
-- Authentication bypass methodology
-- User discovery techniques
-- Login brute-force analysis
-- Response comparison techniques
+- Username Enumeration
+- Authentication Testing
+- Account Lock Analysis
+- Burp Intruder
+- Cluster Bomb Attacks
+- Response Length Analysis
+- Login Workflow Analysis
+- User Discovery Techniques
+
+---
+
+# 🧰 Tools Used
+
+- Burp Suite
+- Burp Intruder
+- Burp Repeater
+- Burp Comparer
+- PortSwigger Web Security Academy
 
 ---
 
 # ✅ Conclusion
 
-This lab demonstrated how account lockout mechanisms can unintentionally leak valid usernames. By analyzing response lengths and error messages, it was possible to identify an existing user account (`apache`) and then brute-force its password (`1111`). The vulnerability existed because the application handled valid and invalid usernames differently during authentication failures, enabling username enumeration and facilitating further attacks.
+This lab demonstrated how an account lockout mechanism can unintentionally leak valid usernames through different responses and response lengths.
+
+By analyzing authentication behavior, identifying the account lock message, and leveraging Burp Intruder to automate testing, I was able to enumerate a valid user account (`apache`) and subsequently discover its password (`1111`).
+
+Through this lab, I learned:
+
+- how username enumeration works
+- how account lockouts can leak sensitive information
+- how response length analysis can reveal valid accounts
+- how Burp Intruder can automate authentication testing
+
+The lab was successfully solved by exploiting information disclosure within the account lockout mechanism and using the discovered username to perform password enumeration.
