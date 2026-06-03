@@ -209,7 +209,7 @@ Attempt 3 → Locked
 
 ## Screenshot 7 — Verifying Lockout Reset
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(7).png?raw=true)
 
 After waiting one minute, I modified the request and used valid credentials:
 
