@@ -716,4 +716,3 @@ Through this lab, I learned:
 - why MD5 should never be used for authentication mechanisms
 
 The lab was successfully solved by reverse engineering the stay-logged-in cookie format and generating a valid authentication token for Carlos.
-```**
