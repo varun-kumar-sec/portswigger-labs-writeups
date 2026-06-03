@@ -423,7 +423,7 @@ Password: 123qwe
 
 ## Screenshot 13 — Replaying the Successful Request
 
-![Screenshot 13](screenshot-auth13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(13).png?raw=true)
 
 Using Burp Suite's:
 
