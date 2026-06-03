@@ -141,7 +141,7 @@ At this point, it was impossible to determine whether:
 
 ## Screenshot 4 — Capturing the Login Request
 
-![Screenshot 4](screenshot4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Account%20Lock/screenshots/lab7(4).png?raw=true)
 
 Using Burp Suite, I intercepted the login request:
 
