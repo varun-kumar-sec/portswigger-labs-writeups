@@ -165,7 +165,7 @@ indicating that the username existed but the password was wrong.
 
 ## Screenshot 6 — Discovering the Lockout Logic
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(6).png?raw=true)
 
 I captured the login request:
 
