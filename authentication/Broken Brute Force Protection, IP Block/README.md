@@ -270,7 +270,7 @@ This prevented Carlos's account from remaining locked.
 
 ## Screenshot 9 — Preparing the Password List
 
-![Screenshot 9](screenshot-auth9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(9).png?raw=true)
 
 I also modified the password list.
 
