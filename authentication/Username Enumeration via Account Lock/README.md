@@ -230,7 +230,7 @@ indicating that the tested username was likely invalid.
 
 ## Screenshot 7 — Identifying the Valid Username
 
-![Screenshot 7](screenshot7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Account%20Lock/screenshots/lab7(7).png?raw=true)
 
 To locate anomalies, I sorted Intruder results by the **Length** column.
 
