@@ -287,7 +287,7 @@ This made it easy to identify the valid username by sorting Intruder results.
 
 ## Screenshot 8 — Brute Forcing the Password
 
-![Screenshot 8](screenshot8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Account%20Lock/screenshots/lab7(8).png?raw=true)
 
 Once the username was identified, I modified the Intruder request:
 
