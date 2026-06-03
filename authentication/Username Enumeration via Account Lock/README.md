@@ -106,7 +106,7 @@ The application initially displayed a normal webpage containing a:
 
 ## Screenshot 2 — Accessing the Login Page
 
-![Screenshot 2](screenshot2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Account%20Lock/screenshots/lab7(2).png?raw=true)
 
 After clicking **My Account**, I was redirected to the login page.
 
