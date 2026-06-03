@@ -123,7 +123,7 @@ to observe the application's behavior.
 
 ## Screenshot 3 — Authentication Failure
 
-![Screenshot 3](screenshot3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Account%20Lock/screenshots/lab7(3).png?raw=true)
 
 After submitting the credentials, the application returned:
 
