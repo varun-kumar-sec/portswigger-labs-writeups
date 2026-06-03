@@ -1,9 +1,5 @@
 # Username Enumeration via Account Lock
 
-**Lab Name:** Username Enumeration via Account Lock  
-**Difficulty:** Practitioner  
-**Category:** Authentication Vulnerabilities
-
 ## Lab Overview
 
 This lab demonstrates how different application responses during account lockout can be used to enumerate valid usernames. Although the application attempts to protect accounts by locking them after multiple failed login attempts, the lockout mechanism itself leaks information about which usernames exist.
