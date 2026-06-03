@@ -99,7 +99,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Logging in as Wiener
 
-![Screenshot 2](screenshot-auth2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
