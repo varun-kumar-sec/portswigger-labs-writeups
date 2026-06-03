@@ -437,7 +437,7 @@ feature, I copied the successful authenticated request and pasted it into the br
 
 ## Screenshot 14 — Successful Login as Carlos
 
-![Screenshot 14](screenshot-auth14.png)
+![Screenshot 14](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(14).png?raw=true)
 
 The login succeeded and I was authenticated as:
 
