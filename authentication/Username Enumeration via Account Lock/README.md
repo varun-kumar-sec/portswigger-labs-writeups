@@ -48,7 +48,7 @@ This difference allows attackers to discover legitimate usernames without knowin
 
 ---
 
-## Objective
+# 🎯 Objective
 
 The goal of this lab was to:
 
