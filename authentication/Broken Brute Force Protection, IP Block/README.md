@@ -116,7 +116,7 @@ I entered these credentials and attempted to log in.
 
 ## Screenshot 3 — Successful Login
 
-![Screenshot 3](screenshot-auth3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(3).png?raw=true)
 
 The login was successful and I was authenticated as:
 
