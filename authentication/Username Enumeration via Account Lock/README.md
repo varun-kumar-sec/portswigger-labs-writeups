@@ -162,7 +162,7 @@ I then sent the request to **Burp Intruder** for automated testing.
 
 ## Screenshot 5 — Configuring Username Enumeration
 
-![Screenshot 5]()
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Username%20Enumeration%20via%20Account%20Lock/screenshots/lab7(5).png?raw=true)
 
 Inside Intruder, I selected the username parameter:
 
