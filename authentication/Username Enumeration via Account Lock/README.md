@@ -290,7 +290,7 @@ The attack succeeded because:
 
 ---
 
-# Security Impact
+# 💥 Security Impact
 
 If exploited in a real application, an attacker could:
 
