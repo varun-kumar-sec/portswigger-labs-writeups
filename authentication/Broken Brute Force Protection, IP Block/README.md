@@ -408,7 +408,7 @@ Setting concurrency to **1** guarantees the requests are processed in the intend
 
 ## Screenshot 12 — Discovering Carlos's Password
 
-![Screenshot 12](screenshot-auth12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(12).png?raw=true)
 
 After launching the attack, I reviewed the results.
 
