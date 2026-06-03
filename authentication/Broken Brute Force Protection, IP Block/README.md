@@ -245,6 +245,7 @@ After understanding the logic, I modified my username list.
 The pattern used was:
 
 ```text
+wiener
 carlos
 carlos
 wiener
@@ -277,6 +278,7 @@ I also modified the password list.
 Example pattern:
 
 ```text
+peter
 123456
 password
 peter
