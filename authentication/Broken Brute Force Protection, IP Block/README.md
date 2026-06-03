@@ -130,7 +130,7 @@ This account would later be used to bypass the brute-force protection.
 
 ## Screenshot 4 — Testing Carlos Login
 
-![Screenshot 4](screenshot-auth4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute%20Force%20Protection,%20IP%20Block/screenshots/lab6(4).png?raw=true)
 
 After logging out, I returned to the login page.
 
