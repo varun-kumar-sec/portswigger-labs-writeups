@@ -272,7 +272,7 @@ The goal was to verify whether Stored XSS existed.
 
 ## Screenshot 7 — Comment Submission
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(7).png?raw=true)
 
 The application responded:
 
