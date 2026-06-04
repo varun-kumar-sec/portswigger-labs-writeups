@@ -198,7 +198,7 @@ functionality.
 
 ## Screenshot 4 — Analyzing the Cookie
 
-![Screenshot 4](screenshot-auth4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Brute-Forcing%20a%20Stay-Logged-In%20Cookie/screenshots/lab9(4).png?raw=true)
 
 I captured the authenticated request:
 
