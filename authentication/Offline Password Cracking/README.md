@@ -410,7 +410,7 @@ The password was successfully cracked offline.
 
 ## Screenshot 13 — Logging in as Carlos
 
-![Screenshot 13](screenshot-auth13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(13).png?raw=true)
 
 I returned to the login page and used:
 
