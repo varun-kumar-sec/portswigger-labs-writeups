@@ -362,7 +362,7 @@ This provided Carlos's authentication cookie.
 
 ## Screenshot 11 — Decoding Carlos's Cookie
 
-![Screenshot 11](screenshot-auth11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(11).png?raw=true)
 
 Using Burp Decoder, I decoded:
 
