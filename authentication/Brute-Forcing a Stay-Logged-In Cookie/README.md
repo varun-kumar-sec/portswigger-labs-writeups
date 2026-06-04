@@ -522,7 +522,7 @@ The attack was then launched.
 
 ## Screenshot 11 — Discovering Carlos's Cookie
 
-![Screenshot 11](screenshot-auth11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Brute-Forcing%20a%20Stay-Logged-In%20Cookie/screenshots/lab9(11).png?raw=true)
 
 After sorting the results, one response contained:
 
