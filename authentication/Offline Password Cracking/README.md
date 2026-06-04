@@ -293,7 +293,7 @@ button.
 
 ## Screenshot 8 — Stored XSS Confirmed
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(8).png?raw=true)
 
 After returning to the blog page, the browser displayed:
 
