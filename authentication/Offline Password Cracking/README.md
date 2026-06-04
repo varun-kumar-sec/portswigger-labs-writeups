@@ -122,7 +122,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Login as Wiener
 
-![Screenshot 2](screenshot-auth2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
