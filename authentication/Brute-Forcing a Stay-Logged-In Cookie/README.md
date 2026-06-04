@@ -155,7 +155,7 @@ The application initially displayed a normal webpage containing:
 
 ## Screenshot 2 — Logging In with Stay Logged In Enabled
 
-![Screenshot 2](screenshot-auth2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Brute-Forcing%20a%20Stay-Logged-In%20Cookie/screenshots/lab9(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
