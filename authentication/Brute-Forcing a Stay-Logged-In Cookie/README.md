@@ -366,7 +366,7 @@ instead of MD5.
 
 ## Screenshot 6 — Sending the Request to Intruder
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Brute-Forcing%20a%20Stay-Logged-In%20Cookie/screenshots/lab9(6).png?raw=true)
 
 After understanding the cookie structure, I sent the authenticated request to Burp Intruder.
 
