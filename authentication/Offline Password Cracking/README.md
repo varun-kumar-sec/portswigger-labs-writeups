@@ -162,7 +162,7 @@ The account page exposed:
 
 ## Screenshot 4 — Analyzing the Stay Logged In Cookie
 
-![Screenshot 4](screenshot-auth4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(4).png?raw=true)
 
 I captured the authenticated request:
 
