@@ -254,7 +254,7 @@ the password hash could potentially be cracked offline.
 
 ## Screenshot 6 — Testing for Stored XSS
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(6).png?raw=true)
 
 To obtain another user's cookie, I explored the blog section and found a comment feature.
 
