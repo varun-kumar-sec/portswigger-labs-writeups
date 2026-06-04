@@ -345,7 +345,7 @@ sending the victim's cookies directly to the attacker.
 
 ## Screenshot 10 — Capturing Carlos's Cookie
 
-![Screenshot 10](screenshot-auth10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(10).png?raw=true)
 
 I opened the exploit server logs and captured a request from the victim.
 
