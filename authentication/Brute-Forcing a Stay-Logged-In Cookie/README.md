@@ -498,7 +498,7 @@ confirming that the cookie generation logic was correct.
 
 ## Screenshot 10 — Brute Forcing Carlos's Password
 
-![Screenshot 10](screenshot-auth10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Brute-Forcing%20a%20Stay-Logged-In%20Cookie/screenshots/lab9(10).png?raw=true)
 
 I then replaced the payload list with the password list provided by the lab.
 
