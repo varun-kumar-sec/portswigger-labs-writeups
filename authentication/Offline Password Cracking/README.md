@@ -388,7 +388,7 @@ The MD5 hash now belonged to Carlos.
 
 ## Screenshot 12 — Cracking Carlos's Password
 
-![Screenshot 12](screenshot-auth12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(12).png?raw=true)
 
 I submitted the hash:
 
