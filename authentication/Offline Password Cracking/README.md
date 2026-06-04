@@ -423,7 +423,7 @@ Password: onceuponatime
 
 ## Screenshot 14 — Successful Authentication
 
-![Screenshot 14](screenshot-auth14.png)
+![Screenshot 14](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(14).png?raw=true)
 
 The login succeeded.
 
