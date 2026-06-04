@@ -196,7 +196,7 @@ username : md5(password)
 
 ## Screenshot 5 — Cracking the MD5 Hash
 
-![Screenshot 5](screenshot-auth5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(5).png?raw=true)
 
 I copied the hash:
 
