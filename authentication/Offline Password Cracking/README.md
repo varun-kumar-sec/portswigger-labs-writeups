@@ -307,7 +307,7 @@ This confirmed that Stored XSS was present.
 
 ## Screenshot 9 — Stealing Victim Cookies
 
-![Screenshot 9](screenshot-auth9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(9).png?raw=true)
 
 After confirming Stored XSS, I submitted the following payload:
 
