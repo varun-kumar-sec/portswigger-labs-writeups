@@ -558,7 +558,7 @@ feature, I copied the successful authenticated request.
 
 ## Screenshot 13 — Successful Login as Carlos
 
-![Screenshot 13](screenshot-auth13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Brute-Forcing%20a%20Stay-Logged-In%20Cookie/screenshots/lab9(13).png?raw=true)
 
 After opening the request in the browser, I was successfully authenticated as:
 
