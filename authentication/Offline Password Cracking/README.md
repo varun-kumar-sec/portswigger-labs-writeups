@@ -442,7 +442,7 @@ The account page exposed:
 
 ## Screenshot 15 — Deleting Carlos's Account
 
-![Screenshot 15](screenshot-auth15.png)
+![Screenshot 15](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Offline%20Password%20Cracking/screenshots/lab10(15).png?raw=true)
 
 I clicked:
 
