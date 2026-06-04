@@ -544,7 +544,7 @@ which confirmed that a valid stay-logged-in cookie had been generated.
 
 ## Screenshot 12 — Request in Browser
 
-![Screenshot 12](screenshot-auth12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Brute-Forcing%20a%20Stay-Logged-In%20Cookie/screenshots/lab9(12).png?raw=true)
 
 Using Burp Suite's:
 
