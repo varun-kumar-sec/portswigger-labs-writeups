@@ -376,7 +376,7 @@ The goal was to recreate valid stay-logged-in cookies automatically.
 
 ## Screenshot 7 — Verifying the Cookie Logic
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Brute-Forcing%20a%20Stay-Logged-In%20Cookie/screenshots/lab9(7).png?raw=true)
 
 I modified the request:
 
