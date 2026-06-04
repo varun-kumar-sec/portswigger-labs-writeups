@@ -178,7 +178,7 @@ before submitting the login request.
 
 ## Screenshot 3 — Successful Login
 
-![Screenshot 3](screenshot-auth3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Brute-Forcing%20a%20Stay-Logged-In%20Cookie/screenshots/lab9(3).png?raw=true)
 
 The login succeeded and I was authenticated as:
 
