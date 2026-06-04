@@ -410,7 +410,7 @@ This would help identify valid authenticated responses.
 
 ## Screenshot 8 — Payload Processing Rules
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Brute-Forcing%20a%20Stay-Logged-In%20Cookie/screenshots/lab9(8).png?raw=true)
 
 I configured Intruder Payload Processing with:
 
