@@ -251,7 +251,7 @@ used for receiving password reset emails.
 
 ## Screenshot 5 — Viewing the Password Reset Email
 
-![Screenshot 5](screenshot-auth5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(5).png?raw=true)
 
 Inside Wiener's mailbox I received a password reset email containing:
 
