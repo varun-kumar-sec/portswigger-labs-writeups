@@ -376,7 +376,7 @@ The application generated a password reset link for Carlos using my exploit serv
 
 ## Screenshot 11 — Capturing Carlos's Reset Token
 
-![Screenshot 11](screenshot-auth11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(11).png?raw=true)
 
 I opened the exploit server logs and observed a request from the victim:
 
