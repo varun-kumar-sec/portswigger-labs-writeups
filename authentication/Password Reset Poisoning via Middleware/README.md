@@ -286,7 +286,7 @@ into both fields and submitted the request.
 
 ## Screenshot 7 — Testing X-Forwarded-Host
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(7).png?raw=true)
 
 I captured the password reset request:
 
