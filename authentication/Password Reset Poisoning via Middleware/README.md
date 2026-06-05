@@ -190,7 +190,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Login Page
 
-![Screenshot 2](screenshot-auth2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
