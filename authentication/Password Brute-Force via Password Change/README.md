@@ -92,7 +92,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Logging in as Wiener
 
-![Screenshot 2](screenshot-auth2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Brute-Force%20via%20Password%20Change/screenshots/lab13(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
