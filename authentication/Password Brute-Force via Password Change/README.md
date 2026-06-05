@@ -138,7 +138,7 @@ Confirm New Password: 123
 
 ## Screenshot 4 — Verifying Password Change
 
-![Screenshot 4](screenshot-auth4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Brute-Force%20via%20Password%20Change/screenshots/lab13(4).png?raw=true)
 
 After changing the password, I returned to the login page and successfully logged in using:
 
