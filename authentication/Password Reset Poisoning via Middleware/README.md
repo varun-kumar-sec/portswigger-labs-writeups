@@ -402,7 +402,7 @@ Attacker Steals Token
 
 ## Screenshot 12 — Using Carlos's Token
 
-![Screenshot 12](screenshot-auth12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(12).png?raw=true)
 
 I first attempted to reuse Wiener's original token:
 
