@@ -127,7 +127,7 @@ and clicked **Log in**.
 
 ## Screenshot 3 — Invalid Credentials
 
-![Screenshot 3](screenshot-auth3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute-Force%20Protection,%20Multiple%20Credentials%20Per%20Request/screenshots/lab13(3).png?raw=true)
 
 The application responded with:
 
