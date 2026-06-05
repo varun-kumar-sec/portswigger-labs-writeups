@@ -284,7 +284,7 @@ This logical flaw allowed password brute forcing without triggering protections.
 
 ## Screenshot 7 — Successful Authentication Response
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute-Force%20Protection,%20Multiple%20Credentials%20Per%20Request/screenshots/lab13(7).png?raw=true)
 
 After sending the modified request, the application responded with:
 
