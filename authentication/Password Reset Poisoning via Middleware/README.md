@@ -428,7 +428,7 @@ and accessed the page successfully.
 
 ## Screenshot 13 — Changing Carlos's Password
 
-![Screenshot 13](screenshot-auth13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(13).png?raw=true)
 
 The application displayed the password reset form.
 
