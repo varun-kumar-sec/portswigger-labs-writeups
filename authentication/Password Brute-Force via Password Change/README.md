@@ -381,7 +381,7 @@ amanda
 
 ## Screenshot 9 — Logging in as Carlos
 
-![Screenshot 9](screenshot-auth9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Brute-Force%20via%20Password%20Change/screenshots/lab13(9).png?raw=true)
 
 I returned to the login page and entered:
 
