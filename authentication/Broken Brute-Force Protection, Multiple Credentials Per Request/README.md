@@ -141,7 +141,7 @@ This confirmed that the supplied password was incorrect.
 
 ## Screenshot 4 — Capturing the Login Request
 
-![Screenshot 4](screenshot-auth4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute-Force%20Protection,%20Multiple%20Credentials%20Per%20Request/screenshots/lab13(4).png?raw=true)
 
 I captured the login request using Burp Suite.
 
