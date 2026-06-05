@@ -394,7 +394,7 @@ Password: amanda
 
 ## Screenshot 10 — Successful Authentication
 
-![Screenshot 10](screenshot-auth10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Brute-Force%20via%20Password%20Change/screenshots/lab13(10).png?raw=true)
 
 The login succeeded and I was authenticated as:
 
