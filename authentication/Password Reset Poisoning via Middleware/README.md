@@ -334,7 +334,7 @@ was being trusted by the application when generating password reset URLs.
 
 ## Screenshot 9 — Obtaining the Exploit Server Domain
 
-![Screenshot 9](screenshot-auth9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(9).png?raw=true)
 
 I copied my exploit server URL:
 
@@ -348,7 +348,7 @@ This server would be used to capture Carlos's reset token.
 
 ## Screenshot 10 — Poisoning Carlos's Password Reset Request
 
-![Screenshot 10](screenshot-auth10.png)
+![Screenshot 10]()
 
 I modified the captured request:
 
