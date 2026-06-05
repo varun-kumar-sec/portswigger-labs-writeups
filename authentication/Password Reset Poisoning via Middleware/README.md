@@ -459,7 +459,7 @@ Password: password
 
 ## Screenshot 15 — Successful Account Takeover
 
-![Screenshot 15](screenshot-auth15.png)
+![Screenshot 15](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(15).png?raw=true)
 
 The login succeeded and I was authenticated as:
 
