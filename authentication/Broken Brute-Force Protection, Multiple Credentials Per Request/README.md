@@ -176,7 +176,7 @@ At this stage, nothing unusual appeared in the response.
 
 ## Screenshot 6 — Injecting Multiple Passwords
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute-Force%20Protection,%20Multiple%20Credentials%20Per%20Request/screenshots/lab13(6).png?raw=true)
 
 Since the request body was JSON, I modified the password field.
 
