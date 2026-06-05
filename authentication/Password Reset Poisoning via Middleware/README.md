@@ -265,7 +265,7 @@ This confirmed that the application generated password reset links using absolut
 
 ## Screenshot 6 — Resetting Wiener's Password
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(6).png?raw=true)
 
 After clicking the link, I was redirected to the password reset page.
 
