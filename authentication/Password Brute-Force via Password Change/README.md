@@ -170,7 +170,7 @@ This indicated that brute-force protection existed on the login page.
 
 ## Screenshot 6 — Discovering the Information Leak
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Brute-Force%20via%20Password%20Change/screenshots/lab13(6).png?raw=true)
 
 After waiting for the lockout period to expire, I logged back in as Wiener.
 
