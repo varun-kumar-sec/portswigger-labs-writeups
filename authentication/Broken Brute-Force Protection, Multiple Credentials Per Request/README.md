@@ -166,7 +166,7 @@ The interesting observation was that the application accepted credentials in **J
 
 ## Screenshot 5 — Rendering the Response
 
-![Screenshot 5](screenshot-auth5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute-Force%20Protection,%20Multiple%20Credentials%20Per%20Request/screenshots/lab13(5).png?raw=true)
 
 I rendered the server response inside Burp Repeater to better understand how the application processed authentication requests.
 
