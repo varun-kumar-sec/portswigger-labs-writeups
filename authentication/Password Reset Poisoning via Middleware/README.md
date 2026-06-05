@@ -348,7 +348,7 @@ This server would be used to capture Carlos's reset token.
 
 ## Screenshot 10 — Poisoning Carlos's Password Reset Request
 
-![Screenshot 10]()
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(10).png?raw=true)
 
 I modified the captured request:
 
