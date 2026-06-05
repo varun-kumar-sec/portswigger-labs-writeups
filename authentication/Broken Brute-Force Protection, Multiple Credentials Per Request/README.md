@@ -304,7 +304,7 @@ This confirmed that one of the supplied passwords inside the array was valid.
 
 ## Screenshot 8 — Using Request in Browser
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Broken%20Brute-Force%20Protection,%20Multiple%20Credentials%20Per%20Request/screenshots/lab13(8).png?raw=true)
 
 I used Burp Suite's:
 
