@@ -153,7 +153,7 @@ This confirmed that the password change feature was functioning correctly.
 
 ## Screenshot 5 — Observing Login Lockout
 
-![Screenshot 5](screenshot-auth5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Brute-Force%20via%20Password%20Change/screenshots/lab13(5).png?raw=true)
 
 I intentionally entered incorrect credentials multiple times.
 
