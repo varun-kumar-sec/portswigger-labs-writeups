@@ -205,7 +205,7 @@ The page contained:
 
 ## Screenshot 3 — Initiating Password Reset
 
-![Screenshot 3](screenshot-auth3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(3).png?raw=true)
 
 I clicked:
 
