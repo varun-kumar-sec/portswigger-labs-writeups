@@ -312,7 +312,7 @@ to determine whether the application trusted the header.
 
 ## Screenshot 8 — Verifying Host Header Injection
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(8).png?raw=true)
 
 After checking the email again, a new password reset email arrived.
 
