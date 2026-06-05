@@ -357,7 +357,7 @@ I then launched the attack.
 
 ## Screenshot 8 — Identifying Carlos's Password
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Brute-Force%20via%20Password%20Change/screenshots/lab13(8).png?raw=true)
 
 After Intruder completed the attack, I reviewed the results.
 
