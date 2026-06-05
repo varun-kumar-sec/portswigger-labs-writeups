@@ -231,7 +231,7 @@ and submitted the request.
 
 ## Screenshot 4 — Accessing the Email Client
 
-![Screenshot 4](screenshot-auth4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(4).png?raw=true)
 
 The lab provided an:
 
