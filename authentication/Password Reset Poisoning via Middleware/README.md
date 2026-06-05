@@ -446,7 +446,7 @@ Carlos's password was successfully changed.
 
 ## Screenshot 14 — Logging in as Carlos
 
-![Screenshot 14](screenshot-auth14.png)
+![Screenshot 14](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Reset%20Poisoning%20via%20Middleware/screenshots/lab11(14).png?raw=true)
 
 I returned to the login page and entered:
 
