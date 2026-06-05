@@ -109,7 +109,7 @@ I entered the credentials and clicked **Log in**.
 
 ## Screenshot 3 — Accessing Password Change Functionality
 
-![Screenshot 3](screenshot-auth3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Brute-Force%20via%20Password%20Change/screenshots/lab13(3).png?raw=true)
 
 After successful authentication, I was logged in as:
 
