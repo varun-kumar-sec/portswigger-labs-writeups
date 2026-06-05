@@ -305,7 +305,7 @@ This turns the password change feature into a password verification oracle.
 
 ## Screenshot 7 — Configuring Burp Intruder
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/Password%20Brute-Force%20via%20Password%20Change/screenshots/lab13(7).png?raw=true)
 
 I captured the password change request:
 
