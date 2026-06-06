@@ -34,6 +34,23 @@ This repository contains practical writeups and walkthroughs for labs completed 
 
 ---
 
+## Authentication
+- [x] Username enumeration via different responses
+- [x] Username enumeration via subtly different responses
+- [x] Username enumeration via response timing
+- [x] Username enumeration via account lock
+- [x] Broken brute force protection, IP block
+- [x] Broken brute-force protection, multiple credentials per request
+- [x] Password brute-force via password change
+- [x] 2FA simple bypass
+- [x] 2FA bypass using a brute-force attack
+- [x] Password reset broken logic
+- [x] Password reset poisoning via middleware
+- [x] Brute-forcing a stay-logged-in cookie
+- [x] Offline password cracking
+
+---
+
 ## Cross-Site Scripting (XSS)
 - [x] Reflected XSS into HTML context with nothing encoded
 - [x] Reflected XSS into attribute with angle brackets HTML-encoded
