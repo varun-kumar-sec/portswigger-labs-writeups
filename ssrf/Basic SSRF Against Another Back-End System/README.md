@@ -109,7 +109,7 @@ At this stage no vulnerability was visible from the user interface.
 
 ## Screenshot 2 — Product Details Page
 
-![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20Another%20Back-End%20System/screenshots/lab2(1).png?raw=true)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20Another%20Back-End%20System/screenshots/lab2(2).png?raw=true)
 
 After clicking a product's **View Details** button, I was redirected to the product page.
 
