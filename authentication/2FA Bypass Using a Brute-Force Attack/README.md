@@ -100,7 +100,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-auth1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Bypass%20Using%20a%20Brute-Force%20Attack/screenshots/lab14(1).png?raw=true)
 
 The application initially displayed:
 
