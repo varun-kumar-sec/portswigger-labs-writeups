@@ -146,7 +146,7 @@ This suggested that the application was retrieving stock information dynamically
 
 ## Screenshot 3 — Identifying the SSRF Entry Point
 
-![Screenshot 3](screenshot-ssrf3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20the%20Local%20Server/screenshots/lab1(3).png?raw=true)
 
 I captured the stock check request:
 
