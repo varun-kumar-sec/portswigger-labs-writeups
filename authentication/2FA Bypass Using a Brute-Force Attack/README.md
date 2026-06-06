@@ -510,7 +510,7 @@ I copied the authenticated response URL.
 
 ## Screenshot 11 — Successful Login as Carlos
 
-![Screenshot 11](screenshot-auth11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Bypass%20Using%20a%20Brute-Force%20Attack/screenshots/lab14(11).png?raw=true)
 
 After pasting the URL into the browser:
 
