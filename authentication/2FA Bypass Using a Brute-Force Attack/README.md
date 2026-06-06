@@ -132,7 +132,7 @@ Log In
 
 ## Screenshot 3 — 2FA Verification Page
 
-![Screenshot 3](screenshot-auth3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Bypass%20Using%20a%20Brute-Force%20Attack/screenshots/lab14(3).png?raw=true)
 
 After successful authentication, I was redirected to the second authentication step.
 
