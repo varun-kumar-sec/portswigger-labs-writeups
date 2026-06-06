@@ -96,7 +96,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-ssrf1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20Another%20Back-End%20System/screenshots/lab2(1).png?raw=true)
 
 The application initially displayed:
 
@@ -109,7 +109,7 @@ At this stage no vulnerability was visible from the user interface.
 
 ## Screenshot 2 — Product Details Page
 
-![Screenshot 2](screenshot-ssrf2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20Another%20Back-End%20System/screenshots/lab2(1).png?raw=true)
 
 After clicking a product's **View Details** button, I was redirected to the product page.
 
@@ -133,7 +133,7 @@ This suggested that stock information was being retrieved dynamically from anoth
 
 ## Screenshot 3 — Identifying the SSRF Entry Point
 
-![Screenshot 3](screenshot-ssrf3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20Another%20Back-End%20System/screenshots/lab2(3).png?raw=true)
 
 I captured the stock-checking request:
 
@@ -161,7 +161,7 @@ because the server trusted whatever URL was supplied.
 
 ## Screenshot 4 — Enumerating the Internal Network
 
-![Screenshot 4](screenshot-ssrf4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20Another%20Back-End%20System/screenshots/lab2(4).png?raw=true)
 
 The lab hinted that an administrative interface existed somewhere within the:
 
@@ -224,7 +224,7 @@ to identify which machine contains the admin panel.
 
 ## Screenshot 5 — Finding the Internal Admin Server
 
-![Screenshot 5](screenshot-ssrf5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20Another%20Back-End%20System/screenshots/lab2(5).png?raw=true)
 
 After launching the Intruder attack, I reviewed the responses.
 
@@ -252,7 +252,7 @@ http://192.168.0.18:8080/admin
 
 ## Screenshot 6 — Accessing the Admin Panel
 
-![Screenshot 6](screenshot-ssrf6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20Another%20Back-End%20System/screenshots/lab2(6).png?raw=true)
 
 After selecting the successful response and rendering it, I gained access to the internal admin panel.
 
@@ -271,7 +271,7 @@ This confirmed that SSRF successfully exposed an internal management interface.
 
 ## Screenshot 7 — Discovering the Delete Endpoint
 
-![Screenshot 7](screenshot-ssrf7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20Another%20Back-End%20System/screenshots/lab2(7).png?raw=true)
 
 While reviewing the response in the Pretty tab, I located the delete functionality:
 
@@ -291,7 +291,7 @@ I copied the URL for the next step.
 
 ## Screenshot 8 — Deleting Carlos
 
-![Screenshot 8](screenshot-ssrf8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20Another%20Back-End%20System/screenshots/lab2(8).png?raw=true)
 
 I modified the SSRF parameter to:
 
