@@ -245,7 +245,7 @@ I copied this path for the next step.
 
 ## Screenshot 6 — Deleting Carlos
 
-![Screenshot 6](screenshot-ssrf6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20the%20Local%20Server/screenshots/lab1(6).png?raw=true)
 
 I modified the parameter again:
 
