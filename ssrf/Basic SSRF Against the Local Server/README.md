@@ -225,7 +225,7 @@ SSRF Successful
 
 ## Screenshot 5 — Discovering the Delete Functionality
 
-![Screenshot 5](screenshot-ssrf5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20the%20Local%20Server/screenshots/lab1(5).png?raw=true)
 
 After examining the response in the Pretty view, I found a link responsible for deleting Carlos:
 
