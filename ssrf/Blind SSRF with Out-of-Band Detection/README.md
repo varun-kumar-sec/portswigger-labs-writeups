@@ -126,7 +126,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-ssrf1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Blind%20SSRF%20with%20Out-of-Band%20Detection/screenshots/lab3(1).png?raw=true)
 
 The application displayed:
 
@@ -139,7 +139,7 @@ At this stage, no obvious SSRF functionality was visible.
 
 ## Screenshot 2 — Viewing a Product
 
-![Screenshot 2](screenshot-ssrf2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Blind%20SSRF%20with%20Out-of-Band%20Detection/screenshots/lab3(2).png?raw=true)
 
 I clicked a random product's:
 
@@ -160,7 +160,7 @@ Nothing immediately appeared vulnerable.
 
 ## Screenshot 3 — Capturing the Request
 
-![Screenshot 3](screenshot-ssrf3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Blind%20SSRF%20with%20Out-of-Band%20Detection/screenshots/lab3(3).png?raw=true)
 
 I captured the request:
 
@@ -215,7 +215,7 @@ In this lab, the backend was processing the Referer header, making it a potentia
 
 ## Screenshot 4 — Injecting Burp Collaborator
 
-![Screenshot 4](screenshot-ssrf4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Blind%20SSRF%20with%20Out-of-Band%20Detection/screenshots/lab3(4).png?raw=true)
 
 I replaced the Referer header value with my Burp Collaborator URL:
 
@@ -241,7 +241,7 @@ If the application attempted to access the supplied URL, the interaction would a
 
 ## Screenshot 5 — Receiving Out-of-Band Interaction
 
-![Screenshot 5](screenshot-ssrf5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Blind%20SSRF%20with%20Out-of-Band%20Detection/screenshots/lab3(5).png?raw=true)
 
 After checking Burp Collaborator, I observed:
 
