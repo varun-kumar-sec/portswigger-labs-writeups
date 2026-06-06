@@ -496,7 +496,7 @@ The redirect revealed the correct 2FA code.
 
 ## Screenshot 10 — Replaying the Successful Response
 
-![Screenshot 10](screenshot-auth10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Bypass%20Using%20a%20Brute-Force%20Attack/screenshots/lab14(10).png?raw=true)
 
 Using Burp Suite's feature:
 
