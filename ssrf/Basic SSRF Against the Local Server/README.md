@@ -109,7 +109,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-ssrf1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20the%20Local%20Server/screenshots/lab1(1).png?raw=true)
 
 The application initially displayed:
 
