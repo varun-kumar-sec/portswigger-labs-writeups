@@ -185,7 +185,7 @@ This ensured every request used a valid authenticated session.
 
 ## Screenshot 4 — Session Handling Rules Configuration
 
-![Screenshot 4](screenshot-auth4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Bypass%20Using%20a%20Brute-Force%20Attack/screenshots/lab14(4).png?raw=true)
 
 I opened:
 
