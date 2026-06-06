@@ -428,7 +428,7 @@ This confirmed that the macro was working correctly.
 
 ![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Bypass%20Using%20a%20Brute-Force%20Attack/screenshots/lab14(9).png?raw=true)
 
-After configuring session handling, I launched the brute-force attack against the security code field.
+After configuring session handling, **In the resource pool section of intruder i created a custom resource pool and setting it's Maximum concurrent request to 1**, And then i launched the brute-force attack against the security code field.
 
 Burp Intruder tested:
 
