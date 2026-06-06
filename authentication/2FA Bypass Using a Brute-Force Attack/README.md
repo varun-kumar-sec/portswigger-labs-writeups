@@ -402,7 +402,7 @@ Ready to Submit Security Code
 
 ## Screenshot 8 — Testing the Macro
 
-![Screenshot 8](screenshot-auth8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Bypass%20Using%20a%20Brute-Force%20Attack/screenshots/lab14(8).png?raw=true)
 
 I clicked:
 
