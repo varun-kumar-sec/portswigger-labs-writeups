@@ -96,7 +96,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20Another%20Back-End%20System/screenshots/lab2(1).png?raw=true)
+![Screenshot 1]()
 
 The application initially displayed:
 
