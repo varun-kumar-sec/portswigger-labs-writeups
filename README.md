@@ -35,9 +35,22 @@ This repository contains practical writeups and walkthroughs for labs completed 
 ---
 
 ## Cross-Site Scripting (XSS)
-- [ ] Reflected XSS
-- [ ] Stored XSS
-- [ ] DOM-based XSS
+- [x] Reflected XSS into HTML context with nothing encoded
+- [x] Reflected XSS into attribute with angle brackets HTML-encoded
+- [x] Stored XSS into HTML context with nothing encoded
+- [x] DOM XSS in document.write sink using source location.search
+- [x] DOM XSS in innerHTML sink using source location.search
+- [x] Reflected XSS into JavaScript string with single quote and backslash escaped
+- [x] Reflected XSS into HTML context with most tags and attributes blocked
+- [x] Stored XSS into anchor href attribute with double quotes HTML-encoded
+- [x] Stored DOM XSS
+- [x] Reflected DOM XSS
+- [x] Exploiting cross-site scripting to steal cookies
+- [x] Exploiting XSS to perform CSRF
+- [x] Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped
+- [x] Reflected XSS with AngularJS sandbox escape
+- [x] Reflected XSS protected by CSP, with CSP bypass
+- [x] Reflected XSS with event handlers and href attributes blocked
 
 ---
 
