@@ -178,7 +178,7 @@ This became the SSRF attack surface.
 
 ## Screenshot 4 — Accessing the Internal Admin Panel
 
-![Screenshot 4](screenshot-ssrf4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20the%20Local%20Server/screenshots/lab1(4).png?raw=true)
 
 The lab provided a hint that an admin panel existed on:
 
