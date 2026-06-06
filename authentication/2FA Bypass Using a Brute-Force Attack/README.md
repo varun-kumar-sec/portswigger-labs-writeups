@@ -324,7 +324,7 @@ This allowed Burp to automatically use fresh authentication data.
 
 ## Screenshot 7 — Macro Editor Configuration
 
-![Screenshot 7](screenshot-auth7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Bypass%20Using%20a%20Brute-Force%20Attack/screenshots/lab14(7).png?raw=true)
 
 Inside the Macro Editor, I added three requests:
 
