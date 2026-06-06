@@ -287,7 +287,7 @@ Macros are commonly used for:
 
 ## Screenshot 6 — Session Handling Action Editor
 
-![Screenshot 6](screenshot-auth6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Bypass%20Using%20a%20Brute-Force%20Attack/screenshots/lab14(6).png?raw=true)
 
 Inside:
 
