@@ -426,7 +426,7 @@ This confirmed that the macro was working correctly.
 
 ## Screenshot 9 — Brute Forcing the Security Code
 
-![Screenshot 9](screenshot-auth9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Bypass%20Using%20a%20Brute-Force%20Attack/screenshots/lab14(9).png?raw=true)
 
 After configuring session handling, I launched the brute-force attack against the security code field.
 
