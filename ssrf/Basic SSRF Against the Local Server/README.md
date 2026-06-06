@@ -122,7 +122,7 @@ At this stage, there was no visible indication of an SSRF vulnerability.
 
 ## Screenshot 2 — Product Details Page
 
-![Screenshot 2](screenshot-ssrf2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/Basic%20SSRF%20Against%20the%20Local%20Server/screenshots/lab1(2).png?raw=true)
 
 After clicking a product's **View Details** button, I was redirected to the product page.
 
