@@ -209,7 +209,7 @@ This rule would automatically execute a predefined macro before each brute-force
 
 ## Screenshot 5 — Session Handling Rule Editor
 
-![Screenshot 5](screenshot-auth5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/authentication/2FA%20Bypass%20Using%20a%20Brute-Force%20Attack/screenshots/lab14(5).png?raw=true)
 
 Inside the:
 
