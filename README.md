@@ -88,6 +88,18 @@ This repository contains practical writeups and walkthroughs for labs completed 
 
 ---
 
+## SSRF
+
+- [x] Basic SSRF against the local server
+- [x] Basic SSRF against another back-end system
+- [x] Blind SSRF with out-of-band detection
+- [x] Blind SSRF with Shellshock exploitation
+- [x] SSRF with blacklist-based input filter
+- [x] SSRF with whitelist-based input filter
+- [x] SSRF with filter bypass via open redirection vulnerability
+
+
+---
 ## 📖 Disclaimer
 This repository is created strictly for educational and ethical security learning purposes. All testing was performed within intentionally vulnerable lab environments provided by PortSwigger Web Security Academy.
 
