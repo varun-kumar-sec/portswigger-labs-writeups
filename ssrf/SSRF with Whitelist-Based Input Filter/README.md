@@ -125,7 +125,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-ssrf-whitelist1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/SSRF%20with%20Whitelist-Based%20Input%20Filter/screenshots/lab7(1).png?raw=true)
 
 The application displayed:
 
@@ -136,7 +136,7 @@ The application displayed:
 
 ## Screenshot 2 — Accessing Product Details
 
-![Screenshot 2](screenshot-ssrf-whitelist2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/SSRF%20with%20Whitelist-Based%20Input%20Filter/screenshots/lab7(2).png?raw=true)
 
 After opening a product page, I found a:
 
@@ -156,7 +156,7 @@ Clicking it returned:
 
 ## Screenshot 3 — Capturing the Stock Check Request
 
-![Screenshot 3](screenshot-ssrf-whitelist3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/SSRF%20with%20Whitelist-Based%20Input%20Filter/screenshots/lab7(3).png?raw=true)
 
 The request was:
 
@@ -176,7 +176,7 @@ This clearly indicated that the backend server was making requests to the suppli
 
 ## Screenshot 4 — Testing localhost
 
-![Screenshot 4](screenshot-ssrf-whitelist4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/SSRF%20with%20Whitelist-Based%20Input%20Filter/screenshots/lab7(4).png?raw=true)
 
 I modified the parameter:
 
@@ -198,7 +198,7 @@ This revealed that host validation was being performed.
 
 ## Screenshot 5 — Confirming the Whitelist
 
-![Screenshot 5](screenshot-ssrf-whitelist5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/SSRF%20with%20Whitelist-Based%20Input%20Filter/screenshots/lab7(5).png?raw=true)
 
 I tested:
 
@@ -224,7 +224,7 @@ was accepted by the whitelist.
 
 ## Screenshot 6 — Testing Username@Host Syntax
 
-![Screenshot 6](screenshot-ssrf-whitelist6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/SSRF%20with%20Whitelist-Based%20Input%20Filter/screenshots/lab7(6).png?raw=true)
 
 Next I tested:
 
@@ -286,7 +286,7 @@ is treated as the actual host.
 
 ## Screenshot 7 — Whitelist Bypass
 
-![Screenshot 7](screenshot-ssrf-whitelist7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/SSRF%20with%20Whitelist-Based%20Input%20Filter/screenshots/lab7(7).png?raw=true)
 
 I used:
 
@@ -426,7 +426,7 @@ This mismatch created the bypass.
 
 ## Screenshot 8 — Accessing the Admin Panel
 
-![Screenshot 8](screenshot-ssrf-whitelist8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/SSRF%20with%20Whitelist-Based%20Input%20Filter/screenshots/lab7(8).png?raw=true)
 
 After bypassing the filter, I rendered the response.
 
@@ -449,7 +449,7 @@ and delete buttons.
 
 ## Screenshot 9 — Finding Carlos's Delete Link
 
-![Screenshot 9](screenshot-ssrf-whitelist9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/SSRF%20with%20Whitelist-Based%20Input%20Filter/screenshots/lab7(9).png?raw=true)
 
 While reviewing the HTML response, I found:
 
@@ -463,7 +463,7 @@ This revealed the endpoint needed to delete Carlos.
 
 ## Screenshot 10 — Deleting Carlos
 
-![Screenshot 10](screenshot-ssrf-whitelist10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/ssrf/SSRF%20with%20Whitelist-Based%20Input%20Filter/screenshots/lab7(10).png?raw=true)
 
 I modified the payload:
 
