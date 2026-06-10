@@ -90,7 +90,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-fileupload1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Web%20Shell%20Upload/screenshots/lab1(1).png?raw=true)
 
 The application initially displayed:
 
@@ -101,7 +101,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Logging In
 
-![Screenshot 2](screenshot-fileupload2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Web%20Shell%20Upload/screenshots/lab1(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
@@ -118,7 +118,7 @@ I entered the credentials and logged in.
 
 ## Screenshot 3 — Avatar Upload Functionality
 
-![Screenshot 3](screenshot-fileupload3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Web%20Shell%20Upload/screenshots/lab1(3).png?raw=true)
 
 After successful authentication, I was redirected to my account page.
 
@@ -135,7 +135,7 @@ The avatar upload functionality became the primary attack surface.
 
 ## Screenshot 4 — Uploading a Legitimate Image
 
-![Screenshot 4](screenshot-fileupload4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Web%20Shell%20Upload/screenshots/lab1(4).png?raw=true)
 
 To understand how uploads worked, I selected a normal image:
 
@@ -154,7 +154,7 @@ This helped verify:
 
 ## Screenshot 5 — Successful Image Upload
 
-![Screenshot 5](screenshot-fileupload5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Web%20Shell%20Upload/screenshots/lab1(5).png?raw=true)
 
 The application responded:
 
@@ -174,7 +174,7 @@ directory.
 
 ## Screenshot 6 — Uploading a Malicious PHP File
 
-![Screenshot 6](screenshot-fileupload6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Web%20Shell%20Upload/screenshots/lab1(6).png?raw=true)
 
 After confirming the upload functionality, I attempted to upload a PHP file:
 
@@ -220,7 +220,7 @@ Display Secret
 
 ## Screenshot 7 — PHP File Successfully Uploaded
 
-![Screenshot 7](screenshot-fileupload7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Web%20Shell%20Upload/screenshots/lab1(7).png?raw=true)
 
 The application responded:
 
@@ -242,7 +242,7 @@ files entirely.
 
 ## Screenshot 8 — Inspecting the Upload Request
 
-![Screenshot 8](screenshot-fileupload8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Web%20Shell%20Upload/screenshots/lab1(8).png?raw=true)
 
 I captured the upload request:
 
@@ -298,7 +298,7 @@ contains the malicious code that will execute on the server.
 
 ## Screenshot 9 — Executing the Uploaded PHP File
 
-![Screenshot 9](screenshot-fileupload9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Web%20Shell%20Upload/screenshots/lab1(9).png?raw=true)
 
 After returning to the account page, the avatar appeared as a broken image.
 
@@ -356,7 +356,7 @@ Remote Code Execution
 
 ## Screenshot 10 — Solving the Lab
 
-![Screenshot 10](screenshot-fileupload10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Web%20Shell%20Upload/screenshots/lab1(10).png?raw=true)
 
 I copied the secret:
 
