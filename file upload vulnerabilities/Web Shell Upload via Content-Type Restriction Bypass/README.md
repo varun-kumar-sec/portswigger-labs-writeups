@@ -123,7 +123,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-fileupload1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Content-Type%20Restriction%20Bypass/screenshots/lab2(1).png?raw=true)
 
 The application initially displayed:
 
@@ -134,7 +134,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Login Page
 
-![Screenshot 2](screenshot-fileupload2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Content-Type%20Restriction%20Bypass/screenshots/lab2(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
@@ -151,7 +151,7 @@ I entered the credentials and logged in.
 
 ## Screenshot 3 — Upload Functionality
 
-![Screenshot 3](screenshot-fileupload3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Content-Type%20Restriction%20Bypass/screenshots/lab2(3).png?raw=true)
 
 After logging in as:
 
@@ -176,7 +176,7 @@ and uploaded it.
 
 ## Screenshot 4 — Successful Image Upload
 
-![Screenshot 4](screenshot-fileupload4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Content-Type%20Restriction%20Bypass/screenshots/lab2(4).png?raw=true)
 
 The application responded:
 
@@ -190,7 +190,7 @@ indicating that image uploads were allowed.
 
 ## Screenshot 5 — Upload Verification
 
-![Screenshot 5](screenshot-fileupload5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Content-Type%20Restriction%20Bypass/screenshots/lab2(5).png?raw=true)
 
 Returning to the account page confirmed that:
 
@@ -216,7 +216,7 @@ containing:
 
 ## Screenshot 6 — Upload Rejected
 
-![Screenshot 6](screenshot-fileupload6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Content-Type%20Restriction%20Bypass/screenshots/lab2(6).png?raw=true)
 
 The application blocked the upload and displayed:
 
@@ -237,7 +237,7 @@ checking.
 
 ## Screenshot 7 — Capturing the Upload Request
 
-![Screenshot 7](screenshot-fileupload7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Content-Type%20Restriction%20Bypass/screenshots/lab2(7).png?raw=true)
 
 I intercepted the upload request:
 
@@ -259,7 +259,7 @@ The server was identifying the file as PHP based on the Content-Type header.
 
 ## Screenshot 8 — Bypassing Content-Type Validation
 
-![Screenshot 8](screenshot-fileupload8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Content-Type%20Restriction%20Bypass/screenshots/lab2(8).png?raw=true)
 
 Using Burp Repeater, I modified:
 
@@ -321,7 +321,7 @@ The file remained a PHP script despite pretending to be an image.
 
 ## Screenshot 9 — Executing the Web Shell
 
-![Screenshot 9](screenshot-fileupload9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Content-Type%20Restriction%20Bypass/screenshots/lab2(9).png?raw=true)
 
 After the upload, I navigated directly to:
 
@@ -345,7 +345,7 @@ The server executed the PHP file and returned Carlos's secret:
 
 ## Screenshot 10 — Solving the Lab
 
-![Screenshot 10](screenshot-fileupload10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Content-Type%20Restriction%20Bypass/screenshots/lab2(10).png?raw=true)
 
 I copied the retrieved secret and submitted it through the lab solution box.
 
