@@ -102,7 +102,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-upload1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(1).png?raw=true)
 
 The application initially displayed:
 
@@ -113,7 +113,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Login Page
 
-![Screenshot 2](screenshot-upload2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
@@ -130,7 +130,7 @@ I entered the credentials and logged in.
 
 ## Screenshot 3 — Avatar Upload Functionality
 
-![Screenshot 3](screenshot-upload3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(3).png?raw=true)
 
 After logging in as:
 
@@ -155,7 +155,7 @@ and uploaded it.
 
 ## Screenshot 4 — Successful Image Upload
 
-![Screenshot 4](screenshot-upload4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(4).png?raw=true)
 
 The application responded:
 
@@ -169,7 +169,7 @@ confirming that uploads were functioning correctly.
 
 ## Screenshot 5 — Attempting PHP Upload
 
-![Screenshot 5](screenshot-upload5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(5).png?raw=true)
 
 After returning to **My Account**, I confirmed the image was displayed correctly.
 
@@ -191,7 +191,7 @@ and attempted to upload it.
 
 ## Screenshot 6 — Upload Rejected
 
-![Screenshot 6](screenshot-upload6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(6).png?raw=true)
 
 The application responded:
 
@@ -212,7 +212,7 @@ files were blocked by the upload validation mechanism.
 
 ## Screenshot 7 — Identifying Apache
 
-![Screenshot 7](screenshot-upload7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(7).png?raw=true)
 
 I captured the upload request:
 
@@ -267,7 +267,7 @@ Instead of bypassing the blacklist directly, I decided to modify Apache's behavi
 
 ## Screenshot 8 — Uploading a Malicious .htaccess File
 
-![Screenshot 8](screenshot-upload8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(8).png?raw=true)
 
 I modified the upload request:
 
@@ -325,7 +325,7 @@ The file avatars/.htaccess has been uploaded.
 
 ## Screenshot 9 — Uploading the Web Shell
 
-![Screenshot 9](screenshot-upload9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(9).png?raw=true)
 
 Next, I uploaded:
 
@@ -378,7 +378,7 @@ The file avatars/virus.qwert has been uploaded.
 
 ## Screenshot 10 — Using "Show Response in Browser"
 
-![Screenshot 10](screenshot-upload10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(10).png?raw=true)
 
 I used Burp Suite's feature:
 
@@ -394,7 +394,7 @@ This allowed me to access the uploaded resource directly through the browser.
 
 ## Screenshot 11 — Accessing the Uploaded File
 
-![Screenshot 11](screenshot-upload11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(11).png?raw=true)
 
 After opening the copied URL, I saw the upload confirmation page:
 
@@ -408,7 +408,7 @@ I then returned to the account page.
 
 ## Screenshot 12 — Executing the Web Shell
 
-![Screenshot 12](screenshot-upload12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Extension%20Blacklist%20Bypass/screenshots/lab4(12).png?raw=true)
 
 Back on the account page, the avatar appeared as a broken image.
 
