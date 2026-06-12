@@ -114,7 +114,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-upload1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(1).png?raw=true)
 
 The application initially displayed:
 
@@ -125,7 +125,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Login Page
 
-![Screenshot 2](screenshot-upload2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(2).png?raw=true)
 
 After clicking **My Account**, I reached the login page.
 
@@ -142,7 +142,7 @@ I entered them and logged in.
 
 ## Screenshot 3 — Upload Functionality
 
-![Screenshot 3](screenshot-upload3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(3).png?raw=true)
 
 After logging in as:
 
@@ -167,7 +167,7 @@ and uploaded it.
 
 ## Screenshot 4 — Successful Image Upload
 
-![Screenshot 4](screenshot-upload4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(4).png?raw=true)
 
 The application responded:
 
@@ -181,7 +181,7 @@ indicating successful upload.
 
 ## Screenshot 5 — Finding the Upload Path
 
-![Screenshot 5](screenshot-upload5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(5).png?raw=true)
 
 After returning to **My Account**, the uploaded image appeared correctly.
 
@@ -197,7 +197,7 @@ This revealed where uploaded files were stored.
 
 ## Screenshot 6 — Uploading a PHP Web Shell
 
-![Screenshot 6](screenshot-upload6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(6).png?raw=true)
 
 Next, I uploaded:
 
@@ -217,7 +217,7 @@ The payload simply reads Carlos's secret file and displays it.
 
 ## Screenshot 7 — PHP Upload Accepted
 
-![Screenshot 7](screenshot-upload7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(7).png?raw=true)
 
 The application responded:
 
@@ -231,7 +231,7 @@ showing that PHP files were allowed.
 
 ## Screenshot 8 — PHP Not Executing
 
-![Screenshot 8](screenshot-upload8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(8).png?raw=true)
 
 After opening:
 
@@ -255,7 +255,7 @@ The server stored the file but did not execute PHP code inside the avatar direct
 
 ## Screenshot 9 — Attempting Path Traversal
 
-![Screenshot 9](screenshot-upload9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(9).png?raw=true)
 
 I captured the upload request:
 
@@ -333,7 +333,7 @@ but the attack did not yet work.
 
 ## Screenshot 10 — Verifying the Upload
 
-![Screenshot 10](screenshot-upload10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(10).png?raw=true)
 
 Using Burp's:
 
@@ -353,7 +353,7 @@ The file avatars/virus.php has been uploaded.
 
 ## Screenshot 11 — File Not Found
 
-![Screenshot 11](screenshot-upload11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(11).png?raw=true)
 
 After returning to the avatar page and opening the image in a new tab, I received:
 
@@ -398,7 +398,7 @@ Therefore the requested file could not be found.
 
 ## Screenshot 12 — Encoding the Traversal Sequence
 
-![Screenshot 12](screenshot-upload12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(12).png?raw=true)
 
 I modified the filename again:
 
@@ -471,7 +471,7 @@ Path Traversal Filter Bypass
 
 ## Screenshot 13 — Confirming the Upload
 
-![Screenshot 13](screenshot-upload13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(13).png?raw=true)
 
 Again using:
 
@@ -493,7 +493,7 @@ as the uploaded location.
 
 ## Screenshot 14 — Accessing the Executable PHP File
 
-![Screenshot 14](screenshot-upload14.png)
+![Screenshot 14](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(14).png?raw=true)
 
 I manually navigated to:
 
@@ -557,7 +557,7 @@ This resulted in Remote Code Execution.
 
 ## Screenshot 15 — Solving the Lab
 
-![Screenshot 15](screenshot-upload15.png)
+![Screenshot 15](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Path%20Traversal/screenshots/lab3(15).png?raw=true)
 
 I copied the secret and submitted it through the lab banner.
 
