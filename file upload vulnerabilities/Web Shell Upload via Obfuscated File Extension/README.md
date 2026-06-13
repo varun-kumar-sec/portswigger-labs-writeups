@@ -79,7 +79,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-upload1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(1).png?raw=true)
 
 The application initially displayed:
 
@@ -90,7 +90,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Login Page
 
-![Screenshot 2](screenshot-upload2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
@@ -107,7 +107,7 @@ I entered the credentials and logged in.
 
 ## Screenshot 3 — Avatar Upload Functionality
 
-![Screenshot 3](screenshot-upload3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(3).png?raw=true)
 
 After logging in as:
 
@@ -132,7 +132,7 @@ and uploaded it.
 
 ## Screenshot 4 — Successful Image Upload
 
-![Screenshot 4](screenshot-upload4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(4).png?raw=true)
 
 The application responded:
 
@@ -146,7 +146,7 @@ confirming that uploads were functioning correctly.
 
 ## Screenshot 5 — Attempting a PHP Upload
 
-![Screenshot 5](screenshot-upload5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(5).png?raw=true)
 
 After returning to **My Account**, I confirmed that:
 
@@ -174,7 +174,7 @@ and attempted to upload it.
 
 ## Screenshot 6 — Upload Rejected
 
-![Screenshot 6](screenshot-upload6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(6).png?raw=true)
 
 The application responded:
 
@@ -189,7 +189,7 @@ This confirmed that direct PHP uploads were blocked.
 
 ## Screenshot 7 — Capturing the Upload Request
 
-![Screenshot 7](screenshot-upload7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(7).png?raw=true)
 
 I captured the upload request:
 
@@ -215,7 +215,7 @@ The application was clearly validating the filename extension.
 
 ## Screenshot 8 — Testing Double Extensions
 
-![Screenshot 8](screenshot-upload8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(8).png?raw=true)
 
 I modified the filename:
 
@@ -273,7 +273,7 @@ The file avatars/virus.php has been uploaded.
 
 ## Screenshot 9 — Accessing the Uploaded File
 
-![Screenshot 9](screenshot-upload9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(9).png?raw=true)
 
 I copied the uploaded file URL and opened it in the browser.
 
@@ -285,7 +285,7 @@ No PHP execution occurred yet.
 
 ## Screenshot 10 — Execution Failure
 
-![Screenshot 10](screenshot-upload10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(10).png?raw=true)
 
 After returning to the account page, the avatar appeared as a broken image.
 
@@ -330,7 +330,7 @@ Execution Bypass = Failure
 
 ## Screenshot 11 — Using Null Byte Injection
 
-![Screenshot 11](screenshot-upload11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(11).png?raw=true)
 
 Next, I modified the filename:
 
@@ -422,7 +422,7 @@ The upload succeeded.
 
 ## Screenshot 12 — Opening the Uploaded Resource
 
-![Screenshot 12](screenshot-upload12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(12).png?raw=true)
 
 I copied the response URL and opened it in the browser.
 
@@ -434,7 +434,7 @@ The real test would occur when accessing the actual uploaded file.
 
 ## Screenshot 13 — Broken Image and Not Found Error
 
-![Screenshot 13](screenshot-upload13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(13).png?raw=true)
 
 After returning to the account page, the avatar appeared as a broken image.
 
@@ -495,7 +495,7 @@ existed on disk, Apache returned:
 
 ## Screenshot 14 — Accessing the Real PHP File
 
-![Screenshot 14](screenshot-upload14.png)
+![Screenshot 14](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(14).png?raw=true)
 
 I modified the URL manually:
 
@@ -545,7 +545,7 @@ and revealed the secret.
 
 ## Screenshot 15 — Solving the Lab
 
-![Screenshot 15](screenshot-upload15.png)
+![Screenshot 15](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Obfuscated%20File%20Extension/screenshots/lab5(15).png?raw=true)
 
 I copied the secret and submitted it through the lab banner.
 
