@@ -51,6 +51,17 @@ This repository contains practical writeups and walkthroughs for labs completed 
 
 ---
 
+## File upload vulnerabilities
+- [x] Remote Code Execution via Web Shell Upload
+- [x] Web Shell Upload via Content-Type Restriction Bypass
+- [x] Web Shell Upload via Path Traversal
+- [x] Web Shell via Extension Blacklist Bypass
+- [x] Web Shell Upload via Obfuscated File Extension
+- [x] Remote Code Execution via Polyglot Web Shell Upload
+- [x] Web Shell Upload via Race Condition
+
+---
+
 ## Cross-Site Scripting (XSS)
 - [x] Reflected XSS into HTML context with nothing encoded
 - [x] Reflected XSS into attribute with angle brackets HTML-encoded
