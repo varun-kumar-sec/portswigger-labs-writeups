@@ -80,7 +80,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Understanding the Vulnerable PHP Code
 
-![Screenshot 1](screenshot-upload1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7.png?raw=true)
 
 The lab provided a PHP code snippet explaining how uploads were processed.
 
@@ -194,7 +194,7 @@ before deletion happens.
 
 ## Screenshot 2 — Normal Webpage
 
-![Screenshot 2](screenshot-upload2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(1).png?raw=true)
 
 The application displayed a normal webpage containing a:
 
@@ -208,7 +208,7 @@ button.
 
 ## Screenshot 3 — Login Page
 
-![Screenshot 3](screenshot-upload3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
@@ -225,7 +225,7 @@ I entered them and logged in.
 
 ## Screenshot 4 — Avatar Upload Functionality
 
-![Screenshot 4](screenshot-upload4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(3).png?raw=true)
 
 After logging in as:
 
@@ -250,7 +250,7 @@ to verify uploads worked correctly.
 
 ## Screenshot 5 — Successful Image Upload
 
-![Screenshot 5](screenshot-upload5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(4).png?raw=true)
 
 The application responded:
 
@@ -264,7 +264,7 @@ confirming that uploads were working normally.
 
 ## Screenshot 6 — Attempting a PHP Upload
 
-![Screenshot 6](screenshot-upload6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(5).png?raw=true)
 
 Back on the My Account page, I selected:
 
@@ -284,7 +284,7 @@ and attempted to upload it.
 
 ## Screenshot 7 — Upload Rejected
 
-![Screenshot 7](screenshot-upload7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(6).png?raw=true)
 
 The application responded:
 
@@ -311,7 +311,7 @@ The race condition exists before the deletion step.
 
 ## Screenshot 8 — Capturing the Upload Request
 
-![Screenshot 8](screenshot-upload8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(7).png?raw=true)
 
 I captured the malicious upload request:
 
@@ -331,7 +331,7 @@ This request would be responsible for placing the PHP file on disk.
 
 ## Screenshot 9 — Preparing the Retrieval Request
 
-![Screenshot 9](screenshot-upload9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(8).png?raw=true)
 
 I captured another request that would later be modified.
 
@@ -347,7 +347,7 @@ This request would be converted into a request for the uploaded web shell.
 
 ## Screenshot 10 — Creating the Race Condition Attack
 
-![Screenshot 10](screenshot-upload10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(9).png?raw=true)
 
 I modified the GET request to:
 
@@ -445,7 +445,7 @@ We are trying to hit that exact window.
 
 ## Screenshot 11 — Sending Requests in Parallel
 
-![Screenshot 11](screenshot-upload11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(10).png?raw=true)
 
 I grouped both requests and selected:
 
@@ -496,7 +496,7 @@ This greatly increases the chances of reaching the uploaded file before it gets 
 
 ## Screenshot 12 — Winning the Race
 
-![Screenshot 12](screenshot-upload12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(11).png?raw=true)
 
 After sending the grouped requests multiple times, one request succeeded.
 
@@ -530,7 +530,7 @@ The race condition was successfully exploited.
 
 ## Screenshot 13 — Solving the Lab
 
-![Screenshot 13](screenshot-upload13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Web%20Shell%20Upload%20via%20Race%20Condition/screenshots/lab7(12).png?raw=true)
 
 I copied Carlos's secret and submitted it using the lab solution banner.
 
