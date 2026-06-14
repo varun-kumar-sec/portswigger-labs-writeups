@@ -452,7 +452,7 @@ Within the page output I found:
 
 ```text
 START
-<secret>
+XjHVFkOVRux80u29I2KPhHlZjhTp5Xuo
 END
 ```
 
