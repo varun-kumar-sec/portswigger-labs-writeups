@@ -74,7 +74,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-![Screenshot 1](screenshot-upload1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(1).png?raw=true)
 
 The application initially displayed:
 
@@ -85,7 +85,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Login Page
 
-![Screenshot 2](screenshot-upload2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(2).png?raw=true)
 
 After clicking **My Account**, I landed on the login page.
 
@@ -102,7 +102,7 @@ I entered the credentials and logged in.
 
 ## Screenshot 3 — Avatar Upload Functionality
 
-![Screenshot 3](screenshot-upload3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(3).png?raw=true)
 
 After successful authentication as:
 
@@ -127,7 +127,7 @@ and uploaded it.
 
 ## Screenshot 4 — Successful Image Upload
 
-![Screenshot 4](screenshot-upload4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(4).png?raw=true)
 
 The application responded:
 
@@ -141,7 +141,7 @@ confirming that image uploads worked correctly.
 
 ## Screenshot 5 — Attempting a Direct PHP Upload
 
-![Screenshot 5](screenshot-upload5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(5).png?raw=true)
 
 After returning to the account page, I selected:
 
@@ -161,7 +161,7 @@ and attempted to upload it.
 
 ## Screenshot 6 — Upload Rejected
 
-![Screenshot 6](screenshot-upload6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(6).png?raw=true)
 
 The application responded:
 
@@ -214,7 +214,7 @@ This meant a simple PHP upload would not work.
 
 ## Screenshot 7 — Inspecting the Legitimate Image
 
-![Screenshot 7](screenshot-upload7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(.).png?raw=true)
 
 To understand why the image passed validation, I examined the JPEG using:
 
@@ -243,7 +243,7 @@ was recognized as a legitimate image.
 
 ## Screenshot 8 — Inspecting the PHP File
 
-![Screenshot 8](screenshot-upload8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(..).png?raw=true)
 
 Next, I examined the PHP file:
 
@@ -275,7 +275,7 @@ PHP
 
 ## Screenshot 9 — Creating the Polyglot File
 
-![Screenshot 9](screenshot-upload9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(7).png?raw=true)
 
 To bypass the validation, I created a polyglot file using:
 
@@ -390,7 +390,7 @@ making it a polyglot.
 
 ## Screenshot 10 — Verifying the Polyglot File
 
-![Screenshot 10](screenshot-upload10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(8).png?raw=true)
 
 I inspected the new file:
 
@@ -412,7 +412,7 @@ The file still looked like a valid JPEG image while now containing PHP code insi
 
 ## Screenshot 11 — Uploading the Polyglot File
 
-![Screenshot 11](screenshot-upload11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(11).png?raw=true)
 
 I returned to the application and uploaded:
 
@@ -426,7 +426,7 @@ Because the file still contained valid JPEG structures, it passed the applicatio
 
 ## Screenshot 12 — Upload Successful
 
-![Screenshot 12](screenshot-upload12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(12).png?raw=true)
 
 The application responded:
 
@@ -440,7 +440,7 @@ confirming that the polyglot file bypassed the upload restrictions.
 
 ## Screenshot 13 — Executing the Polyglot Web Shell
 
-![Screenshot 13](screenshot-upload13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/file%20upload%20vulnerabilities/Remote%20Code%20Execution%20via%20Polyglot%20Web%20Shell%20Upload/screenshots/lab6(13).png?raw=true)
 
 After returning to the account page, the avatar appeared as a broken image.
 
