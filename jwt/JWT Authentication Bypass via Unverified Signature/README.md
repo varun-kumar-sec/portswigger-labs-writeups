@@ -159,7 +159,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Initial Application
 
-![Screenshot 1](screenshot-upload1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(1).png?raw=true)
 
 The application initially displayed:
 
@@ -170,7 +170,7 @@ The application initially displayed:
 
 ## Screenshot 2 — Login
 
-![Screenshot 2](screenshot-upload2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(2).png?raw=true)
 
 After clicking **My Account**, I was redirected to the login page.
 
@@ -187,7 +187,7 @@ I entered the credentials and logged in.
 
 ## Screenshot 3 — Attempting to Access Admin Panel
 
-![Screenshot 3](screenshot-upload3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(3).png?raw=true)
 
 After successfully logging in as:
 
@@ -218,7 +218,7 @@ This confirmed that:
 
 ## Screenshot 4 — Capturing the Request
 
-![Screenshot 4](screenshot-upload4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(4).png?raw=true)
 
 I captured the request:
 
@@ -252,7 +252,7 @@ indicating that my current account lacked administrator privileges.
 
 ## Screenshot 5 — Inspecting the JWT Payload
 
-![Screenshot 5](screenshot-upload5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(5).png?raw=true)
 
 Using Burp's JWT Inspector, I selected the payload section of the token.
 
@@ -306,7 +306,7 @@ This was the most interesting field because it controlled who the application be
 
 ## Screenshot 6 — Modifying the Subject
 
-![Screenshot 6](screenshot-upload6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(6).png?raw=true)
 
 I changed:
 
@@ -344,7 +344,7 @@ Apply Changes
 
 ## Screenshot 7 — Modified JWT Token
 
-![Screenshot 7](screenshot-upload7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(7).png?raw=true)
 
 After clicking **Apply Changes**, Burp automatically regenerated the payload portion of the JWT.
 
@@ -404,7 +404,7 @@ privilege escalation.
 
 ## Screenshot 8 — Discovering the Delete Function
 
-![Screenshot 8](screenshot-upload8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(8).png?raw=true)
 
 After gaining administrator access, I reviewed the response.
 
@@ -428,7 +428,7 @@ Therefore I copied:
 
 ## Screenshot 9 — Deleting Carlos
 
-![Screenshot 9](screenshot-upload9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(9).png?raw=true)
 
 I modified the request:
 
@@ -442,7 +442,7 @@ and sent it.
 
 ## Screenshot 10 — Redirect Response
 
-![Screenshot 10](screenshot-upload10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(10).png?raw=true)
 
 The server responded:
 
@@ -505,7 +505,7 @@ button performs the same action automatically and requests the destination page.
 
 ## Screenshot 11 — Successful Response
 
-![Screenshot 11](screenshot-upload11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(11).png?raw=true)
 
 After following the redirect, the server returned:
 
@@ -519,7 +519,7 @@ indicating that the operation completed successfully.
 
 ## Screenshot 12 — Viewing the Response in Browser
 
-![Screenshot 12](screenshot-upload12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(12).png?raw=true)
 
 To view the administrator page more easily, I used Burp's:
 
@@ -535,7 +535,7 @@ Burp generated a temporary URL which I copied.
 
 ## Screenshot 13 — Confirming Carlos Was Deleted
 
-![Screenshot 13](screenshot-upload13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Unverified%20Signature/screenshots/lab1(13).png?raw=true)
 
 After opening the generated URL in the browser, I could see that:
 
