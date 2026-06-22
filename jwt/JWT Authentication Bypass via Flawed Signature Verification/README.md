@@ -168,7 +168,7 @@ The goal of this lab was to:
 
 ## Screenshot 1 — Initial Webpage
 
-![Screenshot 1](screenshot-upload1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(1).png?raw=true)
 
 The lab initially displayed a normal webpage containing:
 
@@ -179,7 +179,7 @@ The lab initially displayed a normal webpage containing:
 
 ## Screenshot 2 — Login Page
 
-![Screenshot 2](screenshot-upload2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(2).png?raw=true)
 
 After clicking **My Account**, I was redirected to the login page.
 
@@ -196,7 +196,7 @@ I entered the credentials and logged in.
 
 ## Screenshot 3 — Attempting to Access the Admin Panel
 
-![Screenshot 3](screenshot-upload3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(3).png?raw=true)
 
 After successfully logging in as:
 
@@ -224,7 +224,7 @@ This indicated that authorization was being enforced.
 
 ## Screenshot 4 — Capturing the Admin Request
 
-![Screenshot 4](screenshot-upload4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(4).png?raw=true)
 
 I captured the request:
 
@@ -248,7 +248,7 @@ This confirmed that my current JWT did not have administrator privileges.
 
 ## Screenshot 5 — Decoding the JWT
 
-![Screenshot 5](screenshot-upload5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(5).png?raw=true)
 
 I used the Burp Suite extension:
 
@@ -274,7 +274,7 @@ This allowed me to inspect both the token claims and the signature algorithm bei
 
 ## Screenshot 6 — Modifying the JWT Header
 
-![Screenshot 6](screenshot-upload6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(6).png?raw=true)
 
 I highlighted the JWT header and opened the Inspector tab.
 
@@ -351,7 +351,7 @@ This allows attackers to modify JWT contents without possessing the signing key.
 
 ## Screenshot 7 — Modifying the JWT Payload
 
-![Screenshot 7](screenshot-upload7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(7).png?raw=true)
 
 Next, I highlighted the JWT payload and opened the Inspector tab.
 
@@ -397,7 +397,7 @@ Burp automatically regenerated the JWT.
 
 ## Screenshot 8 — Removing the Signature
 
-![Screenshot 8](screenshot-upload8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(8).png?raw=true)
 
 Since the header now specified:
 
@@ -441,7 +441,7 @@ The authentication bypass was successful.
 
 ## Screenshot 9 — Discovering the Delete Endpoint
 
-![Screenshot 9](screenshot-upload9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(9).png?raw=true)
 
 After gaining access to the administrator panel response, I examined the returned content.
 
@@ -464,7 +464,7 @@ Since the lab specifically required deleting Carlos's account, I copied:
 
 ## Screenshot 10 — Deleting Carlos
 
-![Screenshot 10](screenshot-upload10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(10).png?raw=true)
 
 I modified the request:
 
@@ -486,7 +486,7 @@ indicating that the deletion action had completed and the application was redire
 
 ## Screenshot 11 — Following the Redirect
 
-![Screenshot 11](screenshot-upload11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(11).png?raw=true)
 
 I clicked:
 
@@ -537,7 +537,7 @@ After following the redirect, I received:
 
 ## Screenshot 12 — Viewing the Response in Browser
 
-![Screenshot 12](screenshot-upload12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(12).png?raw=true)
 
 I used Burp's feature:
 
@@ -555,7 +555,7 @@ I copied the generated URL.
 
 ## Screenshot 13 — Lab Solved
 
-![Screenshot 13](screenshot-upload13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Flawed%20Signature%20Verification/screenshots/lab2(13).png?raw=true)
 
 After pasting the generated URL into the browser, the page loaded successfully.
 
