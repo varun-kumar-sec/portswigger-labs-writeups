@@ -34,6 +34,15 @@ This repository contains practical writeups and walkthroughs for labs completed 
 
 ---
 
+## API Testing
+- [x] Exploiting an API endpoint using documentation
+- [x] Exploiting a mass assignment vulnerability
+- [x] Finding and exploiting an unused API endpoint
+- [x] Exploiting server-side parameter pollution in a query string
+- [x] Exploiting server-side parameter pollution in a REST URL
+
+---
+
 ## Authentication
 - [x] Username enumeration via different responses
 - [x] Username enumeration via subtly different responses
