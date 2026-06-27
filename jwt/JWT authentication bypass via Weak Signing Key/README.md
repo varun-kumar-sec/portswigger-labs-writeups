@@ -293,4 +293,257 @@ After making the modification, I clicked **OK**.
 
 Burp Suite now stores the recovered signing secret and will use it later to generate a valid signature after modifying the JWT payload from **wiener** to **administrator**.
 
+## 📷 Screenshot 10
+
+![Screenshot 10](images/screenshot10.png)
+
+I returned to **Repeater** and clicked the **JSON Web Token** option available above the request. Burp Suite automatically decoded the JWT into its **Header** and **Payload** sections.
+
+### 📌 Header
+
+```json
+{
+    "kid": "2752c78b-2c6a-42f7-8033-aa50605804d9",
+    "alg": "HS256"
+}
+```
+
+### 📌 Payload
+
+```json
+{
+    "iss": "portswigger",
+    "exp": 1782113329,
+    "sub": "wiener"
+}
+```
+
+The important field in the header is:
+
+```json
+"alg": "HS256"
+```
+
+### 🔍 What is HS256?
+
+**HS256 (HMAC SHA-256)** is a **symmetric cryptographic signing algorithm** used to protect JWT tokens.
+
+Unlike asymmetric algorithms (such as RS256), **HS256 uses the same secret key for both signing and verifying the JWT**.
+
+The process works as follows:
+
+1. The server creates the JWT Header and Payload.
+2. It combines them together.
+3. It signs the combined data using the secret key and the **SHA-256 HMAC** algorithm.
+4. The generated signature becomes the third part of the JWT.
+
+Whenever the client sends the JWT back to the server, the server repeats the signing process using its own secret key.
+
+- If the generated signature matches the signature inside the JWT, the token is considered valid.
+- If the signatures do not match, the request is rejected.
+
+Since I had already recovered the secret key (`secret1`) in the previous steps, I was now able to generate a completely valid signature for any modified JWT.
+
 ---
+
+## 📷 Screenshot 11
+
+![Screenshot 11](images/screenshot11.png)
+
+Next, I modified the JWT **Payload**.
+
+The original payload contained:
+
+```json
+{
+    "iss": "portswigger",
+    "exp": 1782113329,
+    "sub": "wiener"
+}
+```
+
+I changed only the **sub (Subject)** claim.
+
+From:
+
+```json
+"sub": "wiener"
+```
+
+To:
+
+```json
+"sub": "administrator"
+```
+
+The **sub** claim represents the identity of the authenticated user.
+
+By changing its value from **wiener** to **administrator**, I attempted to impersonate the administrator account.
+
+However, modifying the payload invalidates the existing JWT signature, so the token must be signed again using the recovered secret key.
+
+---
+
+## 📷 Screenshot 12
+
+![Screenshot 12](images/screenshot12.png)
+
+After modifying the payload, I clicked the **Sign** button in Burp Suite.
+
+Burp Suite displayed the previously created symmetric signing key that contained the recovered secret.
+
+I selected that key and clicked **OK**.
+
+Burp Suite automatically generated a **new HS256 signature** using the recovered secret (`secret1`) and updated the JWT.
+
+As a result, the modified token was now cryptographically valid and could be accepted by the server.
+
+---
+
+## 📷 Screenshot 13
+
+![Screenshot 13](images/screenshot13.png)
+
+I sent the request containing the newly signed JWT.
+
+This time, instead of returning **401 Unauthorized**, the server responded with:
+
+```http
+HTTP/2 200 OK
+```
+
+This confirms that the server successfully verified the JWT signature and trusted the modified token.
+
+Since the **sub** claim now contained **administrator**, the application treated me as an administrator and granted access to the administrator panel.
+
+After scrolling through the response, I found the following endpoint for deleting users:
+
+```text
+/admin/delete?username=carlos
+```
+
+The lab specifically requires deleting the **carlos** user, so I copied this endpoint for the next step.
+
+---
+
+## 📷 Screenshot 14
+
+![Screenshot 14](images/screenshot14.png)
+
+I modified the request path to:
+
+```http
+GET /admin/delete?username=carlos
+```
+
+and sent the request.
+
+The server responded with:
+
+```http
+HTTP/2 302 Found
+```
+
+A **302 Found** response indicates that the requested action was successfully processed, but the server wants the client to visit another page.
+
+To continue following the application's normal workflow, I clicked **Follow Redirection** in Burp Suite.
+
+---
+
+## 📷 Screenshot 15
+
+![Screenshot 15](images/screenshot15.png)
+
+After following the redirection, Burp Suite automatically sent the next request.
+
+This time the server returned:
+
+```http
+HTTP/2 200 OK
+```
+
+The successful response indicates that the deletion request completed successfully.
+
+---
+
+## 📷 Screenshot 16
+
+![Screenshot 16](images/screenshot16.png)
+
+To view the response in a more user-friendly format, I used Burp Suite's **Show response in browser** feature.
+
+This feature generates a temporary URL that renders the intercepted HTTP response directly inside a web browser.
+
+I copied the generated URL.
+
+---
+
+## 📷 Screenshot 17
+
+![Screenshot 17](images/screenshot17.png)
+
+Finally, I pasted the copied URL into the browser and pressed **Enter**.
+
+After the page loaded, I observed the following:
+
+- ✅ The **carlos** user was no longer present.
+- ✅ A message stating **"User deleted successfully"** was displayed.
+- ✅ The lab displayed **"Congratulations, you solved the lab!"**
+
+This confirms that forging a valid JWT using the recovered weak signing key successfully granted administrator privileges, allowing unauthorized access to the administrator panel and enabling deletion of the target user account.
+
+---
+
+# 🛡️ Mitigation
+
+To prevent JWT authentication bypass through weak signing keys, developers should follow these security best practices:
+
+- **Use strong, randomly generated signing secrets** (at least 256-bit entropy for HS256).
+- **Never use common words, default passwords, or predictable secrets** such as `secret`, `password123`, or `secret1`.
+- Store signing keys securely using **environment variables** or a dedicated **secret management solution** instead of hardcoding them into the application.
+- Rotate signing keys periodically and immediately after any suspected compromise.
+- Validate every JWT signature before trusting its contents.
+- Restrict access based on server-side authorization checks rather than relying solely on JWT claims.
+- Monitor authentication logs for abnormal JWT usage or repeated invalid signature attempts.
+
+---
+
+# 🎯 Why This Attack Worked
+
+This attack succeeded because the application was using a **weak HMAC signing secret** for its JWT tokens.
+
+The overall attack flow was:
+
+1. Capture a valid JWT belonging to a normal user (`wiener`).
+2. Perform an offline brute-force attack using **Hashcat** and a common password wordlist.
+3. Recover the signing secret (`secret1`).
+4. Import the recovered secret into Burp Suite as a symmetric key.
+5. Modify the JWT payload by changing the `sub` claim from `wiener` to `administrator`.
+6. Re-sign the modified token using the recovered secret.
+7. Since the new signature was cryptographically valid, the server trusted the modified JWT and granted administrator privileges.
+
+In short, **the vulnerability was not in JWT itself—it was caused by using a weak signing key that could be guessed through brute-force attacks.**
+
+---
+
+# 📚 Learning Outcomes
+
+From this lab, I learned:
+
+- How JWTs signed with **HS256** depend entirely on the secrecy of the signing key.
+- Why weak signing secrets make JWT authentication vulnerable to offline brute-force attacks.
+- How to identify and capture JWTs using Burp Suite.
+- How to use **Hashcat** to recover weak JWT secrets.
+- How to convert a recovered secret into Base64 format for use in Burp Suite.
+- How to generate a symmetric signing key inside Burp Suite.
+- How to modify JWT payload claims and generate a valid signature.
+- Why servers trust modified JWTs when the signature is valid.
+- The importance of choosing strong cryptographic secrets for authentication systems.
+
+---
+
+# ✅ Conclusion
+
+In this lab, I demonstrated how a JWT implementation becomes vulnerable when it relies on a **weak HMAC signing secret**. By capturing a legitimate JWT, brute-forcing the signing key using Hashcat, and re-signing a modified token with administrator privileges, I was able to bypass authentication and gain unauthorized access to the administrator panel. Finally, I used the newly acquired administrative privileges to delete the target user's account, successfully completing the lab.
+
+This lab highlights that **JWT security is only as strong as its signing key**. Even when the JWT implementation is technically correct, using a weak secret completely undermines its security, allowing attackers to forge valid tokens and impersonate privileged users.
