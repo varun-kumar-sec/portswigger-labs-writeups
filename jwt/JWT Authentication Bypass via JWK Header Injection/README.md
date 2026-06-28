@@ -347,7 +347,7 @@ After following the redirect, Burp returns:
 
 confirming that the deletion request completed successfully.
 
-![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(14).png?raw=true)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(15).png?raw=true)
 
 ---
 
@@ -357,7 +357,7 @@ Use Burp Suite's **Show response in browser** feature.
 
 Copy the generated URL.
 
-![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(15).png?raw=true)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(16).png?raw=true)
 
 ---
 
@@ -372,8 +372,6 @@ User deleted successfully
 ```
 
 The lab is now successfully solved.
-
-![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(16).png?raw=true)
 
 ![sceenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(17).png?raw=true)
 
