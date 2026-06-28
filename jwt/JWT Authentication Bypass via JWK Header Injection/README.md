@@ -334,6 +334,7 @@ Follow Redirection
 
 ![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(13).png?raw=true)
 
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(14).png?raw=true)
 ---
 
 ## Step 14: Follow the Redirect
