@@ -21,7 +21,7 @@ In this lab, the objective is to recover the weak signing key, modify the JWT so
 
 ## 📷 Screenshot 1
 
-![Screenshot 1](images/screenshot1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(1).png?raw=true)
 
 The lab starts with a normal shopping website. On the top navigation bar, there is a **My Account** button that allows users to authenticate themselves.
 
@@ -31,7 +31,7 @@ Since JWT tokens are generated only after successful authentication, the first s
 
 ## 📷 Screenshot 2
 
-![Screenshot 2](images/screenshot2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(2).png?raw=true)
 
 After clicking the **My Account** button, I was redirected to the login page.
 
@@ -48,7 +48,7 @@ After successful authentication, the application generated a JWT token that woul
 
 ## 📷 Screenshot 3
 
-![Screenshot 3](images/screenshot3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(3).png?raw=true)
 
 After logging in successfully, I was redirected to my account page.
 
@@ -66,7 +66,7 @@ Since the objective of the lab is to gain administrator privileges, the next ste
 
 ## 📷 Screenshot 4
 
-![Screenshot 4](images/screenshot4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(4).png?raw=true)
 
 I manually modified the current URL from:
 
@@ -98,7 +98,7 @@ This suggests that the JWT token likely contains information about the currently
 
 ## 📷 Screenshot 5
 
-![Screenshot 5](images/screenshot5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(5).png?raw=true)
 
 I captured the **GET /admin** request in Burp Suite and sent it to **Repeater**.
 
@@ -163,7 +163,7 @@ However, to generate a valid signature, we first need to recover the secret key 
 
 ## 📷 Screenshot 6
 
-![Screenshot 6](images/screenshot6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(6).png?raw=true)
 
 To recover the JWT signing secret, I used **Hashcat** to perform a dictionary attack against the token.
 
@@ -217,7 +217,7 @@ Since the application uses a weak signing key, the correct secret is successfull
 
 ## 📷 Screenshot 7
 
-![Screenshot 7](images/screenshot7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(7).png?raw=true)
 
 After Hashcat completed the attack, it successfully recovered the JWT signing secret.
 
@@ -237,7 +237,7 @@ The next step is to use this recovered secret to create our own administrator to
 
 ## 📷 Screenshot 8
 
-![Screenshot 8](images/screenshot8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(8).png?raw=true)
 
 I returned to Burp Suite and opened the **Decoder** tool.
 
@@ -261,7 +261,7 @@ This encoded value will be used while generating the symmetric signing key insid
 
 ## 📷 Screenshot 9
 
-![Screenshot 9](images/screenshot9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(9).png?raw=true)
 
 Next, I opened the **JWT Editor** inside Burp Suite and selected **New Symmetric Key**.
 
@@ -295,7 +295,7 @@ Burp Suite now stores the recovered signing secret and will use it later to gene
 
 ## 📷 Screenshot 10
 
-![Screenshot 10](images/screenshot10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(10).png?raw=true)
 
 I returned to **Repeater** and clicked the **JSON Web Token** option available above the request. Burp Suite automatically decoded the JWT into its **Header** and **Payload** sections.
 
@@ -348,7 +348,7 @@ Since I had already recovered the secret key (`secret1`) in the previous steps, 
 
 ## 📷 Screenshot 11
 
-![Screenshot 11](images/screenshot11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(11).png?raw=true)
 
 Next, I modified the JWT **Payload**.
 
@@ -386,7 +386,7 @@ However, modifying the payload invalidates the existing JWT signature, so the to
 
 ## 📷 Screenshot 12
 
-![Screenshot 12](images/screenshot12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(12).png?raw=true)
 
 After modifying the payload, I clicked the **Sign** button in Burp Suite.
 
@@ -402,7 +402,7 @@ As a result, the modified token was now cryptographically valid and could be acc
 
 ## 📷 Screenshot 13
 
-![Screenshot 13](images/screenshot13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(13).png?raw=true)
 
 I sent the request containing the newly signed JWT.
 
@@ -428,7 +428,7 @@ The lab specifically requires deleting the **carlos** user, so I copied this end
 
 ## 📷 Screenshot 14
 
-![Screenshot 14](images/screenshot14.png)
+![Screenshot 14](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(14).png?raw=true)
 
 I modified the request path to:
 
@@ -452,7 +452,7 @@ To continue following the application's normal workflow, I clicked **Follow Redi
 
 ## 📷 Screenshot 15
 
-![Screenshot 15](images/screenshot15.png)
+![Screenshot 15](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(15).png?raw=true)
 
 After following the redirection, Burp Suite automatically sent the next request.
 
@@ -468,7 +468,7 @@ The successful response indicates that the deletion request completed successful
 
 ## 📷 Screenshot 16
 
-![Screenshot 16](images/screenshot16.png)
+![Screenshot 16](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(16).png?raw=true)
 
 To view the response in a more user-friendly format, I used Burp Suite's **Show response in browser** feature.
 
@@ -480,7 +480,7 @@ I copied the generated URL.
 
 ## 📷 Screenshot 17
 
-![Screenshot 17](images/screenshot17.png)
+![Screenshot 17](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20authentication%20bypass%20via%20Weak%20Signing%20Key/screenshots/lab3(17).png?raw=true)
 
 Finally, I pasted the copied URL into the browser and pressed **Enter**.
 
