@@ -39,7 +39,7 @@ The objective of this lab is to exploit a **JWK Header Injection** vulnerability
 
 The lab starts with a normal shopping application containing a **My Account** button.
 
-![screenshot](images/01.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(1).png?raw=true)
 
 ---
 
@@ -54,7 +54,7 @@ Log in using the provided credentials:
 
 After entering the credentials, click **Log in**.
 
-![screenshot](images/02.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(2).png?raw=true)
 
 ---
 
@@ -68,7 +68,7 @@ Current URL:
 /my-account?id=wiener
 ```
 
-![screenshot](images/03.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(3).png?raw=true)
 
 ---
 
@@ -88,7 +88,7 @@ Admin interface only available if logged in as an administrator
 
 This confirms that the current JWT does not provide administrator privileges.
 
-![screenshot](images/04.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(4).png?raw=true)
 
 ---
 
@@ -152,7 +152,7 @@ sub = wiener
 
 which explains why administrative resources cannot be accessed.
 
-![screenshot](images/05.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(5).png?raw=true)
 
 ---
 
@@ -179,7 +179,7 @@ Since RS256 is an **asymmetric algorithm**, JWTs are signed using a **private ke
 
 This makes the application a potential target for **JWK Header Injection** if it trusts embedded public keys.
 
-![screenshot](images/06.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(6).png?raw=true)
 
 ---
 
@@ -203,7 +203,7 @@ Then click **OK**.
 
 Burp creates a completely new RSA public/private key pair which will later be used to sign our forged administrator token.
 
-![screenshot](images/07.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(7).png?raw=true)
 
 ---
 
@@ -215,7 +215,7 @@ Click the **JSON Web Token** tab available above the request.
 
 Burp automatically decodes both the JWT Header and JWT Payload, making them easier to edit.
 
-![screenshot](images/08.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(8).png?raw=true)
 
 ---
 
@@ -264,7 +264,7 @@ Burp automatically:
 
 As a result, when the server verifies the JWT, it unknowingly uses the attacker's public key, making the forged administrator token appear completely valid.
 
-![screenshot](images/09.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(9).png?raw=true)
 
 ---
 
@@ -274,7 +274,7 @@ After the attack completes, Burp automatically inserts the generated **JWK** int
 
 The JWT now contains the attacker's public key.
 
-![screenshot](images/10.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(10).png?raw=true)
 
 ---
 
@@ -290,7 +290,7 @@ The server now returns:
 
 indicating that the forged administrator JWT has been accepted successfully.
 
-![screenshot](images/11.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(11).png?raw=true)
 
 ---
 
@@ -306,7 +306,7 @@ Locate the delete endpoint for Carlos:
 
 Copy this endpoint.
 
-![screenshot](images/12.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(12).png?raw=true)
 
 ---
 
@@ -332,7 +332,7 @@ Click:
 Follow Redirection
 ```
 
-![screenshot](images/13.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(13).png?raw=true)
 
 ---
 
@@ -346,7 +346,7 @@ After following the redirect, Burp returns:
 
 confirming that the deletion request completed successfully.
 
-![screenshot](images/14.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(14).png?raw=true)
 
 ---
 
@@ -356,7 +356,7 @@ Use Burp Suite's **Show response in browser** feature.
 
 Copy the generated URL.
 
-![screenshot](images/15.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(15).png?raw=true)
 
 ---
 
@@ -372,7 +372,9 @@ User deleted successfully
 
 The lab is now successfully solved.
 
-![screenshot](images/16.png)
+![screenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(16).png?raw=true)
+
+![sceenshot](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JWK%20Header%20Injection/screenshots/lab4(17).png?raw=true)
 
 ---
 
