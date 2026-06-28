@@ -64,7 +64,7 @@ The lab initially loads a normal shopping website containing various products an
 
 No authentication has been performed yet.
 
-![](images/01.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(1).png?raw=true)
 
 ---
 
@@ -81,7 +81,7 @@ Login using the provided credentials:
 
 After entering the credentials, click **Log in**.
 
-![](images/02.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(2).png?raw=true)
 
 ---
 
@@ -97,7 +97,7 @@ Current URL:
 
 This confirms that the current authenticated user is **wiener**.
 
-![](images/03.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(3).png?raw=true)
 
 ---
 
@@ -117,7 +117,7 @@ Admin interface only available if logged in as administrator
 
 This confirms that authorization is being enforced using the information contained inside the JWT.
 
-![](images/04.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(4).png?raw=true)
 
 ---
 
@@ -199,7 +199,7 @@ The important claim is:
 
 which identifies the currently logged-in user.
 
-![](images/05.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(5).png?raw=true)
 
 ---
 
@@ -244,7 +244,7 @@ Later in the attack:
 - We will sign the forged JWT using our **private key**.
 - The application will verify it using our **public key**.
 
-![](images/06.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(6).png?raw=true)
 
 ---
 
@@ -278,7 +278,7 @@ Format it as a proper **JWKS (JSON Web Key Set)**:
 
 This JSON file represents the **public key** that the vulnerable server will later download.
 
-![](images/07.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(7).png?raw=true)
 
 ---
 
@@ -311,7 +311,7 @@ When the application receives the JWT, it will:
 
 In other words, we are replacing the server's trusted public key with one that we completely control.
 
-![](images/08.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(8).png?raw=true)
 
 ---
 
@@ -323,7 +323,7 @@ Click the **JSON Web Token** tab available above the request.
 
 Burp automatically decodes both the JWT Header and Payload, making them easy to edit before performing the attack.
 
-![](images/09.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(9).png?raw=true)
 
 ---
 
@@ -396,7 +396,7 @@ changes the identity stored inside the JWT.
 
 If the signature verification succeeds, the server will treat us as the administrator.
 
-![](images/10.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(10).png?raw=true)
 
 ---
 
@@ -434,7 +434,7 @@ If these values differ, the server cannot locate the correct public key and sign
 
 Updating the **kid** ensures that the application selects our public key.
 
-![](images/11.png)
+![](11)
 
 ---
 
@@ -463,7 +463,7 @@ The resulting JWT now contains:
 - Matching Key Identifier
 - Fresh RSA signature
 
-![](images/12.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(12).png?raw=true)
 
 ---
 
@@ -501,7 +501,7 @@ Scroll through the administrator page until the following endpoint is found:
 
 Copy this endpoint.
 
-![](images/13.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(13).png?raw=true)
 
 ---
 
@@ -527,7 +527,7 @@ Click:
 Follow Redirection
 ```
 
-![](images/14.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(14).png?raw=true)
 
 ---
 
@@ -541,7 +541,7 @@ After following the redirect, Burp returns:
 
 This indicates that the delete operation completed successfully.
 
-![](images/15.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(15).png?raw=true)
 
 ---
 
@@ -557,7 +557,7 @@ Burp generates a temporary URL.
 
 Copy the generated URL.
 
-![](images/16.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(16).png?raw=true)
 
 ---
 
@@ -573,7 +573,7 @@ User has been deleted successfully
 
 confirming that Carlos' account has been deleted and administrator privileges were successfully obtained.
 
-![](images/17.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(17).png?raw=true)
 
 ---
 
@@ -583,7 +583,7 @@ The lab displays the success message indicating that the objective has been comp
 
 The attack successfully abused the **JKU Header Injection** vulnerability to forge a valid administrator JWT and gain access to protected functionality.
 
-![](images/18.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(18).png?raw=true)
 
 ---
 
