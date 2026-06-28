@@ -434,7 +434,7 @@ If these values differ, the server cannot locate the correct public key and sign
 
 Updating the **kid** ensures that the application selects our public key.
 
-![](11)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20JKU%20Header%20Injection/screenshots/lab5(11).png?raw=true)
 
 ---
 
