@@ -39,7 +39,7 @@ The objective of this lab is to exploit a **JWK Header Injection** vulnerability
 
 The lab starts with a normal shopping application containing a **My Account** button.
 
-![](images/01.png)
+![screenshot](images/01.png)
 
 ---
 
@@ -54,7 +54,7 @@ Log in using the provided credentials:
 
 After entering the credentials, click **Log in**.
 
-![](images/02.png)
+![screenshot](images/02.png)
 
 ---
 
@@ -68,7 +68,7 @@ Current URL:
 /my-account?id=wiener
 ```
 
-![](images/03.png)
+![screenshot](images/03.png)
 
 ---
 
@@ -88,7 +88,7 @@ Admin interface only available if logged in as an administrator
 
 This confirms that the current JWT does not provide administrator privileges.
 
-![](images/04.png)
+![screenshot](images/04.png)
 
 ---
 
@@ -152,7 +152,7 @@ sub = wiener
 
 which explains why administrative resources cannot be accessed.
 
-![](images/05.png)
+![screenshot](images/05.png)
 
 ---
 
@@ -179,7 +179,7 @@ Since RS256 is an **asymmetric algorithm**, JWTs are signed using a **private ke
 
 This makes the application a potential target for **JWK Header Injection** if it trusts embedded public keys.
 
-![](images/06.png)
+![screenshot](images/06.png)
 
 ---
 
@@ -203,7 +203,7 @@ Then click **OK**.
 
 Burp creates a completely new RSA public/private key pair which will later be used to sign our forged administrator token.
 
-![](images/07.png)
+![screenshot](images/07.png)
 
 ---
 
@@ -215,7 +215,7 @@ Click the **JSON Web Token** tab available above the request.
 
 Burp automatically decodes both the JWT Header and JWT Payload, making them easier to edit.
 
-![](images/08.png)
+![screenshot](images/08.png)
 
 ---
 
@@ -264,7 +264,7 @@ Burp automatically:
 
 As a result, when the server verifies the JWT, it unknowingly uses the attacker's public key, making the forged administrator token appear completely valid.
 
-![](images/09.png)
+![screenshot](images/09.png)
 
 ---
 
@@ -274,7 +274,7 @@ After the attack completes, Burp automatically inserts the generated **JWK** int
 
 The JWT now contains the attacker's public key.
 
-![](images/10.png)
+![screenshot](images/10.png)
 
 ---
 
@@ -290,7 +290,7 @@ The server now returns:
 
 indicating that the forged administrator JWT has been accepted successfully.
 
-![](images/11.png)
+![screenshot](images/11.png)
 
 ---
 
@@ -306,7 +306,7 @@ Locate the delete endpoint for Carlos:
 
 Copy this endpoint.
 
-![](images/12.png)
+![screenshot](images/12.png)
 
 ---
 
@@ -332,7 +332,7 @@ Click:
 Follow Redirection
 ```
 
-![](images/13.png)
+![screenshot](images/13.png)
 
 ---
 
@@ -346,7 +346,7 @@ After following the redirect, Burp returns:
 
 confirming that the deletion request completed successfully.
 
-![](images/14.png)
+![screenshot](images/14.png)
 
 ---
 
@@ -356,7 +356,7 @@ Use Burp Suite's **Show response in browser** feature.
 
 Copy the generated URL.
 
-![](images/15.png)
+![screenshot](images/15.png)
 
 ---
 
@@ -372,7 +372,7 @@ User deleted successfully
 
 The lab is now successfully solved.
 
-![](images/16.png)
+![screenshot](images/16.png)
 
 ---
 
