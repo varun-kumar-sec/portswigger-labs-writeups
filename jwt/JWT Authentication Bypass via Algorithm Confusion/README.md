@@ -282,6 +282,49 @@ This is the core idea behind the Algorithm Confusion attack:
 - We force it to verify an HS256 token.
 - The RSA public key becomes the HMAC secret.
 
+---
+
+## 📸 Screenshot 8: Encoding the PEM Public Key into Base64
+
+![Screenshot 8](images/screenshot8.png)
+
+After copying the public key in **PEM** format from the JWT Editor, the next step was to convert it into **Base64** using Burp Suite's **Decoder**.
+
+The copied PEM key looked similar to the following:
+
+```pem
+-----BEGIN PUBLIC KEY-----
+...
+-----END PUBLIC KEY-----
+```
+
+This PEM-formatted key was pasted into Burp Suite's **Decoder** tab and encoded into **Base64**.
+
+### 🔍 Why was this required?
+
+The goal of this lab is to perform an **algorithm confusion attack**.
+
+Later, the server will be tricked into using the **public RSA key as an HMAC secret**.
+
+However, Burp's **Symmetric Key Editor** expects the secret to be supplied in **Base64 format**, not raw PEM format.
+
+Therefore:
+
+- Copy the RSA public key as PEM.
+- Encode the PEM into Base64.
+- Use this Base64 value as the secret (`k`) when generating the symmetric key.
+
+This converts the public RSA key into a format Burp can use for signing an **HS256** JWT.
+
+> **Key idea:**  
+> The server already knows the RSA public key because it publishes it. During the algorithm confusion attack, we abuse this by making the server treat that public key as an HMAC secret.
+
+### 🎯 Objective
+
+Prepare the RSA public key in a format that Burp Suite can use to create a forged **HS256-signed JWT** during the next steps.
+
+---
+
 ## 🖼️ Screenshot 09: Creating a Symmetric Key from the Public Key
 
 ![Screenshot 09](images/screenshot09.png)
