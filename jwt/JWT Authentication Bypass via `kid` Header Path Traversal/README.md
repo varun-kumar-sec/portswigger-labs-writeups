@@ -62,7 +62,7 @@ The lab initially loads a normal shopping website containing several products an
 
 At this stage, no user is authenticated.
 
-![](images/01.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(1).png?raw=true)
 
 ---
 
@@ -79,7 +79,7 @@ Login using the provided credentials:
 
 After entering the credentials, click **Log in**.
 
-![](images/02.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(2).png?raw=true)
 
 ---
 
@@ -93,7 +93,7 @@ After successful authentication, the application redirects to:
 
 This confirms that the current authenticated user is **wiener**.
 
-![](images/03.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(3).png?raw=true)
 
 ---
 
@@ -113,7 +113,7 @@ Admin interface only available if logged in as administrator
 
 This confirms that authorization is controlled by the JWT.
 
-![](images/04.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(4).png?raw=true)
 
 ---
 
@@ -191,7 +191,7 @@ The important claim is:
 
 which identifies the currently authenticated user.
 
-![](images/05.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(5).png?raw=true)
 
 ---
 
@@ -225,7 +225,7 @@ With **HS256**, the **same secret key** is used for:
 
 Therefore, if we can control which file is used as the secret key, we can generate our own valid administrator token.
 
-![](images/06.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(6).png?raw=true)
 
 ---
 
@@ -284,7 +284,7 @@ By configuring Burp's signing key as the Base64 representation of a NULL byte (`
 
 As a result, both the client and server use identical signing material, allowing the forged JWT signature to verify successfully.
 
-![](images/07.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(7).png?raw=true)
 
 ---
 
@@ -296,7 +296,7 @@ Click the **JSON Web Token** tab available above the request.
 
 Burp automatically decodes both the Header and Payload, allowing them to be modified before re-signing the JWT.
 
-![](images/08.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(8).png?raw=true)
 
 ---
 
@@ -361,7 +361,7 @@ At the same time, we modified:
 
 which changes our identity from **wiener** to **administrator**.
 
-![](images/09.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(9).png?raw=true)
 
 ---
 
@@ -385,7 +385,7 @@ Scroll through the response until the following endpoint is found:
 
 Copy this endpoint.
 
-![](images/10.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(10).png?raw=true)
 
 ---
 
@@ -411,7 +411,7 @@ Click:
 Follow Redirection
 ```
 
-![](images/11.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(11).png?raw=true)
 
 ---
 
@@ -425,7 +425,7 @@ After following the redirect, Burp returns:
 
 indicating that the delete operation completed successfully.
 
-![](images/12.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(12).png?raw=true)
 
 ---
 
@@ -441,7 +441,7 @@ Burp generates a temporary URL.
 
 Copy the generated URL.
 
-![](images/13.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(13).png?raw=true)
 
 ---
 
@@ -457,7 +457,7 @@ User deleted successfully!
 
 confirming that Carlos' account has been deleted and the lab has been solved.
 
-![](images/14.png)
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20%60kid%60%20Header%20Path%20Traversal/screenshots/lab6(14).png?raw=true)
 
 ---
 
