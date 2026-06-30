@@ -262,3 +262,271 @@ After generation, the value of the **`k`** parameter was replaced with the previ
 This prepares the key for the upcoming algorithm confusion attack.
 
 Instead of using a normal shared secret, the recovered RSA public key is intentionally reused as the HMAC secret because the vulnerable server incorrectly accepts HS256 verification using the public key.
+
+---
+
+# Step 14: Requesting the Administrator Page Again
+
+![Screenshot 14](images/screenshot14.png)
+
+After preparing the symmetric key using the recovered **Base64-encoded X.509 public key**, I navigated back to the application and once again attempted to access the administrator panel by modifying the URL to:
+
+```text
+https://0a6800da046b638b83409b9800b200c8.web-security-academy.net/admin
+```
+
+This request would later be intercepted so that the JWT could be modified and re-signed using the newly created symmetric key.
+
+---
+
+# Step 15: Capturing the Administrator Request
+
+![Screenshot 15](images/screenshot15.png)
+
+The request to the administrator endpoint was captured in Burp Suite Repeater.
+
+```http
+GET /admin
+```
+
+Since the request still contained the original JWT, sending it resulted in:
+
+```http
+HTTP/1.1 401 Unauthorized
+```
+
+This confirms that the application still recognized the current user as **wiener**, who does not have administrator privileges.
+
+The next step was to modify and re-sign the JWT.
+
+---
+
+# Step 16: Performing the Algorithm Confusion Attack
+
+![Screenshot 16](images/screenshot16.png)
+
+I opened the **JSON Web Token** editor available in Burp Suite's request banner.
+
+Burp automatically decoded both the JWT header and payload.
+
+### Header Modification
+
+The algorithm was changed from:
+
+```json
+{
+    "alg": "RS256"
+}
+```
+
+to
+
+```json
+{
+    "alg": "HS256"
+}
+```
+
+### Payload Modification
+
+The subject claim was changed from:
+
+```json
+"sub": "wiener"
+```
+
+to
+
+```json
+"sub": "administrator"
+```
+
+Finally, I clicked the **Sign** button and selected the symmetric key created earlier, whose secret was the recovered **Base64-encoded X.509 public key**.
+
+Burp generated a brand-new **HS256 signature** for the modified JWT.
+
+### 🔍 Why did this work?
+
+Normally:
+
+- **RS256**
+  - Private key → Signing
+  - Public key → Verification
+
+However, the vulnerable application trusted the **`alg`** value supplied by the client.
+
+By changing the algorithm to **HS256**, the server mistakenly switched to HMAC verification.
+
+Instead of using a real shared secret, it incorrectly used its own RSA public key as the HMAC secret.
+
+Since we had already recovered that public key using **sig2n**, we could generate a perfectly valid HS256 signature that the vulnerable server accepted.
+
+---
+
+# Step 17: Successfully Accessing the Administrator Panel
+
+![Screenshot 17](images/screenshot17.png)
+
+After sending the newly signed JWT, the application returned:
+
+```http
+HTTP/1.1 200 OK
+```
+
+This indicates that the forged JWT was accepted successfully.
+
+Because the JWT now contained:
+
+```json
+"sub": "administrator"
+```
+
+the application treated the request as originating from the administrator account.
+
+Scrolling through the response revealed an administrative function for deleting users:
+
+```text
+/admin/delete?username=carlos
+```
+
+Since the lab specifically requires deleting Carlos' account, I copied this endpoint for the next step.
+
+---
+
+# Step 18: Deleting Carlos
+
+![Screenshot 18](images/screenshot18.png)
+
+The intercepted request was modified to:
+
+```http
+GET /admin/delete?username=carlos
+```
+
+After sending the request, the server responded with:
+
+```http
+HTTP/1.1 302 Found
+```
+
+A **302 Found** response indicates that the deletion request was processed successfully and the application redirected the browser to another page.
+
+I clicked **Follow Redirection** to continue.
+
+---
+
+# Step 19: Following the Redirect
+
+![Screenshot 19](images/screenshot19.png)
+
+After following the redirect, Burp Suite displayed:
+
+```http
+HTTP/1.1 200 OK
+```
+
+This confirms that the deletion request completed successfully.
+
+---
+
+# Step 20: Viewing the Response in Browser
+
+![Screenshot 20](images/screenshot20.png)
+
+To verify the response visually, I used Burp Suite's **Show Response in Browser** feature.
+
+Burp generated a temporary URL representing the HTTP response.
+
+I copied the generated URL.
+
+---
+
+# Step 21: Lab Successfully Solved
+
+![Screenshot 21](images/screenshot21.png)
+
+The copied URL was pasted into the browser.
+
+After loading the page, the application displayed the message:
+
+```text
+User deleted successfully
+```
+
+This confirms that:
+
+- The forged JWT was accepted.
+- Administrator privileges were obtained.
+- Carlos' account was deleted successfully.
+
+As a result, the lab was solved successfully.
+
+---
+
+# 💡 Why This Attack Worked
+
+Unlike the previous algorithm confusion lab, this application **did not expose its public key** through an endpoint such as:
+
+```text
+/jwks.json
+```
+
+However, multiple JWTs signed using the same RSA private key leaked enough mathematical information for **PortSwigger's sig2n** tool to reconstruct several candidate public keys.
+
+The attack worked as follows:
+
+1. Two valid JWTs belonging to the same user were collected.
+2. **sig2n** analyzed both signatures and generated multiple candidate X.509 public keys.
+3. Each generated tampered JWT was tested until one was accepted.
+4. The corresponding Base64-encoded X.509 public key was recovered.
+5. That recovered public key was used as the HMAC secret.
+6. The JWT algorithm was changed from **RS256** to **HS256**.
+7. The `sub` claim was modified to `administrator`.
+8. The JWT was re-signed using the recovered public key.
+9. Because the server incorrectly trusted the algorithm supplied by the client, it accepted the forged token.
+
+The vulnerability was **not** the exposure of the public key.
+
+The vulnerability was the application's failure to enforce the expected signing algorithm.
+
+---
+
+# 🛡️ Mitigation
+
+To prevent Algorithm Confusion attacks:
+
+- Never trust the **`alg`** value supplied inside the JWT.
+- Explicitly enforce the expected signing algorithm on the server.
+- Never allow automatic switching between **RS256** and **HS256**.
+- Use separate verification logic for symmetric and asymmetric algorithms.
+- Validate both the key type and algorithm before verifying signatures.
+- Rotate cryptographic keys regularly.
+- Keep JWT libraries updated to versions that prevent algorithm confusion attacks.
+- Avoid exposing unnecessary cryptographic information wherever possible.
+
+---
+
+# 📚 Learning
+
+From this lab, I learned:
+
+- How Algorithm Confusion attacks work when the public key is **not publicly exposed**.
+- How to collect multiple JWTs for the same user.
+- How **PortSwigger's sig2n** tool reconstructs candidate RSA public keys.
+- What an **X.509 public key** is.
+- Why Base64-encoded X.509 keys are used during this attack.
+- How to identify the correct candidate public key by testing tampered JWTs.
+- How to create a symmetric key using the recovered public key.
+- How to modify JWT claims.
+- How to re-sign JWTs using Burp Suite.
+- How incorrect JWT verification can result in complete privilege escalation.
+
+---
+
+# ✅ Conclusion
+
+In this lab, the server did not expose its public key directly. Instead, multiple JWTs signed with the same RSA private key were analyzed using **sig2n**, allowing the recovery of candidate public keys.
+
+After identifying the correct public key, I performed an **Algorithm Confusion attack** by changing the JWT algorithm from **RS256** to **HS256**, modifying the `sub` claim to **administrator**, and signing the token using the recovered public key as the HMAC secret.
+
+Because the application incorrectly trusted the client-supplied algorithm, it accepted the forged JWT, granted administrator privileges, and allowed the deletion of Carlos' account, successfully solving the lab.
