@@ -28,7 +28,7 @@ This confusion between **asymmetric** and **symmetric** verification allows atta
 
 # Step 1: Accessing the Lab
 
-![Screenshot 1](images/screenshot1.png)
+![Screenshot 1](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(1).png?raw=true)
 
 The lab initially presents a normal web application with a **My Account** button.
 
@@ -38,7 +38,7 @@ At this point no authentication has been performed.
 
 # Step 2: Logging into the Application
 
-![Screenshot 2](images/screenshot2.png)
+![Screenshot 2](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(2).png?raw=true)
 
 Clicking **My Account** redirects the browser to the login page.
 
@@ -53,7 +53,7 @@ After providing the credentials, the **Log in** button was clicked.
 
 # Step 3: Successful Authentication
 
-![Screenshot 3](images/screenshot3.png)
+![Screenshot 3](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(3).png?raw=true)
 
 The login succeeds and the application redirects to:
 
@@ -71,7 +71,7 @@ At this stage the user has normal privileges.
 
 # Step 4: Capturing the First JWT
 
-![Screenshot 4](images/screenshot4.png)
+![Screenshot 4](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(4).png?raw=true)
 
 The request to:
 
@@ -91,7 +91,7 @@ This token will later be compared against another JWT generated for the same use
 
 # Step 5: Capturing a Second JWT
 
-![Screenshot 5](images/screenshot5.png)
+![Screenshot 5](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(5).png?raw=true)
 
 The user logged out and authenticated again using the same credentials.
 
@@ -105,7 +105,7 @@ Having two valid JWTs signed by the same private key is important for the next s
 
 # Step 6: Comparing Both Tokens
 
-![Screenshot 6](images/screenshot6.png)
+![Screenshot 6](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(6).png?raw=true)
 
 Both captured JWTs were copied into a text editor for comparison.
 
@@ -117,7 +117,7 @@ These multiple signatures provide enough information for **sig2n** to mathematic
 
 # Step 7: Recovering Candidate Public Keys using sig2n
 
-![Screenshot 7](images/screenshot7.png)
+![Screenshot 7](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(7).png?raw=true)
 
 The following Docker command was executed:
 
@@ -148,7 +148,7 @@ One of these candidates corresponds to the server's real public key.
 
 # Step 8: Generated Candidate Keys
 
-![Screenshot 8](images/screenshot8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(8).png?raw=true)
 
 The **sig2n** tool produced multiple candidate results.
 
@@ -176,7 +176,7 @@ If a tampered JWT is accepted, its corresponding X.509 key is the correct public
 
 # Step 9: Additional Candidate Keys
 
-![Screenshot 9](images/screenshot9.png)
+![Screenshot 9](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(9).png?raw=true)
 
 The remaining output from **sig2n** contains several additional candidate X.509 public keys and their corresponding tampered JWTs.
 
@@ -186,7 +186,7 @@ Since the tool cannot determine which candidate is correct, each generated JWT m
 
 # Step 10: Testing Candidate JWTs
 
-![Screenshot 10](images/screenshot10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(10).png?raw=true)
 
 Each generated tampered JWT was tested by replacing the original JWT in the intercepted request.
 
@@ -209,7 +209,7 @@ This trial-and-error process continues until one of the candidate JWTs is accept
 
 # Step 11: Selecting the Correct Tampered JWT
 
-![Screenshot 11](images/screenshot11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(11).png?raw=true)
 
 Eventually, the **second-last tampered JWT** generated by **sig2n** was identified as the correct candidate.
 
@@ -221,7 +221,7 @@ Using this candidate allows the remainder of the algorithm confusion attack to p
 
 # Step 12: Successful Verification
 
-![Screenshot 12](images/screenshot12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(12).png?raw=true)
 
 After replacing the JWT with the selected tampered token, the request was sent again.
 
@@ -243,7 +243,7 @@ This recovered public key will later be reused as the **HMAC secret** during the
 
 # Step 13: Creating a Symmetric Key
 
-![Screenshot 13](images/screenshot13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(13).png?raw=true)
 
 The **JWT Editor** extension in Burp Suite was opened.
 
@@ -267,7 +267,7 @@ Instead of using a normal shared secret, the recovered RSA public key is intenti
 
 # Step 14: Requesting the Administrator Page Again
 
-![Screenshot 14](images/screenshot14.png)
+![Screenshot 14](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(14).png?raw=true)
 
 After preparing the symmetric key using the recovered **Base64-encoded X.509 public key**, I navigated back to the application and once again attempted to access the administrator panel by modifying the URL to:
 
@@ -281,7 +281,7 @@ This request would later be intercepted so that the JWT could be modified and re
 
 # Step 15: Capturing the Administrator Request
 
-![Screenshot 15](images/screenshot15.png)
+![Screenshot 15](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(15).png?raw=true)
 
 The request to the administrator endpoint was captured in Burp Suite Repeater.
 
@@ -303,7 +303,7 @@ The next step was to modify and re-sign the JWT.
 
 # Step 16: Performing the Algorithm Confusion Attack
 
-![Screenshot 16](images/screenshot16.png)
+![Screenshot 16](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(16).png?raw=true)
 
 I opened the **JSON Web Token** editor available in Burp Suite's request banner.
 
@@ -365,7 +365,7 @@ Since we had already recovered that public key using **sig2n**, we could generat
 
 # Step 17: Successfully Accessing the Administrator Panel
 
-![Screenshot 17](images/screenshot17.png)
+![Screenshot 17](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(17).png?raw=true)
 
 After sending the newly signed JWT, the application returned:
 
@@ -395,7 +395,7 @@ Since the lab specifically requires deleting Carlos' account, I copied this endp
 
 # Step 18: Deleting Carlos
 
-![Screenshot 18](images/screenshot18.png)
+![Screenshot 18](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(18).png?raw=true)
 
 The intercepted request was modified to:
 
@@ -417,7 +417,7 @@ I clicked **Follow Redirection** to continue.
 
 # Step 19: Following the Redirect
 
-![Screenshot 19](images/screenshot19.png)
+![Screenshot 19](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(19).png?raw=true)
 
 After following the redirect, Burp Suite displayed:
 
@@ -431,7 +431,7 @@ This confirms that the deletion request completed successfully.
 
 # Step 20: Viewing the Response in Browser
 
-![Screenshot 20](images/screenshot20.png)
+![Screenshot 20](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(20).png?raw=true)
 
 To verify the response visually, I used Burp Suite's **Show Response in Browser** feature.
 
@@ -443,7 +443,7 @@ I copied the generated URL.
 
 # Step 21: Lab Successfully Solved
 
-![Screenshot 21](images/screenshot21.png)
+![Screenshot 21](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion%20with%20No%20Exposed%20Key/screenshots/lab8(21).png?raw=true)
 
 The copied URL was pasted into the browser.
 
