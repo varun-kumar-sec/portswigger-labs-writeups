@@ -24,7 +24,7 @@ Because the server blindly trusts the algorithm specified in the JWT header, it 
 
 # Step 1: Accessing the Login Page
 
-![]()
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(1).png?raw=true)
 
 The lab starts with the application's home page containing a **My Account** button.
 
@@ -34,7 +34,7 @@ To authenticate, click **My Account**.
 
 # Step 2: Logging In
 
-![]()
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(2).png?raw=true)
 
 The application redirects to the login page.
 
@@ -49,7 +49,7 @@ After entering the credentials, click **Log in**.
 
 # Step 3: Successful Login
 
-![]()
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(3).png?raw=true)
 
 After authentication, the application redirects to:
 
@@ -63,7 +63,7 @@ This confirms that we are authenticated as the normal user **wiener**.
 
 # Step 4: Attempting to Access the Admin Panel
 
-![]()
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(4).png?raw=true)
 
 Next, manually modify the URL to access the administrator panel.
 
@@ -83,7 +83,7 @@ This confirms that additional authorization checks are performed.
 
 # Step 5: Capturing the JWT
 
-![]()
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(5).png?raw=true)
 
 Capture the previous request in Burp Suite and send it to **Repeater**.
 
@@ -176,7 +176,7 @@ meaning this token belongs to the normal user.
 
 # Step 6: Accessing the Public JWK Endpoint
 
-![]()
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(6).png?raw=true)
 
 Next, browse to the following endpoint:
 
@@ -222,7 +222,7 @@ This only works when the JWT implementation incorrectly trusts the **`alg`** hea
 
 # Step 7: Creating an RSA Key in Burp
 
-![]()
+![](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(7).png?raw=true)
 
 Open **JWT Editor** in Burp Suite.
 
@@ -286,7 +286,7 @@ This is the core idea behind the Algorithm Confusion attack:
 
 ## 📸 Screenshot 8: Encoding the PEM Public Key into Base64
 
-![Screenshot 8](images/screenshot8.png)
+![Screenshot 8](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(8).png?raw=true)
 
 After copying the public key in **PEM** format from the JWT Editor, the next step was to convert it into **Base64** using Burp Suite's **Decoder**.
 
@@ -327,7 +327,7 @@ Prepare the RSA public key in a format that Burp Suite can use to create a forge
 
 ## 🖼️ Screenshot 09: Creating a Symmetric Key from the Public Key
 
-![Screenshot 09](images/screenshot09.png)
+![Screenshot 09](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(9).png?raw=true)
 
 After obtaining the server's **public RSA key** and converting it into **Base64**, the next step was to create a **new symmetric key** inside Burp Suite's JWT Editor.
 
@@ -361,7 +361,7 @@ Therefore, by creating a symmetric key whose value is exactly the server's publi
 
 ## 🖼️ Screenshot 10: Modifying and Signing the JWT
 
-![Screenshot 10](images/screenshot10.png)
+![Screenshot 10](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(10).png?raw=true)
 
 Next, I opened the **JSON Web Token** editor from the request banner in Burp Suite. Burp automatically decoded both the JWT header and payload.
 
@@ -432,7 +432,7 @@ Burp generated a new HS256 signature using the Base64-encoded public key.
 
 ## 🖼️ Screenshot 11: Accessing the Administrator Panel
 
-![Screenshot 11](images/screenshot11.png)
+![Screenshot 11](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(11).png?raw=true)
 
 After sending the newly signed JWT, the server responded with **200 OK**, indicating that the token had been accepted successfully.
 
@@ -452,7 +452,7 @@ Since the lab specifically requires deleting **Carlos**, I copied this endpoint 
 
 ## 🖼️ Screenshot 12: Deleting Carlos
 
-![Screenshot 12](images/screenshot12.png)
+![Screenshot 12](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(12).png?raw=true)
 
 I modified the request to:
 
@@ -474,7 +474,7 @@ I clicked **Follow Redirection** to complete the request flow.
 
 ## 🖼️ Screenshot 13: Following the Redirect
 
-![Screenshot 13](images/screenshot13.png)
+![Screenshot 13](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(13).png?raw=true)
 
 After following the redirect, the server returned:
 
@@ -488,7 +488,7 @@ This confirmed that the deletion operation completed successfully.
 
 ## 🖼️ Screenshot 14: Viewing the Response in Browser
 
-![Screenshot 14](images/screenshot14.png)
+![Screenshot 14](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(14).png?raw=true)
 
 To verify the result visually, I used Burp Suite's **Show Response in Browser** feature.
 
@@ -500,7 +500,7 @@ I copied this generated URL.
 
 ## 🖼️ Screenshot 15: Lab Successfully Solved
 
-![Screenshot 15](images/screenshot15.png)
+![Screenshot 15](https://github.com/varun-kumar-sec/portswigger-labs-writeups/blob/main/jwt/JWT%20Authentication%20Bypass%20via%20Algorithm%20Confusion/screenshots/lab7(15).png?raw=true)
 
 Finally, I pasted the copied URL into the browser.
 
