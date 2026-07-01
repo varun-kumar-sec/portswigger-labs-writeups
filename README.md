@@ -70,6 +70,17 @@ This repository contains practical writeups and walkthroughs for labs completed 
 - [x] Web Shell Upload via Race Condition
 
 ---
+## JWT
+- [x] JWT authentication bypass via unverified signature
+- [x] JWT authentication bypass via flawed signature verification
+- [x] JWT authentication bypass via weak signing key
+- [x] JWT authentication bypass via JWK header injection
+- [x] JWT authentication bypass via JKU header injection
+- [x] JWT authentication bypass via `kid` header path traversal
+- [x] JWT authentication bypass via algorithm confusion
+- [x] JWT authentication bypass via algorithm confusion with no exposed key
+
+---
 
 ## Cross-Site Scripting (XSS)
 - [x] Reflected XSS into HTML context with nothing encoded
